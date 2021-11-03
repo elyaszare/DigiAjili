@@ -1,0 +1,17 @@
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Domain.deps.json
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Domain.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\ref\ShopManagement.Domain.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Domain.pdb
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\0_Framework.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.csproj.AssemblyReference.cache
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.AssemblyInfoInputs.cache
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.AssemblyInfo.cs
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.csproj.CoreCompileInputs.cache
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.csproj.CopyComplete
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\obj\Debug\net5.0\ref\ShopManagement.Domain.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.pdb
