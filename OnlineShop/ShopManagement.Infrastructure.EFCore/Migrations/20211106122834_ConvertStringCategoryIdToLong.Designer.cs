@@ -21,7 +21,7 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                 .HasAnnotation("ProductVersion", "5.0.11")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ShopManagement.Domain.ProductAgg.Product", b =>
+            modelBuilder.Entity("ShopManagement.Domain.ProductAgg.ProductId", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -144,7 +144,7 @@ namespace ShopManagement.Infrastructure.EFCore.Migrations
                     b.ToTable("ProductCategories");
                 });
 
-            modelBuilder.Entity("ShopManagement.Domain.ProductAgg.Product", b =>
+            modelBuilder.Entity("ShopManagement.Domain.ProductAgg.ProductId", b =>
                 {
                     b.HasOne("ShopManagement.Domain.ProductCategoryAgg.ProductCategory", "Category")
                         .WithMany("Products")

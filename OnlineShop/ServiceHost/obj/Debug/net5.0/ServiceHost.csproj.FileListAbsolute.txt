@@ -93,3 +93,6 @@ D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Product\Create.cshtml.g.cs
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Product\Edit.cshtml.g.cs
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Product\Index.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductPicture\Create.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductPicture\Edit.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductPicture\Index.cshtml.g.cs

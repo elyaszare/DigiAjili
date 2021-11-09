@@ -70,6 +70,11 @@ namespace ShopManagement.Application
             return productRepository.GetDetails(id);
         }
 
+        public List<ProductViewModel> GetProducts()
+        {
+          return productRepository.GetProducts();
+        }
+
         public List<ProductViewModel> Search(ProductSearchModel searchModel)
         {
             return productRepository.Search(searchModel);

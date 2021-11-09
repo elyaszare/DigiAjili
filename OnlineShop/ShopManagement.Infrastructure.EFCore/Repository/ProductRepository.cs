@@ -11,9 +11,9 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
     {
         private readonly ShopContext context;
 
-        public ProductRepository(DbContext context, ShopContext context1) : base(context)
+        public ProductRepository(ShopContext context) : base(context)
         {
-            this.context = context1;
+            this.context = context;
         }
 
         public EditProduct GetDetails(long id)
@@ -36,25 +36,42 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             }).FirstOrDefault(x => x.Id == id);
         }
 
+        public List<ProductViewModel> GetProducts()
+        {
+            var queyr = context.Products.Select(x => new ProductViewModel
+            {
+                Id = x.Id,
+                Name = x.Name
+            });
+
+            var name = queyr;
+            return queyr.ToList();
+        }
+
         public List<ProductViewModel> Search(ProductSearchModel searchModel)
         {
-            var query = context.Products.Include(x => x.Category).Select(x => new ProductViewModel
-            {
-                UnitPrice = x.UnitPrice,
-                Category = x.Category.Name,
-                CategoryId = x.CategoryId,
-                Code = x.Code,
-                Id = x.Id,
-                Name = x.Name,
-                Picture = x.Picture,
-                CreationDate = x.CreationDate.ToString()
-            });
+            var query = context.Products
+                .Include(x => x.Category)
+                .Select(x => new ProductViewModel
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Category = x.Category.Name,
+                    CategoryId = x.CategoryId,
+                    Code = x.Code,
+                    Picture = x.Picture,
+                    IsInStock = x.IsInStock,
+                    CreationDate = x.CreationDate.ToString()
+                });
+
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
                 query = query.Where(x => x.Name.Contains(searchModel.Name));
+
             if (!string.IsNullOrWhiteSpace(searchModel.Code))
                 query = query.Where(x => x.Code.Contains(searchModel.Code));
 
-            if (searchModel.CategoryId != 0) query = query.Where(x => x.CategoryId == searchModel.CategoryId);
+            if (searchModel.CategoryId != 0)
+                query = query.Where(x => x.CategoryId == searchModel.CategoryId);
 
             return query.OrderByDescending(x => x.Id).ToList();
         }
