@@ -38,14 +38,11 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 
         public List<ProductViewModel> GetProducts()
         {
-            var queyr = context.Products.Select(x => new ProductViewModel
+            return context.Products.Select(x => new ProductViewModel
             {
                 Id = x.Id,
                 Name = x.Name
-            });
-
-            var name = queyr;
-            return queyr.ToList();
+            }).ToList();
         }
 
         public List<ProductViewModel> Search(ProductSearchModel searchModel)

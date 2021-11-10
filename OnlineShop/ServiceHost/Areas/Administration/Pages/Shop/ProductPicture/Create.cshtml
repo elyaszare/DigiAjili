@@ -18,7 +18,7 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label asp-for="ProductId" class="control-label">محصول</label>
-                    <select class="form-control" asp-for="ProductId"
+                    <select class="form-control" asp-for="ProductId" 
                             asp-items='new SelectList(Model.Products, "Id", "Name")'>
                         <option value="0">محصول</option>
                     </select>
