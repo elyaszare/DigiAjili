@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LGmIcGLMJFt5tpk47VZbtZeOITqv8/sq6XcHDDRZJOdD/huM/cPfHT6Qa3oOuPPglo7vyLC/L1bU7H1q2j10FA==",
+  "dgSpecHash": "vEdIDIdm4rKs6/VzsKw/8FAwigi5GQ2qpc+/+WwVhNVqWx8EU4kttqGeCQ9kkagdMXQg/4wLrNzm/AFuKY0a6g==",
   "success": true,
   "projectFilePath": "D:\\OnlineShop\\OnlineShop\\ServiceHost\\ServiceHost.csproj",
   "expectedPackageFiles": [
@@ -99,7 +99,8 @@
     "C:\\Users\\User\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }
