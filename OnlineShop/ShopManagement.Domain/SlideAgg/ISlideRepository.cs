@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿
+//ISlideRepository Implementation
+
+using System.Collections.Generic;
 using _0_Framework.Domain;
 using ShopManagement.Application.Contracts.Slide;
 

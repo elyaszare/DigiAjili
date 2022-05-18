@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
@@ -20,7 +21,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             return context.ProductCategories.Select(x => new ProductCategoryViewModel
             {
                 Id = x.Id,
-                Name = x.Name
+                Name = x.Name,
             }).ToList();
         }
 
@@ -46,7 +47,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             {
                 Name = x.Name,
                 Picture = x.Picture,
-                CreationDate = x.CreationDate.ToString(),
+                CreationDate = x.CreationDate.ToFarsi(),
                 Id = x.Id
             });
 

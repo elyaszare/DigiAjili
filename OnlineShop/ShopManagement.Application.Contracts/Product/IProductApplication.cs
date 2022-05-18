@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿
+//ProductApplication Abstraction
+
+using System.Collections.Generic;
 using _0_Framework.Application;
 
 namespace ShopManagement.Application.Contracts.Product

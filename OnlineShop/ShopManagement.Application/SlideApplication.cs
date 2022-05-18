@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿//ISlideApplication Implementation
+
+using System.Collections.Generic;
 using _0_Framework.Application;
 using ShopManagement.Application.Contracts.Slide;
 using ShopManagement.Domain.SlideAgg;

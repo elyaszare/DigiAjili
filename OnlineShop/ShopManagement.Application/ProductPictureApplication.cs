@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿//IProductPictureApplication Implementation
+
+using System.Collections.Generic;
 using _0_Framework.Application;
 using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Domain.ProductPictureAgg;
@@ -18,7 +20,7 @@ namespace ShopManagement.Application
         {
             var operation = new OperationResult();
             if (productPictureRepository.Exists(x => x.Picture == command.Picture && x.ProductId == command.ProductId))
-                return operation.Failed(ValidationMessage.DuplicateRecord);
+                return operation.Failed(ApplicationMessages.DuplicateRecord);
 
             var productpicture = new ProductPicture(command.ProductId, command.Picture, command.PictureAlt,
                 command.PictureTitle);

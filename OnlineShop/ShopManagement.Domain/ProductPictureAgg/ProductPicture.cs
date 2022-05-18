@@ -1,4 +1,7 @@
-﻿using _0_Framework.Domain;
+﻿
+//ProductPicture Model
+//ProductPicture Propertys
+using _0_Framework.Domain;
 using ShopManagement.Domain.ProductAgg;
 
 namespace ShopManagement.Domain.ProductPictureAgg

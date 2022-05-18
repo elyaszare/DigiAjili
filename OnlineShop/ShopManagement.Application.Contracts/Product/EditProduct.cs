@@ -1,4 +1,7 @@
-﻿namespace ShopManagement.Application.Contracts.Product
+﻿//Edit Product By This Class
+
+
+namespace ShopManagement.Application.Contracts.Product
 {
     public class EditProduct : CreateProduct
     {

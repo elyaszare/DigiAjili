@@ -101,3 +101,17 @@ D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration
 D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\01_Query.dll
 D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\01_Query.pdb
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Slide\Default.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\ProductCategory\Default.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\DiscountManagement.Application.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\DiscountManagement.Configuration.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\DiscountManagement.Domain.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\DiscountManagement.Configuration.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\DiscountManagement.Application.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\CustomerDiscount\Create.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\CustomerDiscount\Edit.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\CustomerDiscount\Index.cshtml.g.cs

@@ -30,7 +30,27 @@
       "ProjectGuid": "e65c0a0f-baab-4e2f-a544-cc7792b9bfc0",
       "DisplayName": "ShopManagement.Infrastructure.EFCore",
       "ColorIndex": 5
+    },
+    "375d04fc-f97e-4bb9-83cd-4061c8adbc7b": {
+      "ProjectGuid": "375d04fc-f97e-4bb9-83cd-4061c8adbc7b",
+      "DisplayName": "ShopManagement.Configuration",
+      "ColorIndex": 6
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "694c3116-8cd8-4499-a0f7-a69a396bb29c": {
+      "ProjectGuid": "694c3116-8cd8-4499-a0f7-a69a396bb29c",
+      "DisplayName": "0_Framework",
+      "ColorIndex": 7
+    },
+    "abd513e7-e673-4212-ac9f-9bb05ac823b1": {
+      "ProjectGuid": "abd513e7-e673-4212-ac9f-9bb05ac823b1",
+      "DisplayName": "DiscountManagement.Infrastructure.EFCore",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 9
 }

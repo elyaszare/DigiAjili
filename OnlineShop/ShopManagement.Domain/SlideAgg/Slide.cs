@@ -1,4 +1,7 @@
-﻿using _0_Framework.Domain;
+﻿//Slide Model
+//Slide Propertys
+
+using _0_Framework.Domain;
 
 namespace ShopManagement.Domain.SlideAgg
 {

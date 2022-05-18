@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿//IProductApplication Implementation
+
+using System.Collections.Generic;
 using _0_Framework.Application;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Domain.ProductAgg;

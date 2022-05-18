@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿//ProductCategory Model 
+//ProductCategory Property
+
+using System.Collections.Generic;
 using _0_Framework.Domain;
 using ShopManagement.Domain.ProductAgg;
 

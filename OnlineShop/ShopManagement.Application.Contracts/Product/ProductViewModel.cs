@@ -1,4 +1,6 @@
-﻿namespace ShopManagement.Application.Contracts.Product
+﻿//Show Products By This Class
+
+namespace ShopManagement.Application.Contracts.Product
 {
     public class ProductViewModel
     {

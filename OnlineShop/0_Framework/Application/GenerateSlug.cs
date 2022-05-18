@@ -1,4 +1,6 @@
-﻿using System.Globalization;
+﻿//Create Slug By Slugify
+
+using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -6,6 +8,7 @@ namespace _0_Framework.Application
 {
     public static class GenerateSlug
     {
+        //Create Slug
         public static string Slugify(this string phrase)
         {
             var s = phrase.RemoveDiacritics().ToLower();

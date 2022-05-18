@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿
+//IProductPictureRepository Implementation
+
+using System.Collections.Generic;
 using _0_Framework.Domain;
 using ShopManagement.Application.Contracts.ProductPicture;
 

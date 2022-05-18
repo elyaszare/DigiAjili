@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Operation Messages File
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,13 +16,14 @@ namespace _0_Framework.Application
         {
             IsSucceeded = false;
         }
+        //Succeeded Message
         public OperationResult Succeeded(string message = "عملیسات با موفقیت انجام شد")
         {
             IsSucceeded = true;
             Message = message;
             return this;
         }
-
+        //Failed Message
         public OperationResult Failed(string message)
         {
             IsSucceeded = false;

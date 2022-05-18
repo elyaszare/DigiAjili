@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Product;
@@ -18,7 +19,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 
         public EditProduct GetDetails(long id)
         {
-            return context.Products.Select(x => new EditProduct
+            return context.Products.Include(x=>x.ProductPictures).Select(x => new EditProduct
             {
                 Id = x.Id,
                 CategoryId = x.CategoryId,
@@ -58,7 +59,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     Code = x.Code,
                     Picture = x.Picture,
                     IsInStock = x.IsInStock,
-                    CreationDate = x.CreationDate.ToString()
+                    CreationDate = x.CreationDate.ToFarsi()
                 });
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
