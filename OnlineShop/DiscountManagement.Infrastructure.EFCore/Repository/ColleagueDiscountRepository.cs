@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using DiscountManagement.Application.ColleagueDiscountAgg;
 using DiscountManagement.Application.Contract.ColleagueDiscount;
-using Microsoft.EntityFrameworkCore;
 using ShopManagement.Infrastructure.EFCore;
 
 namespace DiscountManagement.Infrastructure.EFCore.Repository
@@ -40,7 +36,8 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 DiscountRate = x.DiscountRate,
                 ProductId = x.ProductId,
-                CreationDate = x.CreationDate.ToFarsi()
+                CreationDate = x.CreationDate.ToFarsi(),
+                IsRemoved = x.IsRemoved
             });
             if (searchModel.ProductId>0)
             {
