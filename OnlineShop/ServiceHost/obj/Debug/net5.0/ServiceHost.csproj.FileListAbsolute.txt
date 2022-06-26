@@ -118,3 +118,13 @@ D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\ColleagueDiscount\Create.cshtml.g.cs
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\ColleagueDiscount\Edit.cshtml.g.cs
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\ColleagueDiscount\Index.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.pdb

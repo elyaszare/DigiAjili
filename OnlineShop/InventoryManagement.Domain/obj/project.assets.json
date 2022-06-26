@@ -173,6 +173,19 @@
         "runtime": {
           "bin/placeholder/0_Framework.dll": {}
         }
+      },
+      "InventoryManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Application.Contract.dll": {}
+        }
       }
     }
   },
@@ -537,11 +550,17 @@
       "type": "project",
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
+    },
+    "InventoryManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj",
+      "msbuildProject": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "0_Framework >= 1.0.0"
+      "0_Framework >= 1.0.0",
+      "InventoryManagement.Application.Contract >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -581,6 +600,9 @@
           "projectReferences": {
             "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
               "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+            },
+            "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+              "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
             }
           }
         }

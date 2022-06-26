@@ -1,0 +1,17 @@
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.deps.json
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\ref\InventoryManagement.Domain.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\0_Framework.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.AssemblyReference.cache
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.AssemblyInfoInputs.cache
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.AssemblyInfo.cs
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.CoreCompileInputs.cache
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.CopyComplete
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\ref\InventoryManagement.Domain.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.pdb

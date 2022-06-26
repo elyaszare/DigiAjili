@@ -1,0 +1,15 @@
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\InventoryManagement.Application.Contract.deps.json
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\ref\InventoryManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\0_Framework.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\0_Framework.pdb
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.csproj.AssemblyReference.cache
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.AssemblyInfoInputs.cache
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.AssemblyInfo.cs
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.csproj.CoreCompileInputs.cache
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.csproj.CopyComplete
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\ref\InventoryManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.pdb

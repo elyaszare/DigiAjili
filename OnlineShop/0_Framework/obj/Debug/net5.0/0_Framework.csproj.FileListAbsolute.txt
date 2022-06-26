@@ -9,4 +9,3 @@ D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.csproj.CoreCom
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.dll
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\ref\0_Framework.dll
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.pdb
-D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.csproj.AssemblyReference.cache
