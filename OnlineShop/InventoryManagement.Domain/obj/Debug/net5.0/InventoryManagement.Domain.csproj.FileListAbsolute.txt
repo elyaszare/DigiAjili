@@ -15,3 +15,5 @@ D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\InventoryMa
 D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.dll
 D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\ref\InventoryManagement.Domain.dll
 D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.pdb
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb

@@ -19,7 +19,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
 
         public EditProduct GetDetails(long id)
         {
-            return context.Products.Include(x=>x.ProductPictures).Select(x => new EditProduct
+            return context.Products.Include(x => x.ProductPictures).Select(x => new EditProduct
             {
                 Id = x.Id,
                 CategoryId = x.CategoryId,
@@ -32,8 +32,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Slug = x.Slug,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
-                ShortDescription = x.ShortDescription,
-                UnitPrice = x.UnitPrice
+                ShortDescription = x.ShortDescription
             }).FirstOrDefault(x => x.Id == id);
         }
 
@@ -58,7 +57,6 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     CategoryId = x.CategoryId,
                     Code = x.Code,
                     Picture = x.Picture,
-                    IsInStock = x.IsInStock,
                     CreationDate = x.CreationDate.ToFarsi()
                 });
 

@@ -128,3 +128,9 @@ D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain
 D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
 D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.dll
 D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Create.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Edit.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Index.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Increase.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Reduce.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\OperationLog.cshtml.g.cs

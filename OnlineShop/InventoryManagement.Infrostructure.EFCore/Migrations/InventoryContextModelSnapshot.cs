@@ -52,11 +52,29 @@ namespace InventoryManagement.Infrastructure.EFCore.Migrations
                                 .HasColumnType("bigint")
                                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                            b1.Property<long>("Count")
+                                .HasColumnType("bigint");
+
+                            b1.Property<long>("CurrentCount")
+                                .HasColumnType("bigint");
+
+                            b1.Property<string>("Description")
+                                .HasColumnType("nvarchar(max)");
+
                             b1.Property<long>("InventoryId")
                                 .HasColumnType("bigint");
 
+                            b1.Property<bool>("Operation")
+                                .HasColumnType("bit");
+
                             b1.Property<DateTime>("OperationDate")
                                 .HasColumnType("datetime2");
+
+                            b1.Property<long>("OperatorId")
+                                .HasColumnType("bigint");
+
+                            b1.Property<long>("OrderId")
+                                .HasColumnType("bigint");
 
                             b1.HasKey("Id");
 

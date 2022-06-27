@@ -57,23 +57,5 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Product
             product.ProductCategories = _productCategoryApplication.GetProductCategories();
             return Partial("Edit", product);
         }
-
-        public IActionResult OnGetStock(long id)
-        {
-            var result = _productApplication.Stock(id);
-            if (result.IsSucceeded) return RedirectToPage();
-
-            Message = result.Message;
-            return RedirectToPage();
-        }
-
-        public IActionResult OnGetNotStock(long id)
-        {
-            var result = _productApplication.NotStock(id);
-            if (result.IsSucceeded) return RedirectToPage();
-
-            Message = result.Message;
-            return RedirectToPage();
-        }
     }
 }

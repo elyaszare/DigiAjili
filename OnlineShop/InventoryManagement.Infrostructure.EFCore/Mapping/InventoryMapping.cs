@@ -17,6 +17,12 @@ namespace InventoryManagement.Infrastructure.EFCore.Mapping
                 modelBuilder.ToTable("InventoryOperations");
                 modelBuilder.HasKey(x => x.Id);
                 modelBuilder.WithOwner(x => x.Inventory).HasForeignKey(x => x.InventoryId);
+                modelBuilder.Property(x => x.Count).IsRequired();
+                modelBuilder.Property(x => x.CurrentCount).IsRequired();
+                modelBuilder.Property(x => x.Description);
+                modelBuilder.Property(x => x.OrderId);
+                modelBuilder.Property(x => x.Operation);
+                modelBuilder.Property(x => x.OperatorId);
             });
         }
     }

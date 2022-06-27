@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using _0_Framework.Domain;
 using InventoryManagement.Application.Contract.Inventory;
 
@@ -14,5 +10,6 @@ namespace InventoryManagement.Domain.InventoryAgg
         Inventory GetBy(long productId);
         List<InventoryViewModel> Search(InventorySearchModel searchModel);
 
+        List<InventoryOperationViewModel> GetOperationLog(long inventoryId);
     }
 }

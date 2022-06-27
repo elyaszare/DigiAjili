@@ -63,8 +63,6 @@
                                     <th>نام</th>
                                     <th>کد محصول</th>
                                     <th>گروه</th>
-                                    <th>قیمت</th>
-                                    <th>موجودی</th>
                                     <th>تاریخ تولید</th>
                                     <th>عملیات</th>
                                 </tr>
@@ -72,42 +70,17 @@
                             <tbody>
                                 @foreach (var item in Model.Product)
                                 {
-                                <tr>
-                                    <td>@item.Id</td>
-                                    <td>
-                                        <img src="@item.Picture" style="width: 70px; height: 70px" />
-                                    </td>
-                                    <td>@item.Name</td>
-                                    <td>@item.Code</td>
-                                    <td>@item.Category</td>
-                                    <td>@item.UnitPrice</td>
-                                    <td>
-                                        @if (item.IsInStock)
-                                        {
-                                            <i class="fa fa-check text-success"></i>
-                                        }
-                                        else
-                                        {
-                                            <i class="fa fa-remove text-danger"></i>
-                                        }
-                                    </td>
-                                    <td>@item.CreationDate</td>
-                                    <td>
-                                        <a class="btn btn-warning btn-custom waves-effect waves-light m-b-5"
-                                           href="#showmodal=@Url.Page("./Index", "Edit", new { id =item.Id})">
-                                            <i class="fa fa-edit"></i> ویرایش
-                                        </a>
-                                        @if (item.IsInStock)
-                                        {
-                                            <a asp-page="./Index" asp-page-handler="NotStock" class="btn btn-danger btn-custom waves-effect waves-light m-b-5" asp-route-id="@item.Id">اتمام موجودی</a>
-                                        }
-                                        else
-                                        {
-                                            <a asp-page="./Index" asp-page-handler="Stock" class="btn btn-success btn-custom waves-effect waves-light m-b-5" asp-route-id="@item.Id">موجود شد</a>
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>
+                                            <img src="@item.Picture" style="width: 70px; height: 70px" />
+                                        </td>
+                                        <td>@item.Name</td>
+                                        <td>@item.Code</td>
+                                        <td>@item.Category</td>
 
-                                        }
-                                    </td>
-                                </tr>
+                                        <td>@item.CreationDate</td>
+                                    </tr>
                                 }
                             </tbody>
                         </table>

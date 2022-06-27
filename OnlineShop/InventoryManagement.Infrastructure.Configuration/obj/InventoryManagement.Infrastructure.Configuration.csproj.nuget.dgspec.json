@@ -102,6 +102,9 @@
             "projectReferences": {
               "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
                 "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              },
+              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
