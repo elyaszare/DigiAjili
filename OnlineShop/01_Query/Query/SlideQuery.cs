@@ -1,10 +1,7 @@
-﻿using _01_Query.Contracts.Slides;
-using ShopManagement.Infrastructure.EFCore;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using _01_Query.Contracts.Slides;
+using ShopManagement.Infrastructure.EFCore;
 
 namespace _01_Query.Query
 {
@@ -24,14 +21,13 @@ namespace _01_Query.Query
                 Text = x.Text,
                 Picture = x.Picture,
                 IsRemoved = x.IsRemoved,
-                BntText = x.BntText,
+                BtnText = x.BntText,
                 Heading = x.Heading,
                 Link = x.Link,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Title = x.Title
             }).ToList();
-
         }
     }
 }

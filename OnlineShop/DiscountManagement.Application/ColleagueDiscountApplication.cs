@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using _0_Framework.Application;
-using DiscountManagement.Application.ColleagueDiscountAgg;
 using DiscountManagement.Application.Contract.ColleagueDiscount;
+using DiscountManagement.Domain.ColleagueDiscountAgg;
 
 namespace DiscountManagement.Application
 {

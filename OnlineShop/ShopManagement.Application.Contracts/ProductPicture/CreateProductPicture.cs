@@ -7,7 +7,7 @@ namespace ShopManagement.Application.Contracts.ProductPicture
 {
     public class CreateProductPicture
     {
-        [Range(1, 10000, ErrorMessage = ValidationMessage.IsRequired)]
+        [Range(1, double.MaxValue, ErrorMessage = ValidationMessage.IsRequired)]
         public long ProductId { get; set; }
 
         [Required(ErrorMessage = ValidationMessage.IsRequired)]

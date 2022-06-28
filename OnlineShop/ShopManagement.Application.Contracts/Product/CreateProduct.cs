@@ -24,7 +24,7 @@ namespace ShopManagement.Application.Contracts.Product
         public string PictureTitle { get; set; }
 
 
-        [Range(1, 10000, ErrorMessage = ValidationMessage.IsRequired)]
+        [Range(1, double.MaxValue, ErrorMessage = ValidationMessage.IsRequired)]
         public long CategoryId { get; set; }
 
         [Required(ErrorMessage = ValidationMessage.IsRequired)]

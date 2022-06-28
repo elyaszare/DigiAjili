@@ -1,4 +1,4 @@
-﻿using DiscountManagement.Application.ColleagueDiscountAgg;
+﻿using DiscountManagement.Domain.ColleagueDiscountAgg;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

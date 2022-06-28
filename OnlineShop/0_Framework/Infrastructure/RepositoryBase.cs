@@ -9,36 +9,36 @@ namespace _0_Framework.Infrastructure
 {
     public class RepositoryBase<TKey, T> : IRepository<TKey, T> where T : class
     {
-        private readonly DbContext context;
+        private readonly DbContext _context;
 
         public RepositoryBase(DbContext context)
         {
-            this.context = context;
+            _context = context;
         }
 
         public T Get(TKey id)
         {
-            return context.Find<T>(id);
+            return _context.Find<T>(id);
         }
 
         public List<T> Get()
         {
-            return context.Set<T>().ToList();
+            return _context.Set<T>().ToList();
         }
 
         public void Create(T entity)
         {
-            context.Add(entity);
+            _context.Add(entity);
         }
 
         public bool Exists(Expression<Func<T, bool>> exception)
         {
-            return context.Set<T>().Any(exception);
+            return _context.Set<T>().Any(exception);
         }
 
         public void SaveChanges()
         {
-            context.SaveChanges();
+            _context.SaveChanges(); 
         }
     }
 }

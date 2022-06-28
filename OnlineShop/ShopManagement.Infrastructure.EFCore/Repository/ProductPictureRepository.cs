@@ -40,7 +40,8 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 IsRemoved = x.IsRemoved,
                 Product = x.Product.Name
             });
-            if (searchModel.ProductId != 0) query = query.Where(x => x.ProductId == searchModel.ProductId);
+            if (searchModel.ProductId != 0)
+                query = query.Where(x => x.ProductId == searchModel.ProductId);
 
             return query.OrderByDescending(x => x.Id).ToList();
         }

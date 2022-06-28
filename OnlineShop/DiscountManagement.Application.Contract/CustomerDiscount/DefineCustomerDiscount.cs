@@ -12,7 +12,7 @@ namespace DiscountManagement.Application.Contract.CustomerDiscount
         public long ProductId { get; set; }
 
         [Range(1, 100000, ErrorMessage = ValidationMessage.IsRequired)]
-        public long DiscountRate { get; set; }
+        public int DiscountRate { get; set; }
 
         [Required(ErrorMessage = ValidationMessage.IsRequired)]
         public string StartDate { get; set; }

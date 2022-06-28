@@ -34,9 +34,10 @@ namespace ShopManagement.Application
             var operation = new OperationResult();
 
             var productpicture = productPictureRepository.Get(command.Id);
-            if (productpicture == null) return operation.Failed(ApplicationMessages.RecordNotFound);
+            if (productpicture == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
 
-            if (productPictureRepository.Exists(x => x.Picture == command.Picture && x.Id == command.Id))
+            if (productPictureRepository.Exists(x => x.Picture == command.Picture && x.ProductId == command.ProductId))
                 return operation.Failed(ApplicationMessages.DuplicateRecord);
             productpicture.Edit(command.Id, command.Picture, command.PictureAlt, command.PictureTitle);
             productPictureRepository.SaveChanges();

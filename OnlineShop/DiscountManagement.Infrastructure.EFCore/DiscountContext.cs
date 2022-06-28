@@ -1,4 +1,4 @@
-﻿using DiscountManagement.Application.ColleagueDiscountAgg;
+﻿using DiscountManagement.Domain.ColleagueDiscountAgg;
 using DiscountManagement.Domain.CustomerDiscountAgg;
 using DiscountManagement.Infrastructure.EFCore.Mapping;
 using Microsoft.EntityFrameworkCore;
