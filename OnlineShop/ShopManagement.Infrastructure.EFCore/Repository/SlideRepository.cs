@@ -22,13 +22,12 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             {
                 Id = x.Id,
                 Heading = x.Heading,
-                Picture = x.Picture,
                 Title = x.Title,
                 BtnText = x.BntText,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Text = x.Text,
-                Link=x.Link
+                Link = x.Link
             }).FirstOrDefault(x => x.Id == id);
         }
 

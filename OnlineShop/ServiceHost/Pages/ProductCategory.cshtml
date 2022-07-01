@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id}"
 @model ServiceHost.Pages.ProductCategoryModel
 @{
     ViewData["Title"] = "گروه محصولات";
@@ -90,7 +90,7 @@
                                                             }
                                                         </div>
                                                         <a href="single-product.html">
-                                                            <img src="@product.Picture" class="img-fluid"
+                                                            <img src="~/ProductPictures/@product.Picture" class="img-fluid"
                                                                  alt="@product.PictureAlt" title="@product.PictureTitle">
                                                         </a>
 
@@ -98,7 +98,7 @@
                                                     <div class="single-grid-product__content">
                                                         <div class="single-grid-product__category-rating">
                                                             <span class="category">
-                                                                <a href="shop-left-sidebar.html">@product.Category</a>
+                                                                <a asp-page="/ProductCategory" asp-route-id="@product.CategorySlug">@product.Category</a>
                                                             </span>
                                                             <span class="rating">
                                                                 <i class="ion-android-star active"></i>
@@ -125,7 +125,7 @@
                                                         else
                                                         {
                                                             <p class="single-grid-product__price">
-                                                                <span class="main-price ">@product.Price</span>
+                                                                <span class="main-price ">@product.Price تومان</span>
                                                             </p>
                                                         }
                                                         

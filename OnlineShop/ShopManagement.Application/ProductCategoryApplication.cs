@@ -10,11 +10,14 @@ namespace ShopManagement.Application
 {
     public class ProductCategoryApplication : IProductCategoryApplication
     {
+        private readonly IFileUploader _fileUploader;
         private readonly IProductCategoryRepository productCategoryRepository;
 
-        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository)
+        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository,
+            IFileUploader fileUploader)
         {
             this.productCategoryRepository = productCategoryRepository;
+            _fileUploader = fileUploader;
         }
 
         public OperationResult Create(CreateProductCategory command)
@@ -24,7 +27,9 @@ namespace ShopManagement.Application
                 return operation.Failed(ApplicationMessages.DuplicateRecord);
 
             var slug = command.Slug.Slugify();
-            var productcategory = new ProductCategory(command.Name, command.Description, command.Picture,
+            var picturePath = $"{command.Slug}";
+            var fileName = _fileUploader.Upload(command.Picture, picturePath);
+            var productcategory = new ProductCategory(command.Name, command.Description, fileName,
                 command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug);
             productCategoryRepository.Create(productcategory);
             productCategoryRepository.SaveChanges();
@@ -43,7 +48,9 @@ namespace ShopManagement.Application
                 return operation.Failed(ApplicationMessages.DuplicateRecord);
 
             var slug = command.Slug.Slugify();
-            produCtcategory.Edit(command.Name, command.Description, command.Picture,
+            var picturePath = $"{command.Slug}";
+            var fileName = _fileUploader.Upload(command.Picture, picturePath);
+            produCtcategory.Edit(command.Name, command.Description, fileName,
                 command.PictureAlt, command.PictureTitle, command.Keywords, command.MetaDescription, slug);
             productCategoryRepository.SaveChanges();
             return operation.Succeeded();

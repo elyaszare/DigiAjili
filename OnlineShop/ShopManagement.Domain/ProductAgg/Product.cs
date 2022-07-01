@@ -8,7 +8,7 @@ using ShopManagement.Domain.ProductPictureAgg;
 
 namespace ShopManagement.Domain.ProductAgg
 {
-   public class Product:EntityBase
+    public class Product : EntityBase
     {
         public string Name { get; private set; }
         public string Code { get; private set; }
@@ -49,7 +49,10 @@ namespace ShopManagement.Domain.ProductAgg
             Code = code;
             ShortDescription = shortDescription;
             Description = description;
-            Picture = picture;
+
+            if (!string.IsNullOrWhiteSpace(picture))
+                Picture = picture;
+
             PictureAlt = pictureAlt;
             PictureTitle = pictureTitle;
             CategoryId = categoryId;
@@ -57,5 +60,5 @@ namespace ShopManagement.Domain.ProductAgg
             MetaDescription = metaDescription;
             Slug = slug;
         }
-   }
+    }
 }

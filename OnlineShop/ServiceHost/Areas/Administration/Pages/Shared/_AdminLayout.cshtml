@@ -184,7 +184,9 @@
                         <li>
                             <a asp-page="/Index" class="waves-effect active"><i class="md md-home"></i><span> داشبورد </span></a>
                         </li>
-
+                        <li>
+                            <a asp-page="/Inventory/Index" class="waves-effect"><i class="md md-local-offer"></i><span> انبارداری </span></a>
+                        </li>
                         <li class="has_sub">
                             <a class="waves-effect"><i class="md md-mail"></i><span> فروشگاه </span><span class="pull-right"><i class="md md-add"></i></span></a>
                             <ul class="list-unstyled">
@@ -194,9 +196,7 @@
                                 <li><a asp-page="/shop/productPicture/index">عکس محصولات</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a asp-page="/Inventory/Index" class="waves-effect"><i class="md md-mail"></i><span> انبارداری </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                        </li>
+
                         <li class="has_sub">
                             <a class="waves-effect"><i class="md md-mail"></i><span> تخفیفات </span><span class="pull-right"><i class="md md-add"></i></span></a>
                             <ul class="list-unstyled">
@@ -355,11 +355,6 @@
 
 
 
-    <!-- END wrapper -->
-    <!-- <script> -->
-    <!-- var resizefunc = []; -->
-    <!-- </script> -->
-    <!-- jQuery  -->
     <script src="~/AdminTheme/assets/js/jquery.min.js"></script>
     <script src="~/AdminTheme/assets/js/bootstrap.min.js"></script>
     <script src="~/AdminTheme/assets/js/waves.js"></script>
@@ -392,6 +387,11 @@
     <script src="~/AdminTheme/assets/counterup/jquery.counterup.min.js" type="text/javascript"></script>
 
     <!-- CUSTOM JS -->
+
+    <script src="~/AdminTheme/assets/js/jquery.todo.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
     <script src="~/AdminTheme/assets/js/site.js"></script>
 
     <script src="~/AdminTheme/assets/js/jquery.app.js"></script>
@@ -403,14 +403,13 @@
     <script src="~/AdminTheme/assets/js/jquery.chat.js"></script>
 
     <!-- Todo -->
-    <script src="~/AdminTheme/assets/js/jquery.todo.js"></script>
-    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
     <!--Persian date piker-->
+
     <link href="~/AdminTheme/assets/css/persian-datepicker.min.css" rel="stylesheet">
 
     <script src="~/AdminTheme/assets/js/persian-date.min.js"></script>
     <script src="~/AdminTheme/assets/js/persian-datepicker.min.js"></script>
+
     @RenderSection("Scripts", false)
     <script>
         $('.persianDateInput').persianDatepicker({

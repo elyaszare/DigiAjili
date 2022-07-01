@@ -17,3 +17,13 @@ D:\OnlineShop\OnlineShop\DM.Domain\obj\Debug\net5.0\ref\DiscountManagement.Domai
 D:\OnlineShop\OnlineShop\DM.Domain\obj\Debug\net5.0\DiscountManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
+D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\System.IO.Pipelines.dll
+D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.xml
+D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\System.IO.Pipelines.xml
+D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml

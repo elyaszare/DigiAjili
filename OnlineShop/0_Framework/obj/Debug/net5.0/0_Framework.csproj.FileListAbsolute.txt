@@ -9,3 +9,15 @@ D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.csproj.CoreCom
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.dll
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\ref\0_Framework.dll
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.pdb
+D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.csproj.AssemblyReference.cache
+D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\System.IO.Pipelines.dll
+D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.xml
+D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\System.IO.Pipelines.xml
+D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.csproj.CopyComplete
+D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml

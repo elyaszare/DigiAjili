@@ -142,7 +142,8 @@ namespace _01_Query.Query
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 Category = x.Category.Name,
-                Slug = x.Slug
+                Slug = x.Slug,
+                CategorySlug = x.Category.Slug
             }).ToList();
         }
     }

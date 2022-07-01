@@ -34,11 +34,17 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Name = x.Name,
                 Keywords = x.Keywords,
                 MetaDescription = x.MetaDescription,
-                Picture = x.Picture,
+                //Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 Slug = x.Slug,
                 PictureTitle = x.PictureTitle
             }).FirstOrDefault(x => x.Id == id);
+        }
+
+        public string GetSlugBy(long id)
+        {
+            var category = context.ProductCategories.Select(x => new {x.Id, x.Slug}).FirstOrDefault(x => x.Id == id);
+            return category.Slug;
         }
 
         public List<ProductCategoryViewModel> Search(ProductCategorySearchModel searchModel)
