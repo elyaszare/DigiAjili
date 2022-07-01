@@ -1466,6 +1466,7 @@
       },
       "ShopManagement.Application/1.0.0": {
         "dependencies": {
+          "Newtonsoft.Json": "10.0.1",
           "ShopManagement.Application.Contracts": "1.0.0",
           "ShopManagement.Domain": "1.0.0"
         },

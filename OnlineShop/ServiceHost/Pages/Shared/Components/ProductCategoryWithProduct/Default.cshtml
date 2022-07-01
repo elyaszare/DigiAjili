@@ -73,7 +73,7 @@
                                                                 <span class="sale">-@product.DiscountRate%</span>
                                                             </div>
                                                         }
-                                                        <a href="single-product.html">
+                                                        <a asp-page="/Product" asp-route-id="@product.Slug">
                                                             <img src="~/ProductPictures/@product.Picture" title="@product.PictureTitle" class="img-fluid"
                                                                  alt="@product.PictureAlt">
                                                         </a>
@@ -94,7 +94,7 @@
                                                         </div>
 
                                                         <h3 class="single-grid-product__title">
-                                                            <a href="single-product.html">
+                                                            <a asp-page="/Product" asp-route-id="@product.Slug">
                                                                 @product.Name
                                                             </a>
                                                         </h3>
@@ -111,12 +111,10 @@
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <!--=======  End of single grid product  =======-->
                                             </div>
 
                                         }
                                     </div>
-                                    <!--=======  End of tab product content  =======-->
                                 </div>
                             </div>
 
@@ -124,8 +122,6 @@
 
                     </div>
                 </div>
-                <!--=======  End of single row slider wrapper  =======-->
-                <!--=======  End of tab slider wrapper  =======-->
             </div>
         </div>
     </div>
