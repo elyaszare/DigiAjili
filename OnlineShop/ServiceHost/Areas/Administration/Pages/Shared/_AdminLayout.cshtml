@@ -42,7 +42,17 @@
 
     <script src="~/AdminTheme/assets/js/modernizr.min.js"></script>
     <link href="~/AdminTheme/assets/css/persian-datepicker.min.css" rel="stylesheet">
-
+    <script src="https://cdn.tiny.cloud/1/4l7ll64n9m6p5vwdighcgta9opzok7dz2hnspm7sd9iiytka/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#BodyContent',
+            plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
+            toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter image editimage pageembed permanentpen table tableofcontents',
+            toolbar_mode: 'floating',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+        });
+    </script>
 </head>
 
 <body class="fixed-left">
@@ -204,6 +214,14 @@
 
                                 <li><a asp-page="/Discounts/CustomerDiscount/Index">تخفیف مشتری</a></li>
                                 <li><a asp-page="/Discounts/ColleagueDiscount/Index">تخفیف همکاری</a></li>
+                            </ul>
+                        </li>
+                        <li class="has_sub">
+                            <a class="waves-effect"><i class="md md-add-box"></i><span> مقالات </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                            <ul class="list-unstyled">
+
+                                <li><a asp-page="/Blog/Articles/Index">گروه مقالات</a></li>
+                                <li><a asp-page="/Blog/Articles/Index">مقالات</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -414,7 +432,9 @@
     @RenderSection("Scripts", false)
     <script>
         $('.persianDateInput').persianDatepicker({
-            format: 'YYYY/MM/DD'
+            format: 'YYYY/MM/DD',
+            autoClose: true,
+            initialValueType:"persian"
         });
     </script>
 

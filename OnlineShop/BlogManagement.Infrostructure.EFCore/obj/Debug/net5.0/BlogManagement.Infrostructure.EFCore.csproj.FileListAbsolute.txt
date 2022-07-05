@@ -1,0 +1,12 @@
+D:\OnlineShop\OnlineShop\BlogManagement.Infrostructure.EFCore\bin\Debug\net5.0\BlogManagement.Infrostructure.EFCore.deps.json
+D:\OnlineShop\OnlineShop\BlogManagement.Infrostructure.EFCore\bin\Debug\net5.0\BlogManagement.Infrostructure.EFCore.dll
+D:\OnlineShop\OnlineShop\BlogManagement.Infrostructure.EFCore\bin\Debug\net5.0\ref\BlogManagement.Infrostructure.EFCore.dll
+D:\OnlineShop\OnlineShop\BlogManagement.Infrostructure.EFCore\bin\Debug\net5.0\BlogManagement.Infrostructure.EFCore.pdb
+D:\OnlineShop\OnlineShop\BlogManagement.Infrostructure.EFCore\obj\Debug\net5.0\BlogManagement.Infrostructure.EFCore.csproj.AssemblyReference.cache
+D:\OnlineShop\OnlineShop\BlogManagement.Infrostructure.EFCore\obj\Debug\net5.0\BlogManagement.Infrostructure.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineShop\OnlineShop\BlogManagement.Infrostructure.EFCore\obj\Debug\net5.0\BlogManagement.Infrostructure.EFCore.AssemblyInfoInputs.cache
+D:\OnlineShop\OnlineShop\BlogManagement.Infrostructure.EFCore\obj\Debug\net5.0\BlogManagement.Infrostructure.EFCore.AssemblyInfo.cs
+D:\OnlineShop\OnlineShop\BlogManagement.Infrostructure.EFCore\obj\Debug\net5.0\BlogManagement.Infrostructure.EFCore.csproj.CoreCompileInputs.cache
+D:\OnlineShop\OnlineShop\BlogManagement.Infrostructure.EFCore\obj\Debug\net5.0\BlogManagement.Infrostructure.EFCore.dll
+D:\OnlineShop\OnlineShop\BlogManagement.Infrostructure.EFCore\obj\Debug\net5.0\ref\BlogManagement.Infrostructure.EFCore.dll
+D:\OnlineShop\OnlineShop\BlogManagement.Infrostructure.EFCore\obj\Debug\net5.0\BlogManagement.Infrostructure.EFCore.pdb

@@ -43,3 +43,9 @@ D:\OnlineShop\OnlineShop\01_Query\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.
 D:\OnlineShop\OnlineShop\01_Query\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
 D:\OnlineShop\OnlineShop\01_Query\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.xml
 D:\OnlineShop\OnlineShop\01_Query\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\OnlineShop\OnlineShop\01_Query\bin\Debug\net5.0\BlogManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\01_Query\bin\Debug\net5.0\BlogManagement.Domain.dll
+D:\OnlineShop\OnlineShop\01_Query\bin\Debug\net5.0\BlogManagement.Infrastructure.EFCore.dll
+D:\OnlineShop\OnlineShop\01_Query\bin\Debug\net5.0\BlogManagement.Infrastructure.EFCore.pdb
+D:\OnlineShop\OnlineShop\01_Query\bin\Debug\net5.0\BlogManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\01_Query\bin\Debug\net5.0\BlogManagement.Domain.pdb
