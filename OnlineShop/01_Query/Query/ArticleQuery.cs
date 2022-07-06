@@ -24,19 +24,41 @@ namespace _01_Query.Query
                 {
                     Title = x.Title,
                     Picture = x.Picture,
-                    Slug = x.Slug,
-                    Description = x.Description,
                     PictureAlt = x.PictureAlt,
-                    CategoryId = x.CategoryId,
                     PictureTitle = x.PictureTitle,
-                    MetaDescription = x.MetaDescription,
-                    CategorySlug = x.Category.Slug,
-                    CanonicalAddress = x.CanonicalAddress,
+                    PublishDate = x.PublishDate.ToFarsi(),
+                    ShortDescription = x.ShortDescription,
+                    Slug = x.Slug
+                }).ToList();
+        }
+
+        public ArticleQueryModel GetArticleDetails(string slug)
+        {
+            var article = context.Articles
+                .Include(x => x.Category)
+                .Where(x => x.PublishDate <= DateTime.Now)
+                .Select(x => new ArticleQueryModel
+                {
+                    Id = x.Id,
+                    Title = x.Title,
                     CategoryName = x.Category.Name,
+                    CategorySlug = x.Category.Slug,
+                    Slug = x.Slug,
+                    CanonicalAddress = x.CanonicalAddress,
+                    Description = x.Description,
                     Keywords = x.Keywords,
+                    MetaDescription = x.MetaDescription,
+                    Picture = x.Picture,
+                    PictureAlt = x.PictureAlt,
+                    PictureTitle = x.PictureTitle,
                     PublishDate = x.PublishDate.ToFarsi(),
                     ShortDescription = x.ShortDescription
-                }).ToList();
+                }).FirstOrDefault(x => x.Slug == slug);
+
+            if (!string.IsNullOrWhiteSpace(article.Keywords))
+                article.KeywordList = article.Keywords.Split(",").ToList();
+
+            return article;
         }
     }
 }

@@ -160,3 +160,5 @@ D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\Articles\Edit.cshtml.g.cs
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\Articles\Index.cshtml.g.cs
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LatestArticles\Default.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Article.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\ArticleCategory.cshtml.g.cs

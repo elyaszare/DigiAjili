@@ -1,4 +1,5 @@
 ﻿using _01_Query.Contracts.Article;
+using _01_Query.Contracts.ArticleCategory;
 using _01_Query.Query;
 using BlogManagement.Application;
 using BlogManagement.Application.Contract.Article;
@@ -22,6 +23,8 @@ namespace BlogManagement.Infrastructure.Configuration
 
             services.AddTransient<IArticleRepository, ArticleRepository>();
             services.AddTransient<IArticleApplication, ArticleApplication>();
+
+            services.AddTransient<IArticleCategoryQuery, ArticleCategoryQuery>();
 
             services.AddTransient<IArticleQuery, ArticleQuery>();
             services.AddDbContext<BlogContext>(x => x.UseSqlServer(connectionString));
