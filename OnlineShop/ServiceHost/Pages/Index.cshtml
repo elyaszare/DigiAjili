@@ -1,7 +1,10 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "صفحه اصلی";
+    ViewData["keywords"] = "تاپ مارکت, آنلاین شاپ, لوازم خانگی";
+    ViewData["metaDescription"] = "فروشگاه آنلاین لوازم خانگی تاپ مارکت";
+
 }
 
 @await Component.InvokeAsync("Slide")
@@ -124,7 +127,6 @@
 
 @await Component.InvokeAsync("LatestArticles")
 
-<!--====================  newsletter area ====================-->
 <div class="newsletter-area section-space--inner">
     <div class="container">
         <div class="row">
@@ -144,17 +146,14 @@
                         </form>
 
                     </div>
-                    <!-- mailchimp-alerts Start -->
                     <div class="mailchimp-alerts">
-                        <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-                        <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                        <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                        <div class="mailchimp-submitting"></div>
+                        <div class="mailchimp-success"></div>
+                        <div class="mailchimp-error"></div>
                     </div>
-                    <!-- mailchimp-alerts end -->
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!--====================  End of newsletter area  ====================-->

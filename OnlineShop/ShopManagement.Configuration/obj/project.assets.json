@@ -1487,6 +1487,8 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
+          "CommentManagement.Domain": "1.0.0",
+          "CommentManagement.Infrastructure.EFCore": "1.0.0",
           "DiscountManagement.Infrastructure.EFCore": "1.0.0",
           "InventoryManagement.Infrastructure.EFCore": "1.0.0",
           "ShopManagement.Infrastructure.EFCore": "1.0.0"
@@ -1551,6 +1553,49 @@
         },
         "runtime": {
           "bin/placeholder/BlogManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
+      "CommentManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Application.Contract.dll": {}
+        }
+      },
+      "CommentManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "CommentManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Domain.dll": {}
+        }
+      },
+      "CommentManagement.Infrastructure.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CommentManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.11",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Infrastructure.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Infrastructure.EFCore.dll": {}
         }
       },
       "DiscountManagement.Application/1.0.0": {
@@ -5950,6 +5995,21 @@
       "type": "project",
       "path": "../BlogManagement.Infrostructure.EFCore/BlogManagement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../BlogManagement.Infrostructure.EFCore/BlogManagement.Infrastructure.EFCore.csproj"
+    },
+    "CommentManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Application.Contract/CommentManagement.Application.Contract.csproj",
+      "msbuildProject": "../CommentManagement.Application.Contract/CommentManagement.Application.Contract.csproj"
+    },
+    "CommentManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Domain/CommentManagement.Domain.csproj",
+      "msbuildProject": "../CommentManagement.Domain/CommentManagement.Domain.csproj"
+    },
+    "CommentManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagement.Infrastructure.EFCore/CommentManagement.Infrastructure.EFCore.csproj",
+      "msbuildProject": "../CommentManagement.Infrastructure.EFCore/CommentManagement.Infrastructure.EFCore.csproj"
     },
     "DiscountManagement.Application/1.0.0": {
       "type": "project",

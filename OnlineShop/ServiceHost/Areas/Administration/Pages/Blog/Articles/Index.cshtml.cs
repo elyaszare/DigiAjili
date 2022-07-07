@@ -51,7 +51,7 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.Articles
 
         //public IActionResult OnGetEdit(long id)
         //{
-        //    var articleCategory = _articleApplication.GetDetails(id);
+        //    var articleCategory = _articleApplication.GetProductDetails(id);
         //    return Partial("Edit", articleCategory);
         //}
     }

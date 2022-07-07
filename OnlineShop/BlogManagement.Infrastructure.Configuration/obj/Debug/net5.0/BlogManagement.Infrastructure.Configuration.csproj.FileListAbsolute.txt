@@ -53,3 +53,9 @@ D:\OnlineShop\OnlineShop\BlogManagement.Infrastructure.Configuration\bin\Debug\n
 D:\OnlineShop\OnlineShop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\OnlineShop\OnlineShop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
+D:\OnlineShop\OnlineShop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Domain.dll
+D:\OnlineShop\OnlineShop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Domain.pdb
+D:\OnlineShop\OnlineShop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Infrastructure.EFCore.dll
+D:\OnlineShop\OnlineShop\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\CommentManagement.Infrastructure.EFCore.pdb

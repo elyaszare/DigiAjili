@@ -1046,6 +1046,8 @@
       "01_Query/1.0.0": {
         "dependencies": {
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
+          "CommentManagement.Domain": "1.0.0",
+          "CommentManagement.Infrastructure.EFCore": "1.0.0",
           "DiscountManagement.Infrastructure.EFCore": "1.0.0",
           "InventoryManagement.Infrastructure.EFCore": "1.0.0",
           "ShopManagement.Infrastructure.EFCore": "1.0.0"
@@ -1096,6 +1098,34 @@
         },
         "runtime": {
           "BlogManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
+      "CommentManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "CommentManagement.Application.Contract.dll": {}
+        }
+      },
+      "CommentManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "CommentManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "CommentManagement.Domain.dll": {}
+        }
+      },
+      "CommentManagement.Infrastructure.EFCore/1.0.0": {
+        "dependencies": {
+          "CommentManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.11",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "runtime": {
+          "CommentManagement.Infrastructure.EFCore.dll": {}
         }
       },
       "DiscountManagement.Application/1.0.0": {
@@ -1926,6 +1956,21 @@
       "sha512": ""
     },
     "BlogManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommentManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommentManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommentManagement.Infrastructure.EFCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

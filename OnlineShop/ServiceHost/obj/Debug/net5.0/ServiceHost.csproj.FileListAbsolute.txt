@@ -140,9 +140,7 @@ D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\ProductCategor
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Menu\Default.cshtml.g.cs
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Footer\Default.cshtml.g.cs
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Search.cshtml.g.cs
-D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Product.cshtml.g.cs
-D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Comment\Index.cshtml.g.cs
 D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\BlogManagement.Application.Contract.dll
 D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\BlogManagement.Application.dll
 D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\BlogManagement.Domain.dll
@@ -162,3 +160,15 @@ D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LatestArticles\Default.cshtml.g.cs
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Article.cshtml.g.cs
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\ArticleCategory.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\CommentManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\CommentManagement.Application.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\CommentManagement.Domain.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\CommentManagement.Infrastructure.Configuration.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\CommentManagement.Infrastructure.EFCore.dll
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\CommentManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\CommentManagement.Infrastructure.Configuration.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\CommentManagement.Application.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\CommentManagement.Domain.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\CommentManagement.Infrastructure.EFCore.pdb
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Comments\Index.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs

@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using _0_Framework.Application;
+using _01_Query.Contracts.Comment;
 using _01_Query.Contracts.Product;
+using CommentManagement.Infrastructure.EFCore;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryManagement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
-using ShopManagement.Domain.CommentAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EFCore;
 
@@ -17,15 +18,18 @@ namespace _01_Query.Query
         private readonly ShopContext _shopContext;
         private readonly InventoryContext _inventoryContext;
         private readonly DiscountContext _discountContext;
+        private readonly CommentContext _commentContext;
 
-        public ProductQuery(ShopContext shopContext, InventoryContext inventoryContext, DiscountContext discountContext)
+        public ProductQuery(ShopContext shopContext, InventoryContext inventoryContext, DiscountContext discountContext,
+            CommentContext commentContext)
         {
             _shopContext = shopContext;
             _inventoryContext = inventoryContext;
             _discountContext = discountContext;
+            _commentContext = commentContext;
         }
 
-        public ProductQueryModel GetDetails(string slug)
+        public ProductQueryModel GetProductDetails(string slug)
         {
             var inventory = _inventoryContext.Inventory.Select(x => new {x.ProductId, x.UnitPrice}).ToList();
 
@@ -37,7 +41,6 @@ namespace _01_Query.Query
             var product = _shopContext.Products
                 .Include(x => x.Category)
                 .Include(x => x.ProductPictures)
-                .Include(x => x.Comments)
                 .Select(x =>
                     new ProductQueryModel
                     {
@@ -54,8 +57,7 @@ namespace _01_Query.Query
                         Keywords = x.Keywords,
                         ShortDescription = x.ShortDescription,
                         MetaDescription = x.MetaDescription,
-                        Pictures = MapProductPicture(x.ProductPictures),
-                        Comments = MapComments(x.Comments)
+                        Pictures = MapProductPicture(x.ProductPictures)
                     }).FirstOrDefault(x => x.Slug == slug);
 
 
@@ -79,20 +81,19 @@ namespace _01_Query.Query
                 }
             }
 
-            return product;
-        }
-
-        public static List<CommentQueryModel> MapComments(List<Comment> comments)
-        {
-            return comments
+            product.Comments = _commentContext.Comments
                 .Where(x => !x.IsCanceled)
                 .Where(x => x.IsConfirmed)
+                .Where(x => x.Type == CommentType.Product)
+                .Where(x => x.OwnerRecordId == product.Id)
                 .Select(x => new CommentQueryModel
                 {
                     Id = x.Id,
                     Name = x.Name,
                     Message = x.Message
                 }).OrderByDescending(x => x.Id).ToList();
+
+            return product;
         }
 
         public static List<ProductPictureQueryModel> MapProductPicture(List<ProductPicture> pictures)

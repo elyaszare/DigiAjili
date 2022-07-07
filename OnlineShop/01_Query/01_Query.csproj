@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlogManagement.Infrostructure.EFCore\BlogManagement.Infrastructure.EFCore.csproj" />
+    <ProjectReference Include="..\CommentManagement.Domain\CommentManagement.Domain.csproj" />
+    <ProjectReference Include="..\CommentManagement.Infrastructure.EFCore\CommentManagement.Infrastructure.EFCore.csproj" />
     <ProjectReference Include="..\DiscountManagement.Infrastructure.EFCore\DiscountManagement.Infrastructure.EFCore.csproj" />
     <ProjectReference Include="..\InventoryManagement.Infrostructure.EFCore\InventoryManagement.Infrastructure.EFCore.csproj" />
     <ProjectReference Include="..\ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj" />
