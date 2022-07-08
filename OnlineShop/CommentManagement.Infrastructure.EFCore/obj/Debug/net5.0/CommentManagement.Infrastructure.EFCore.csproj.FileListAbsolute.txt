@@ -16,10 +16,7 @@ D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Domain.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
-D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
-D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\System.IO.Pipelines.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\0_Framework.pdb
@@ -27,10 +24,7 @@ D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.xml
-D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.xml
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml
-D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\bin\Debug\net5.0\System.IO.Pipelines.xml
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.csproj.CopyComplete
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\ref\CommentManagement.Infrastructure.EFCore.dll

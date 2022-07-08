@@ -1,4 +1,6 @@
-﻿@model _01_Query.MenuModel
+﻿@using _0_Framework.Application
+@model _01_Query.MenuModel
+@inject IAuthHelper AuthHelper
 @{
 }
 
@@ -6,12 +8,12 @@
 <div class="header-area header-sticky">
     <div>
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-10">
                 <!--=======  header wrapper  =======-->
                 <div class="header-wrapper d-none d-lg-flex">
                     <!-- logo -->
-                    <div class="logo">
-                        <a href="index.html">
+                    <div class="logo" style="margin-right: 40px">
+                        <a asp-page="/Index">
                             <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
                         </a>
                     </div>
@@ -23,17 +25,17 @@
                                     <a asp-page="/Index">صفحه اصلی</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a >گروه محصولات</a>
+                                    <a>گروه محصولات</a>
                                     <ul class="sub-menu">
                                         @foreach (var category in Model.ProductCategories)
-                                            {
-                                                <li>
-                                                    <a asp-page="/ProductCategory" asp-route-id="@category.Slug">@category.Name</a>
-                                                </li>
-                                            }
+                                        {
+                                            <li>
+                                                <a asp-page="/ProductCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                            </li>
+                                        }
                                     </ul>
                                 <li class="menu-item-has-children">
-                                    <a >مقالات</a>
+                                    <a>مقالات</a>
                                     <ul class="sub-menu">
                                         @foreach (var category in Model.ArticleCategories)
                                         {
@@ -43,11 +45,23 @@
                                         }
                                     </ul>
                                 </li>
-                                </li>
-
                                 <li>
                                     <a href="contact.html">تماس با ما</a>
                                 </li>
+                                @if (AuthHelper.IsAuthenticated())
+                                {
+                                    <li>
+                                        <a class="md md-add-box" asp-page="/Account" asp-page-handler="Logout">خروج</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li>
+                                        <a class="md md-add-box" asp-page="/Account">ورود / ثبت نام</a>
+                                    </li>
+                                    
+                                }
+
                             </ul>
                         </nav>
                     </div>

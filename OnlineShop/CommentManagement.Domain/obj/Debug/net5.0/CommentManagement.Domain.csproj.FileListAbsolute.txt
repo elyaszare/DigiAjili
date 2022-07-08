@@ -5,17 +5,11 @@ D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\CommentManage
 D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\0_Framework.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\CommentManagement.Application.Contract.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
-D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
-D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\System.IO.Pipelines.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
 D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\CommentManagement.Application.Contract.pdb
 D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.xml
-D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.xml
 D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml
-D:\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Debug\net5.0\System.IO.Pipelines.xml
 D:\OnlineShop\OnlineShop\CommentManagement.Domain\obj\Debug\net5.0\CommentManagement.Domain.csproj.AssemblyReference.cache
 D:\OnlineShop\OnlineShop\CommentManagement.Domain\obj\Debug\net5.0\CommentManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\OnlineShop\OnlineShop\CommentManagement.Domain\obj\Debug\net5.0\CommentManagement.Domain.AssemblyInfoInputs.cache

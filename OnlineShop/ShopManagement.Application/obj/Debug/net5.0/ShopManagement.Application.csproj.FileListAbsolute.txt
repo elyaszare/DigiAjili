@@ -17,13 +17,7 @@ D:\OnlineShop\OnlineShop\ShopManagement.Application\obj\Debug\net5.0\ShopManagem
 D:\OnlineShop\OnlineShop\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Application\obj\Debug\net5.0\ref\ShopManagement.Application.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.pdb
-D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
-D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\System.IO.Pipelines.dll
-D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.xml
-D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\System.IO.Pipelines.xml
 D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.xml
 D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml
