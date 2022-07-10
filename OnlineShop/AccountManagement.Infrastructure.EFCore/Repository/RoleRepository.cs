@@ -4,6 +4,7 @@ using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using AccountManagement.Application.Contract.Role;
 using AccountManagement.Domain.RoleAgg;
+using Microsoft.EntityFrameworkCore;
 
 namespace AccountManagement.Infrastructure.EFCore.Repository
 {
@@ -21,8 +22,14 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
             return _accountContext.Roles.Select(x => new EditRole
             {
                 Id = x.Id,
-                Name = x.Name
-            }).FirstOrDefault(x => x.Id == id);
+                Name = x.Name,
+                MappedPermissions = MapPermission(x.Permissions)
+            }).AsNoTracking().FirstOrDefault(x => x.Id == id);
+        }
+
+        private static List<PermissionDto> MapPermission(List<Permission> permissions)
+        {
+            return permissions.Select(x => new PermissionDto(x.Code, x.Name)).ToList();
         }
 
         public List<RoleViewModel> GetRoles()

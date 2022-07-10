@@ -50,7 +50,12 @@
       "ProjectGuid": "abd513e7-e673-4212-ac9f-9bb05ac823b1",
       "DisplayName": "DiscountManagement.Infrastructure.EFCore",
       "ColorIndex": 8
+    },
+    "895ea13e-16c3-42c3-8d66-aed70cc12085": {
+      "ProjectGuid": "895ea13e-16c3-42c3-8d66-aed70cc12085",
+      "DisplayName": "BlogManagement.Domain",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 10
 }
