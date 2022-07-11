@@ -30,7 +30,6 @@ namespace AccountManagement.Application
         public OperationResult Edit(EditRole command)
         {
             var operation = new OperationResult();
-
             var role = _roleRepository.Get(command.Id);
             if (role == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
@@ -38,8 +37,8 @@ namespace AccountManagement.Application
             if (_roleRepository.Exists(x => x.Name == command.Name && x.Id != command.Id))
                 return operation.Failed(ApplicationMessages.DuplicateRecord);
 
-
             var permissions = new List<Permission>();
+
             command.Permissions.ForEach(code => permissions.Add(new Permission(code)));
 
             role.Edit(command.Name, permissions);

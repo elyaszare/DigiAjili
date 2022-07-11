@@ -76,13 +76,15 @@ namespace ServiceHost
             });
 
 
-            services.AddRazorPages().AddRazorPagesOptions(option =>
-            {
-                option.Conventions.AuthorizeAreaFolder("Administration", "/", "AdminArea");
-                option.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
-                option.Conventions.AuthorizeAreaFolder("Administration", "/Discounts", "Discount");
-                option.Conventions.AuthorizeAreaFolder("Administration", "/Accounts", "Account");
-            });
+            services.AddRazorPages()
+                .AddMvcOptions(options => options.Filters.Add<SecurityPageFilter>())
+                .AddRazorPagesOptions(option =>
+                {
+                    option.Conventions.AuthorizeAreaFolder("Administration", "/", "AdminArea");
+                    option.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
+                    option.Conventions.AuthorizeAreaFolder("Administration", "/Discounts", "Discount");
+                    option.Conventions.AuthorizeAreaFolder("Administration", "/Accounts", "Account");
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

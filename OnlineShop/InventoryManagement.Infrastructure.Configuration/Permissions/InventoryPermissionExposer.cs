@@ -10,12 +10,16 @@ namespace InventoryManagement.Infrastructure.Configuration.Permissions
             return new()
             {
                 {
-                    "Inventory", new List<PermissionDto>
+                    "Inventory",
+                    new List<PermissionDto>
                     {
-                        new(50, "ListInventory"),
-                        new(51, "SearchInventory"),
-                        new(52, "CreateInventory"),
-                        new(53, "EditInventory")
+                        new PermissionDto(InventoryPermissions.ListInventory, "ListInventory"),
+                        new PermissionDto(InventoryPermissions.SearchInventory, "SearchInventory"),
+                        new PermissionDto(InventoryPermissions.CreateInventory, "CreateInventory"),
+                        new PermissionDto(InventoryPermissions.EditInventory, "EditInventory"),
+                        new PermissionDto(InventoryPermissions.Increase, "Increase"),
+                        new PermissionDto(InventoryPermissions.Reduce, "Reduce"),
+                        new PermissionDto(InventoryPermissions.OperationLog, "OperationLog")
                     }
                 }
             };

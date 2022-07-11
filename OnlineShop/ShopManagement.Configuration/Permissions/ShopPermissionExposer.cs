@@ -10,21 +10,23 @@ namespace ShopManagement.Configuration.Permissions
             return new()
             {
                 {
-                    "Product", new List<PermissionDto>
+                    "Product",
+                    new List<PermissionDto>
                     {
-                        new(10, "ListProduct"),
-                        new(11, "SearchProduct"),
-                        new(12, "CreateProduct"),
-                        new(13, "EditProduct")
+                        new(ShopPermissions.ListProducts, "ListProducts"),
+                        new(ShopPermissions.SearchProducts, "SearchProducts"),
+                        new(ShopPermissions.CreateProduct, "CreateProduct"),
+                        new(ShopPermissions.EditProduct, "EditProduct")
                     }
                 },
                 {
-                    "ProductCategory", new List<PermissionDto>
+                    "ProductCategory",
+                    new List<PermissionDto>
                     {
-                        new(20, "ListProductCategories"),
-                        new(21, "SearchProductCategories"),
-                        new(22, "CreateProductCategory"),
-                        new(23, "EditProductCategory")
+                        new(ShopPermissions.SearchProductCategories, "SearchProductCategories"),
+                        new(ShopPermissions.ListProductCategories, "ListProductCategories"),
+                        new(ShopPermissions.CreateProductCategory, "CreateProductCategory"),
+                        new(ShopPermissions.EditProductCategory, "EditProductCategory")
                     }
                 }
             };
