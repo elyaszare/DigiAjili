@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using ShopManagement.Application.Contracts.Order;
 
 namespace _01_Query.Contracts.Product
 {
@@ -7,5 +8,6 @@ namespace _01_Query.Contracts.Product
         ProductQueryModel GetProductDetails(string slug);
         List<ProductQueryModel> GetLastArrivals();
         List<ProductQueryModel> Search(string searchModel);
+        List<CartItem> CheckInventoryStock(List<CartItem> cartItems);
     }
 }
