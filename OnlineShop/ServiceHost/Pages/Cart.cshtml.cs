@@ -29,7 +29,7 @@ namespace ServiceHost.Pages
             var cartItems = serializer.Deserialize<List<CartItem>>(value);
             if (cartItems != null)
                 foreach (var item in cartItems)
-                    item.TotalItemPrice = item.UnitPrice * item.Count;
+                    item.CalculateTotalItemPrice();
 
             CartItems = _productQuery.CheckInventoryStock(cartItems);
         }
@@ -55,7 +55,7 @@ namespace ServiceHost.Pages
             var cartItems = serializer.Deserialize<List<CartItem>>(value);
             if (cartItems != null)
                 foreach (var item in cartItems)
-                    item.TotalItemPrice = item.UnitPrice * item.Count;
+                    item.CalculateTotalItemPrice();
 
             CartItems = _productQuery.CheckInventoryStock(cartItems);
             if (CartItems.Any(x => !x.IsInStock))

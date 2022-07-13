@@ -199,3 +199,4 @@ D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.Depen
 D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.PlatformAbstractions.dll
 D:\OnlineShop\OnlineShop\ServiceHost\bin\Debug\net5.0\Nancy.dll
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Cart.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\CheckOut.cshtml.g.cs
