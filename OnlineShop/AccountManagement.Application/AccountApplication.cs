@@ -32,9 +32,15 @@ namespace AccountManagement.Application
             if (_accountRepository.Exists(x => x.Username == command.Username || x.Mobile == command.Mobile))
                 return operation.Failed(ApplicationMessages.DuplicateRecord);
 
+            //Hashing Password
             var password = _passwordHasher.Hash(command.Password);
+
+            //Picture Path
             var path = $"ProfilePhotos //{command.Username}";
+
+            //Save Picture in Path
             var fileName = _fileUploader.Upload(command.ProfilePhoto, path);
+
             var account = new Account(command.Fullname, command.Username, password, command.Mobile, fileName,
                 command.RoleId);
 
@@ -54,7 +60,10 @@ namespace AccountManagement.Application
             if (_accountRepository.Exists(x =>
                 (x.Username == command.Username || x.Mobile == command.Mobile) && x.Id != command.Id))
                 return operation.Failed(ApplicationMessages.DuplicateRecord);
+
+            //Picture Path
             var path = $"ProfilePhotos//{command.Username}";
+            //Save Picture in Path
             var fileName = _fileUploader.Upload(command.ProfilePhoto, path);
             account.Edit(command.Fullname, command.Username, command.Mobile, fileName, command.RoleId);
 
@@ -73,7 +82,9 @@ namespace AccountManagement.Application
             if (command.Password != command.RePassword)
                 return operation.Failed(ApplicationMessages.PasswordNotMatch);
 
+            //Hashing Password
             var password = _passwordHasher.Hash(command.Password);
+
             account.ChangePassword(password);
             _accountRepository.SaveChanges();
             return operation.Succeeded();
@@ -87,7 +98,9 @@ namespace AccountManagement.Application
             if (account == null)
                 return operation.Failed(ApplicationMessages.WrongUserPass);
 
+            //Check for Valid password in Database 
             var result = _passwordHasher.Check(account.Password, command.Password);
+
 
             var permission = _roleRepository
                 .Get(account.RoleId)
@@ -104,6 +117,11 @@ namespace AccountManagement.Application
         public EditAccount GetDetails(long id)
         {
             return _accountRepository.GetDetails(id);
+        }
+
+        public List<AccountViewModel> GetAccounts()
+        {
+            return _accountRepository.GetAccounts();
         }
 
         public List<AccountViewModel> Search(AccountSearchModel searchModel)

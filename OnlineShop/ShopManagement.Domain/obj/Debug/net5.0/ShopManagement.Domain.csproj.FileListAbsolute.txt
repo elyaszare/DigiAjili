@@ -18,7 +18,3 @@ D:\OnlineShop\OnlineShop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.D
 D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Domain.runtimeconfig.json
 D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Domain.runtimeconfig.dev.json
 D:\OnlineShop\OnlineShop\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.genruntimeconfig.cache
-D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
-D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\ShopManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml

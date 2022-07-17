@@ -60,10 +60,19 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
                 query = query.Where(x => x.Mobile.Contains(searchModel.Mobile));
 
             if (searchModel.RoleId > 0)
-                query = query.Where(x => x.RoleId==searchModel.RoleId);
+                query = query.Where(x => x.RoleId == searchModel.RoleId);
 
 
-            return query.OrderByDescending(x=>x.Id).ToList();
+            return query.OrderByDescending(x => x.Id).ToList();
+        }
+
+        public List<AccountViewModel> GetAccounts()
+        {
+            return _context.Accounts.Select(x => new AccountViewModel
+            {
+                Id = x.Id,
+                Fullname = x.Fullname
+            }).ToList();
         }
     }
 }

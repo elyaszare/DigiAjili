@@ -28,7 +28,9 @@ D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5
 D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.genruntimeconfig.cache
 D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\DiscountManagement.Application.dll
 D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\DiscountManagement.Application.pdb
-D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
-D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Domain.dll
+D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Domain.pdb
+D:\OnlineShop\OnlineShop\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb

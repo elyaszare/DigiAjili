@@ -15,7 +15,3 @@ D:\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\obj\Debug\net5.
 D:\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\obj\Debug\net5.0\DiscountManagement.Application.Contract.pdb
 D:\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
-D:\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
-D:\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml

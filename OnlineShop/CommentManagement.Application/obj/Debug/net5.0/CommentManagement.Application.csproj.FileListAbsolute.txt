@@ -10,13 +10,9 @@ D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\CommentM
 D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\0_Framework.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\CommentManagement.Application.Contract.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\CommentManagement.Domain.dll
-D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\CommentManagement.Application.Contract.pdb
 D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\CommentManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\0_Framework.pdb
-D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml
 D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.csproj.CopyComplete
 D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\ref\CommentManagement.Application.dll

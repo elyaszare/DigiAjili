@@ -25,12 +25,17 @@ namespace BlogManagement.Application
             var operation = new OperationResult();
             if (_articleRepository.Exists(x => x.Title == command.Title))
                 return operation.Failed(ApplicationMessages.DuplicateRecord);
-
+            //Create Slug by Slugify Extension Method
             var slug = command.Slug.Slugify();
+            //Get CategorySlug By Id
             var categorySlug = _articleCategoryRepository.GetSlugBy(command.CategoryId);
+            //Picture Path
             var path = $"{categorySlug}/{slug}";
+            //Save picture in path
             var fileName = _fileUploader.Upload(command.Picture, path);
+            //Convert date time to Georgian by ToGeorgianDateTime Extension Method
             var publishDate = command.PublishDate.ToGeorgianDateTime();
+
             var article = new Article(command.Title, command.ShortDescription, command.Description, fileName,
                 command.PictureAlt, command.PictureTitle, publishDate, slug, command.MetaDescription,
                 command.KeyWords, command.CanonicalAddress, command.CategoryId);

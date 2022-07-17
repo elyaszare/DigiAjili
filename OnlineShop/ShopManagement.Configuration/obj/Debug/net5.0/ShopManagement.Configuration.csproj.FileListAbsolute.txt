@@ -37,10 +37,6 @@ D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\DiscountM
 D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
 D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
-D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
-D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml
 D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Application.Contract.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Domain.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\BlogManagement.Infrastructure.EFCore.dll
@@ -53,3 +49,13 @@ D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\CommentMa
 D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\CommentManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\CommentManagement.Infrastructure.EFCore.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\CommentManagement.Infrastructure.EFCore.pdb
+D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.xml
+D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.InventoryAcl.pdb
+D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Domain.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Domain.pdb
+D:\OnlineShop\OnlineShop\ShopManagement.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb

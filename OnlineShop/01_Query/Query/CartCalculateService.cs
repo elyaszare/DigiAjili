@@ -22,13 +22,16 @@ namespace _01_Query.Query
         public Cart ComputeCart(List<CartItem> cartItems)
         {
             var cart = new Cart();
+
             var colleagueDiscounts = _discountContext.ColleagueDiscounts
                 .Where(x => !x.IsRemoved)
                 .Select(x => new { x.DiscountRate, x.ProductId }).ToList();
+
             var customerDiscounts = _discountContext.CustomerDiscounts
                 .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
                 .Select(x => new { x.DiscountRate, x.ProductId }).ToList();
 
+            //Get Account Role 
             var currentAccountRole = _authHelper.CurrentAccountRole();
 
             foreach (var cartItem in cartItems)

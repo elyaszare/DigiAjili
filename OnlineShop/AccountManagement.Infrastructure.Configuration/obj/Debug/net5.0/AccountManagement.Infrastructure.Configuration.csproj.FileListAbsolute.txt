@@ -7,15 +7,11 @@ D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debu
 D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.dll
 D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Domain.dll
 D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
-D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
 D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.pdb
 D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb
 D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debug\net5.0\0_Framework.pdb
 D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
 D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Domain.pdb
-D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml
 D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\obj\Debug\net5.0\AccountManagement.Infrastructure.Configuration.csproj.AssemblyReference.cache
 D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\obj\Debug\net5.0\AccountManagement.Infrastructure.Configuration.GeneratedMSBuildEditorConfig.editorconfig
 D:\OnlineShop\OnlineShop\AccountManagement.Infrastructure.Configuration\obj\Debug\net5.0\AccountManagement.Infrastructure.Configuration.AssemblyInfoInputs.cache

@@ -27,7 +27,9 @@ D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\obj\De
 D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\obj\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.pdb
 D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Application.dll
 D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\InventoryManagement.Application.pdb
-D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
-D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Domain.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Domain.pdb
+D:\OnlineShop\OnlineShop\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb

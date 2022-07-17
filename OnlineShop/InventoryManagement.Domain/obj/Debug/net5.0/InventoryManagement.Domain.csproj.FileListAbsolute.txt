@@ -17,7 +17,3 @@ D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\ref\Invento
 D:\OnlineShop\OnlineShop\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
-D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
-D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\InventoryManagement.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml

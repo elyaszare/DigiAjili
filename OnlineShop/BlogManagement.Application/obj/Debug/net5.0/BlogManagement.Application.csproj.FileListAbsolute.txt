@@ -5,13 +5,9 @@ D:\OnlineShop\OnlineShop\BlogManagement.Application\bin\Debug\net5.0\BlogManagem
 D:\OnlineShop\OnlineShop\BlogManagement.Application\bin\Debug\net5.0\0_Framework.dll
 D:\OnlineShop\OnlineShop\BlogManagement.Application\bin\Debug\net5.0\BlogManagement.Application.Contract.dll
 D:\OnlineShop\OnlineShop\BlogManagement.Application\bin\Debug\net5.0\BlogManagement.Domain.dll
-D:\OnlineShop\OnlineShop\BlogManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\BlogManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
 D:\OnlineShop\OnlineShop\BlogManagement.Application\bin\Debug\net5.0\BlogManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\BlogManagement.Application\bin\Debug\net5.0\BlogManagement.Application.Contract.pdb
 D:\OnlineShop\OnlineShop\BlogManagement.Application\bin\Debug\net5.0\0_Framework.pdb
-D:\OnlineShop\OnlineShop\BlogManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\BlogManagement.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml
 D:\OnlineShop\OnlineShop\BlogManagement.Application\obj\Debug\net5.0\BlogManagement.Application.csproj.AssemblyReference.cache
 D:\OnlineShop\OnlineShop\BlogManagement.Application\obj\Debug\net5.0\BlogManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
 D:\OnlineShop\OnlineShop\BlogManagement.Application\obj\Debug\net5.0\BlogManagement.Application.AssemblyInfoInputs.cache

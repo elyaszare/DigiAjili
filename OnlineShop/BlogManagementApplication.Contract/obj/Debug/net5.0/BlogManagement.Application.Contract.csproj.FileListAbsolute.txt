@@ -3,11 +3,7 @@ D:\OnlineShop\OnlineShop\BlogManagementApplication.Contract\bin\Debug\net5.0\Blo
 D:\OnlineShop\OnlineShop\BlogManagementApplication.Contract\bin\Debug\net5.0\ref\BlogManagement.Application.Contract.dll
 D:\OnlineShop\OnlineShop\BlogManagementApplication.Contract\bin\Debug\net5.0\BlogManagement.Application.Contract.pdb
 D:\OnlineShop\OnlineShop\BlogManagementApplication.Contract\bin\Debug\net5.0\0_Framework.dll
-D:\OnlineShop\OnlineShop\BlogManagementApplication.Contract\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\BlogManagementApplication.Contract\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
 D:\OnlineShop\OnlineShop\BlogManagementApplication.Contract\bin\Debug\net5.0\0_Framework.pdb
-D:\OnlineShop\OnlineShop\BlogManagementApplication.Contract\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\BlogManagementApplication.Contract\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml
 D:\OnlineShop\OnlineShop\BlogManagementApplication.Contract\obj\Debug\net5.0\BlogManagement.Application.Contract.csproj.AssemblyReference.cache
 D:\OnlineShop\OnlineShop\BlogManagementApplication.Contract\obj\Debug\net5.0\BlogManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
 D:\OnlineShop\OnlineShop\BlogManagementApplication.Contract\obj\Debug\net5.0\BlogManagement.Application.Contract.AssemblyInfoInputs.cache

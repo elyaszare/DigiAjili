@@ -17,7 +17,3 @@ D:\OnlineShop\OnlineShop\DM.Domain\obj\Debug\net5.0\ref\DiscountManagement.Domai
 D:\OnlineShop\OnlineShop\DM.Domain\obj\Debug\net5.0\DiscountManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
-D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.dll
-D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
-D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\Microsoft.AspNetCore.Routing.Abstractions.xml
