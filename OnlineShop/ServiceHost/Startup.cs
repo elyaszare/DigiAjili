@@ -9,6 +9,7 @@ using BlogManagement.Infrastructure.Configuration;
 using CommentManagement.Infrastructure.Configuration;
 using DiscountManagement.Configuration;
 using InventoryManagement.Infrastructure.Configuration;
+using InventoryManagement.Presentation.Api;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -61,6 +62,9 @@ namespace ServiceHost
                     o.AccessDeniedPath = new PathString("/AccessDenied");
                 });
 
+            services.AddCors(options =>
+                options.AddPolicy("MyCors", builder => builder.WithOrigins("https://localhost:5005/")));
+
             services.AddAuthorization(option =>
             {
                 option.AddPolicy("AdminArea",
@@ -85,7 +89,8 @@ namespace ServiceHost
                     option.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
                     option.Conventions.AuthorizeAreaFolder("Administration", "/Discounts", "Discount");
                     option.Conventions.AuthorizeAreaFolder("Administration", "/Accounts", "Account");
-                });
+                }).AddApplicationPart(typeof(InventoryController).Assembly)
+                .AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -113,8 +118,12 @@ namespace ServiceHost
             app.UseRouting();
 
             app.UseAuthorization();
-
-            app.UseEndpoints(endpoints => { endpoints.MapRazorPages(); });
+            app.UseCors("MyCors");
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapRazorPages();
+                endpoints.MapControllers();
+            });
         }
     }
 }

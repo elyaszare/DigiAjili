@@ -1628,6 +1628,79 @@
         }
       }
     },
+    "D:\\OnlineShop\\OnlineShop\\InventoryManagemenr.Presentation.Api\\InventoryManagement.Presentation.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\InventoryManagemenr.Presentation.Api\\InventoryManagement.Presentation.Api.csproj",
+        "projectName": "InventoryManagement.Presentation.Api",
+        "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagemenr.Presentation.Api\\InventoryManagement.Presentation.Api.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagemenr.Presentation.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj": {
+                "projectPath": "D:\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj"
+              },
+              "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -1859,6 +1932,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "D:\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj": {
+                "projectPath": "D:\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj"
+              },
               "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
                 "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               },
@@ -2039,6 +2115,9 @@
               "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\DiscountManagement.Configuration.csproj": {
                 "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\DiscountManagement.Configuration.csproj"
               },
+              "D:\\OnlineShop\\OnlineShop\\InventoryManagemenr.Presentation.Api\\InventoryManagement.Presentation.Api.csproj": {
+                "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagemenr.Presentation.Api\\InventoryManagement.Presentation.Api.csproj"
+              },
               "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
                 "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj"
               },
@@ -2058,6 +2137,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

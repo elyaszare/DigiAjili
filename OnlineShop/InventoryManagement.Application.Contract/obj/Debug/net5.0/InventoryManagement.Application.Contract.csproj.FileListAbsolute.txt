@@ -3,7 +3,9 @@ D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5
 D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\ref\InventoryManagement.Application.Contract.dll
 D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
 D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\0_Framework.dll
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\0_Framework.pdb
+D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.csproj.AssemblyReference.cache
 D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
 D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.AssemblyInfoInputs.cache
@@ -13,5 +15,3 @@ D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5
 D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.dll
 D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\ref\InventoryManagement.Application.Contract.dll
 D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Debug\net5.0\InventoryManagement.Application.Contract.pdb
-D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
-D:\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb

@@ -5,10 +5,16 @@ D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\S
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ref\ShopManagement.Infrastructure.EFCore.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\0_Framework.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Domain.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Domain.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\0_Framework.pdb
+D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.csproj.AssemblyReference.cache
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.GeneratedMSBuildEditorConfig.editorconfig
@@ -20,9 +26,3 @@ D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\S
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ref\ShopManagement.Infrastructure.EFCore.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
 D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\obj\Debug\net5.0\ShopManagement.Infrastructure.EFCore.genruntimeconfig.cache
-D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
-D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Domain.dll
-D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
-D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb
-D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
-D:\OnlineShop\OnlineShop\ShopManagement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Domain.pdb

@@ -3,6 +3,9 @@ D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\Disco
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\ref\DiscountManagement.Configuration.dll
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\DiscountManagement.Configuration.pdb
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\0_Framework.dll
+D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\AccountManagement.Domain.dll
+D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\DiscountManagement.Application.dll
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\DiscountManagement.Domain.dll
@@ -14,6 +17,9 @@ D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\Disco
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\DiscountManagement.Application.pdb
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\0_Framework.pdb
+D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\AccountManagement.Domain.pdb
+D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\DiscountManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\ShopManagement.Domain.pdb
@@ -27,9 +33,3 @@ D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\obj\Debug\net5.0\Disco
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\obj\Debug\net5.0\DiscountManagement.Configuration.dll
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\obj\Debug\net5.0\ref\DiscountManagement.Configuration.dll
 D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\obj\Debug\net5.0\DiscountManagement.Configuration.pdb
-D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\AccountManagement.Application.Contract.dll
-D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\AccountManagement.Domain.dll
-D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
-D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\AccountManagement.Application.Contract.pdb
-D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\AccountManagement.Domain.pdb
-D:\OnlineShop\OnlineShop\DiscountManagement.Configoration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb

@@ -16,7 +16,6 @@ namespace InventoryManagement.Domain.InventoryAgg
             ProductId = productId;
             UnitPrice = unitPrice;
             InStock = false;
-
         }
 
         public void Edit(long productId, double unitPrice)

@@ -1,8 +1,3 @@
-D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.csproj.AssemblyReference.cache
-D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
-D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.AssemblyInfoInputs.cache
-D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.AssemblyInfo.cs
-D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.csproj.CoreCompileInputs.cache
 D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\CommentManagement.Application.deps.json
 D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\CommentManagement.Application.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\ref\CommentManagement.Application.dll
@@ -13,6 +8,11 @@ D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\CommentM
 D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\CommentManagement.Application.Contract.pdb
 D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\CommentManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\CommentManagement.Application\bin\Debug\net5.0\0_Framework.pdb
+D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.csproj.AssemblyReference.cache
+D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.AssemblyInfoInputs.cache
+D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.AssemblyInfo.cs
+D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.csproj.CoreCompileInputs.cache
 D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.csproj.CopyComplete
 D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\CommentManagement.Application.dll
 D:\OnlineShop\OnlineShop\CommentManagement.Application\obj\Debug\net5.0\ref\CommentManagement.Application.dll

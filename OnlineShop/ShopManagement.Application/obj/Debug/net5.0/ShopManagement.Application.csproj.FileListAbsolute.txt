@@ -3,11 +3,13 @@ D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\ShopManagem
 D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\ref\ShopManagement.Application.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\ShopManagement.Application.pdb
 D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\0_Framework.dll
+D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\ShopManagement.Domain.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\ShopManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\0_Framework.pdb
+D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.xml
 D:\OnlineShop\OnlineShop\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.csproj.AssemblyReference.cache
 D:\OnlineShop\OnlineShop\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
 D:\OnlineShop\OnlineShop\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.AssemblyInfoInputs.cache
@@ -17,5 +19,3 @@ D:\OnlineShop\OnlineShop\ShopManagement.Application\obj\Debug\net5.0\ShopManagem
 D:\OnlineShop\OnlineShop\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Application\obj\Debug\net5.0\ref\ShopManagement.Application.dll
 D:\OnlineShop\OnlineShop\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.pdb
-D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.dll
-D:\OnlineShop\OnlineShop\ShopManagement.Application\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.xml

@@ -4,8 +4,10 @@ D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\ref\DiscountManagement.Domai
 D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\DiscountManagement.Domain.pdb
 D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\0_Framework.dll
 D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\DiscountManagement.Application.Contract.dll
+D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\0_Framework.pdb
 D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\DiscountManagement.Application.Contract.pdb
+D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\OnlineShop\OnlineShop\DM.Domain\obj\Debug\net5.0\DiscountManagement.Domain.csproj.AssemblyReference.cache
 D:\OnlineShop\OnlineShop\DM.Domain\obj\Debug\net5.0\DiscountManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\OnlineShop\OnlineShop\DM.Domain\obj\Debug\net5.0\DiscountManagement.Domain.AssemblyInfoInputs.cache
@@ -15,5 +17,3 @@ D:\OnlineShop\OnlineShop\DM.Domain\obj\Debug\net5.0\DiscountManagement.Domain.cs
 D:\OnlineShop\OnlineShop\DM.Domain\obj\Debug\net5.0\DiscountManagement.Domain.dll
 D:\OnlineShop\OnlineShop\DM.Domain\obj\Debug\net5.0\ref\DiscountManagement.Domain.dll
 D:\OnlineShop\OnlineShop\DM.Domain\obj\Debug\net5.0\DiscountManagement.Domain.pdb
-D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
-D:\OnlineShop\OnlineShop\DM.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb

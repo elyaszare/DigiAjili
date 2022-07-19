@@ -59,6 +59,7 @@ function updateCart() {
 }
 
 function removeFromCart(id) {
+    
     let products = $.cookie(cookieName);
     products = JSON.parse(products);
     const itemToRemove = products.findIndex(x => x.id === id);
@@ -79,55 +80,21 @@ function changeCartItemCount(id, totalId, count) {
     $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();
 
-    //const data = {
-    //    'productId': parseInt(id),
-    //    'count': parseInt(count)
-    //};
-
-    //$.ajax({
-    //    url: url,
-    //    type: "post",
-    //    data: JSON.stringify(data),
-    //    contentType: "application/json",
-    //    dataType: "json",
-    //    success: function (data) {
-    //        if (data.isInStock == false) {
-    //            const warningsDiv = $('#productStockWarnings');
-    //            if ($(`#${id}-${colorId}`).length == 0) {
-    //                warningsDiv.append(`<div class="alert alert-warning" id="${id}-${colorId}">
-    //                    <i class="fa fa-exclamation-triangle"></i>
-    //                    <span>
-    //                        <strong>${data.productName} - ${color
-    //                    } </strong> در حال حاضر در انبار موجود نیست. <strong>${data.supplyDays
-    //                    } روز</strong> زمان برای تامین آن نیاز است. ادامه مراحل به منزله تایید این زمان است.
-    //                    </span>
-    //                </div>
-    //                `);
-    //            }
-    //        } else {
-    //            if ($(`#${id}-${colorId}`).length > 0) {
-    //                $(`#${id}-${colorId}`).remove();
-    //            }
-    //        }
-    //    },
-    //    error: function (data) {
-    //        alert("خطایی رخ داده است. لطفا با مدیر سیستم تماس بگیرید.");
-    //    }
-    //});
-
-
     const settings = {
-        "url": "https://localhost:5001/api/inventory",
+        "url": "https://localhost:5001/inventory",
         "method": "POST",
         "timeout": 0,
         "headers": {
             "Content-Type": "application/json"
         },
-        "data": JSON.stringify({ "productId": id, "count": count })
+        "data": JSON.stringify({
+            "productid": id,
+            "count": count
+        }),
     };
 
     $.ajax(settings).done(function (data) {
-        if (data.isStock == false) {
+        if (data.isInStock == false) {
             const warningsDiv = $('#productStockWarnings');
             if ($(`#${id}`).length == 0) {
                 warningsDiv.append(`
