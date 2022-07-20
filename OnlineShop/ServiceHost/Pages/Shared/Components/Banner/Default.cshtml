@@ -1,0 +1,31 @@
+﻿@model List<_01_Query.Contracts.Banner.BannerQueryModel>
+
+<div class="banner-hover-area section-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="banner-hover-wrapper">
+                    <div class="row">
+                        @foreach (var banner in Model)
+                        {
+                            <div class="col-md-6">
+                                <div class="single-hover-banner">
+                                    <div class="single-hover-banner__image">
+                                        <a href="@banner.Link">
+                                            <img src="~/ProductPictures/@banner.Picture" class="img-fluid" style="width: 570px; height: 319px" alt="@banner.PictureAlt" title="@banner.PictureTitle">
+                                        </a>
+                                        <div class="single-hover-banner__content">
+                                            <h4 class="small-text" dir="rtl">@banner.Heading</h4>
+                                            <h3 class="big-text" dir="rtl">@banner.Title</h3>
+                                            <a class="banner-link" dir="rtl" href="@banner.Link">@banner.BtnText</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

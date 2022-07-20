@@ -33,7 +33,7 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label asp-for="Picture" class="control-label">عکس</label>
-                    <input type="text" class="form-control" asp-for="Picture">
+                    <input type="file" class="form-control" asp-for="Picture" accept="image/*">
                     <span asp-validation-for="Picture" class="error"></span>
                 </div>
             </div>
@@ -42,7 +42,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="PictureAlt" class="control-label">Alt</label>
-                    <input type="file" class="form-control" asp-for="PictureAlt" accept="image/*">
+                    <input type="text" class="form-control" asp-for="PictureAlt" >
                     <span asp-validation-for="PictureAlt" class="error"></span>
                 </div>
             </div>

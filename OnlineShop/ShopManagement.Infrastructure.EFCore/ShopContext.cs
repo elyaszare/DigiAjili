@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ShopManagement.Domain.BannerAgg;
 using ShopManagement.Domain.OrderAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
@@ -10,15 +11,16 @@ namespace ShopManagement.Infrastructure.EFCore
 {
     public class ShopContext : DbContext
     {
+        public ShopContext(DbContextOptions<ShopContext> options) : base(options)
+        {
+        }
+
         public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductPicture> ProductPictures { get; set; }
         public DbSet<Slide> Slides { get; set; }
         public DbSet<Order> Orders { get; set; }
-
-        public ShopContext(DbContextOptions<ShopContext> options) : base(options)
-        {
-        }
+        public DbSet<Banner> Banners { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

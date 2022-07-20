@@ -18,6 +18,7 @@ namespace _01_Query.Query
         {
             return context.Slides.Where(x => x.IsRemoved == false).Select(x => new SlideQueryModel
             {
+                Id = x.Id,
                 Text = x.Text,
                 Picture = x.Picture,
                 IsRemoved = x.IsRemoved,
@@ -27,7 +28,7 @@ namespace _01_Query.Query
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Title = x.Title
-            }).ToList();
+            }).OrderByDescending(x => x.Id).ToList();
         }
     }
 }

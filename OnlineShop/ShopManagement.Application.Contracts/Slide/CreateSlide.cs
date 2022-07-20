@@ -6,7 +6,7 @@ namespace ShopManagement.Application.Contracts.Slide
 {
     public class CreateSlide
     {
-        [MaxFileSize(2 * 1024 * 1024, ErrorMessage = "حجم فایل آپلود شده بیشتر از حد مجاز است")]
+        [MaxFileSize(3 * 1024 * 1024, ErrorMessage = "حجم فایل آپلود شده بیشتر از حد مجاز است")]
         public IFormFile Picture { get; set; }
 
         [Required(ErrorMessage = ValidationMessage.IsRequired)]

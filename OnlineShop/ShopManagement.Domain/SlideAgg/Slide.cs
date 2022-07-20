@@ -1,5 +1,4 @@
 ﻿//Slide Model
-//Slide Propertys
 
 using _0_Framework.Domain;
 
@@ -16,7 +15,10 @@ namespace ShopManagement.Domain.SlideAgg
         public string BntText { get; private set; }
         public string Link { get; private set; }
         public bool IsRemoved { get; private set; }
-        public Slide(string picture, string pictureAlt, string pictureTitle, string heading, string title, string text,string link,
+
+
+        public Slide(string picture, string pictureAlt, string pictureTitle, string heading, string title, string text,
+            string link,
             string bntText)
         {
             Picture = picture;
@@ -30,8 +32,11 @@ namespace ShopManagement.Domain.SlideAgg
             Link = link;
         }
 
+
         public void Edit(string picture, string pictureAlt, string pictureTitle, string heading, string title,
-            string text,string link, string bntText)
+            string text,
+            string link,
+            string bntText)
         {
             if (!string.IsNullOrWhiteSpace(picture))
                 Picture = picture;

@@ -2,7 +2,6 @@ D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\0_Framework.deps.json
 D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\0_Framework.dll
 D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\ref\0_Framework.dll
 D:\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\0_Framework.pdb
-D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.csproj.AssemblyReference.cache
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.GeneratedMSBuildEditorConfig.editorconfig
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.AssemblyInfoInputs.cache
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.AssemblyInfo.cs
@@ -10,3 +9,4 @@ D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.csproj.CoreCom
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.dll
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\ref\0_Framework.dll
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.pdb
+D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.csproj.AssemblyReference.cache

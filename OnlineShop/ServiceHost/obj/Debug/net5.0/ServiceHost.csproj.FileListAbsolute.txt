@@ -216,3 +216,7 @@ D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\ServiceHost.dll
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\ref\ServiceHost.dll
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Banners\Create.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Banners\Edit.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Banners\Index.cshtml.g.cs
+D:\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Banner\Default.cshtml.g.cs

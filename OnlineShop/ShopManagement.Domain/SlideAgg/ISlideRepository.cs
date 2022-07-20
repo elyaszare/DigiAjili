@@ -1,5 +1,4 @@
-﻿
-//ISlideRepository Implementation
+﻿//ISlideRepository Implementation
 
 using System.Collections.Generic;
 using _0_Framework.Domain;
