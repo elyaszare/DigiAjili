@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TruK8+U5lB/Qoi1RoKYqndM7b8AbUjtMJu/gSK9cGP9mWojq+R1YZ9Vs8Dp24c2V2DISjdmOw5VdAj9WOdUPAA==",
+  "dgSpecHash": "s6P+gQ88mppKaJcAHee7FM/EVVu91g4HPNM4ymJee5Gh3QO6aNC8vwjUP8uoDVEJW6cYxggsy45VXLO96nDHhw==",
   "success": true,
-  "projectFilePath": "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj",
+  "projectFilePath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\mailkit\\1.10.0\\mailkit.1.10.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

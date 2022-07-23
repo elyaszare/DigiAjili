@@ -8083,11 +8083,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj",
+      "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj",
       "projectName": "AccountManagement.Infrastructure.EFCore",
-      "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj",
+      "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\obj\\",
+      "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -8110,8 +8110,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
             }
           }
         }

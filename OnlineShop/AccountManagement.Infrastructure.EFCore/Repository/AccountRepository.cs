@@ -19,7 +19,7 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
 
         public Account GetBy(string username)
         {
-            return _context.Accounts.FirstOrDefault(x => x.Username == username);
+            return _context.Accounts.Where(x => x.IsActive).FirstOrDefault(x => x.Username == username);
         }
 
         public EditAccount GetDetails(long id)
@@ -31,7 +31,9 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
                 Username = x.Username,
                 Mobile = x.Mobile,
                 Password = x.Password,
-                RoleId = x.RoleId
+                RoleId = x.RoleId,
+                ActiveCode = x.ActiveCode,
+                Email = x.Email
             }).FirstOrDefault(x => x.Id == id);
         }
 
@@ -46,6 +48,8 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
                 ProfilePhoto = x.ProfilePhoto,
                 RoleId = x.RoleId,
                 Role = x.Role.Name,
+                IsActive = x.IsActive,
+                Email = x.Email,
                 CreationDate = x.CreationDate.ToFarsi()
             });
 
@@ -73,6 +77,11 @@ namespace AccountManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 Fullname = x.Fullname
             }).ToList();
+        }
+
+        public Account GetByCode(string activeCode)
+        {
+            return _context.Accounts.FirstOrDefault(x => x.ActiveCode == activeCode);
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj": {}
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj": {}
   },
   "projects": {
-    "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
         "projectName": "0_Framework",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -106,14 +106,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
         "projectName": "InventoryManagement.Application.Contract",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -136,11 +136,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -173,14 +173,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
         "projectName": "ShopManagement.Application.Contracts",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -203,8 +203,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               }
             }
           }
@@ -237,14 +237,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "projectName": "ShopManagement.Domain",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -267,11 +267,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -312,14 +312,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj",
         "projectName": "ShopManagement.Infrastructure.InventoryAcl",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.InventoryAcl\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.InventoryAcl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -342,11 +342,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }

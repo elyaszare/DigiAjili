@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gb4qB4ljZ7FcBT1aVPbRerHXQCesnlmnwWwO90LZA35gvNkOEwYlOdGhuKrDDAEKKExilYQ/XUevYm13F3NkKw==",
+  "dgSpecHash": "oox1AfUmfxnMrtpa1uOqE14Su4fO8+Tw1z5XxpcMDfAN8Ylclfl7g/ugudw9BrOLwNN/9y6vsJOzCN6jcwxUEQ==",
   "success": true,
-  "projectFilePath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
+  "projectFilePath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mailkit\\1.10.0\\mailkit.1.10.0.nupkg.sha512",

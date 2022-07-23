@@ -9,6 +9,8 @@ namespace AccountManagement.Application.Contract.Account
         OperationResult Edit(EditAccount command);
         OperationResult ChangePassword(ChangePassword command);
         OperationResult Login(Login command);
+        OperationResult Active(string activeCode);
+        OperationResult Active(long id);
         EditAccount GetDetails(long id);
         List<AccountViewModel> GetAccounts();
         List<AccountViewModel> Search(AccountSearchModel searchModel);

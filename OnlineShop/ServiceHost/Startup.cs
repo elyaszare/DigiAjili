@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using _0_Framework.Application;
+using _0_Framework.Application.Email;
 using _0_Framework.Application.ZarinPal;
 using _0_Framework.Infrastructure;
 using AccountManagement.Infrastructure.Configuration;
@@ -48,6 +49,7 @@ namespace ServiceHost
             services.AddTransient<IFileUploader, FileUploader>();
             services.AddTransient<IAuthHelper, AuthHelper>();
             services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
+            services.AddTransient<IEmailService, EmailService>();
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;

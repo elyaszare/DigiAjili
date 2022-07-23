@@ -7,88 +7,89 @@
 }
 
 
-
-<div class="breadcrumb-area section-space--half">
-    <div class="container wide">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb-wrapper breadcrumb-bg">
-                    <div class="breadcrumb-content">
-                        <h1 class="breadcrumb-content__title">@Model.ProductCategory.Name</h1>
-                        <h2>@Model.ProductCategory.Description</h2>
-                        <ul class="breadcrumb-content__page-map">
-                            <li><a asp-page="./Index">صفحه اصلی</a></li>
-                            <li class="active">@Model.ProductCategory.Name</li>
-                        </ul>
+<div>
+    @*<div class="breadcrumb-area section-space--half">
+        <div class="container wide">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-wrapper breadcrumb-bg">
+                        <div class="breadcrumb-content">
+                            <h1 class="breadcrumb-content__title">@Model.ProductCategory.Name</h1>
+                            <h2>@Model.ProductCategory.Description</h2>
+                            <ul class="breadcrumb-content__page-map">
+                                <li><a asp-page="./Index">صفحه اصلی</a></li>
+                                <li class="active">@Model.ProductCategory.Name</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="page-content-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="page-wrapper">
-                    <div class="page-content-wrapper">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="shop-page-content">
+    <div class="page-content-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-wrapper">
+                        <div class="page-content-wrapper">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="shop-page-content">
 
-                                    <div class="row shop-product-wrap grid three-column">
-                                        @foreach (var product in @Model.ProductCategory.Products)
-                                        {
-                                            <div class="col-12 col-lg-4 col-md-4 col-sm-6">
-                                                <div class="single-grid-product grid-view-product">
-                                                    <div class="single-grid-product__image">
-                                                        <div class="single-grid-product__label">
+                                        <div class="row shop-product-wrap grid three-column">
+                                            @foreach (var product in @Model.ProductCategory.Products)
+                                            {
+                                                <div class="col-12 col-lg-4 col-md-4 col-sm-6">
+                                                    <div class="single-grid-product grid-view-product">
+                                                        <div class="single-grid-product__image">
+                                                            <div class="single-grid-product__label">
+                                                                @if (product.HasDiscount)
+                                                                {
+                                                                    <span class="sale">-@product.DiscountRate%</span>
+                                                                }
+                                                            </div>
+                                                            <a asp-page="/Product" asp-route-id="@product.Slug">
+                                                                <img src="~/ProductPictures/@product.Picture" class="img-fluid"
+                                                                     alt="@product.PictureAlt" title="@product.PictureTitle">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="single-grid-product__content">
+                                                            <div class="single-grid-product__category-rating">
+                                                                <span class="category">
+                                                                    <a asp-page="/ProductCategory" asp-route-id="@product.CategorySlug">@product.Category</a>
+                                                                </span>
+                                                            </div>
+
+                                                            <h2 class="single-grid-product__title">
+                                                                <a asp-page="/Product" asp-route-id="@product.Slug">
+                                                                    @product.Name
+                                                                </a>
+                                                            </h2>
                                                             @if (product.HasDiscount)
                                                             {
-                                                                <span class="sale">-@product.DiscountRate%</span>
+                                                                <p class="single-grid-product__price">
+                                                                    <span class="discounted-price">@product.PriceWithDiscount</span>
+                                                                    <span class="main-price discounted"> @product.Price تومان</span>
+                                                                </p>
+                                                                <div class="product-countdown" data-countdown="@product.DiscountExpireDate"></div>
                                                             }
-                                                        </div>
-                                                        <a asp-page="/Product" asp-route-id="@product.Slug">
-                                                            <img src="~/ProductPictures/@product.Picture" class="img-fluid"
-                                                                 alt="@product.PictureAlt" title="@product.PictureTitle">
-                                                        </a>
+                                                            else
+                                                            {
+                                                                <p class="single-grid-product__price">
+                                                                    <span class="main-price ">@product.Price تومان</span>
+                                                                </p>
+                                                            }
 
-                                                    </div>
-                                                    <div class="single-grid-product__content">
-                                                        <div class="single-grid-product__category-rating">
-                                                            <span class="category">
-                                                                <a asp-page="/ProductCategory" asp-route-id="@product.CategorySlug">@product.Category</a>
-                                                            </span>
                                                         </div>
-
-                                                        <h2 class="single-grid-product__title">
-                                                            <a asp-page="/Product" asp-route-id="@product.Slug">
-                                                                @product.Name
-                                                            </a>
-                                                        </h2>
-                                                        @if (product.HasDiscount)
-                                                        {
-                                                            <p class="single-grid-product__price">
-                                                                <span class="discounted-price">@product.PriceWithDiscount</span> 
-                                                                <span class="main-price discounted"> @product.Price تومان</span>
-                                                            </p>
-                                                            <div class="product-countdown" data-countdown="@product.DiscountExpireDate"></div>
-                                                        }
-                                                        else
-                                                        {
-                                                            <p class="single-grid-product__price">
-                                                                <span class="main-price ">@product.Price تومان</span>
-                                                            </p>
-                                                        }
-                                                        
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                        }
+                                            }
+
+                                        </div>
 
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -96,5 +97,154 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>*@
 </div>
+
+
+
+
+<section class="products pt-0">
+    <!--Header-->
+
+    <header>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-page="/Index">خانه</a></li>
+                <li class="breadcrumb-item active" aria-current="page">@Model.ProductCategory.Name</li>
+            </ol>
+            <h1 class="title">@Model.ProductCategory.Name</h1>
+            <div class="text">
+                <p>@Model.ProductCategory.Description</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================== Icons ======================== -->
+    <!--Content-->
+
+    <div class="container">
+        <div class="row">
+
+            <!--Right content-->
+
+            <div class="col-12">
+
+                <!--Sort bar-->
+
+                <div class="sort-bar clearfix">
+
+                    <div class="sort-results pull-left">
+
+                        <!--Showing result per page-->
+
+                        <select>
+                            <option value="1">10</option>
+                            <option value="2">50</option>
+                            <option value="3">100</option>
+                            <option value="4">همه</option>
+                        </select>
+
+                        <!--Items counter-->
+
+                        <span>نمایش همه<strong>50</strong> از <strong>348</strong> موارد</span>
+
+                    </div>
+
+                    <!--Sort options-->
+
+                    <div class="sort-options pull-right">
+
+                        <span class="d-none d-sm-inline-block">مرتب سازی بر اساس</span>
+
+                        <select>
+                            <option value="1">نام</option>
+                            <option value="2">موارد محبوب</option>
+                            <option value="3">قیمت: کمترین</option>
+                            <option value="4">قیمت: بالاترین</option>
+                        </select>
+
+                        <!--Grid-list view-->
+
+                        <span class="grid-list">
+                            <a href="products-grid.html"><i class="fa fa-th-large"></i></a>
+                            <a href="products-list.html"><i class="fa fa-align-justify"></i></a>
+                            <a href="javascript:void(0);" class="toggle-filters-mobile">
+                                <i class="fa fa-sliders"></i>
+                                <span class="spinner-grow spinner-grow-sm text-warning" role="status" aria-hidden="true"></span>
+                            </a>
+                        </span>
+
+                    </div> <!--/sort-options-->
+
+                </div>
+
+                <!--Products collection-->
+
+                <div class="row">
+
+                    <!--Product item-->
+
+                    @foreach (var product in Model.LatestProducts)
+                    {
+                        <div class="col-6 col-lg-4">
+                            <article>
+                                <div class="info">
+                                    <span class="add-favorite">
+                                        <a href="javascript:void(0);" data-title="افزودن به علاقه مندی ها" data-title-added="افزودن به  لیست علاقه مندی ">
+                                            <i class="icon icon-heart"></i>
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="#productid1" class="mfp-open" data-title="نمایش سریع ">
+                                            <i class="icon icon-eye"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="btn btn-add">
+                                    <i class="icon icon-cart"></i>
+                                </div>
+                                <div class="figure-grid">
+                                    <div class="image">
+                                        <a asp-page="/Product" asp-route-id="@product.Slug">
+                                            <img src="~/ProductPictures/@product.Picture" alt="@product.PictureAlt" title="@product.PictureTitle" />
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <h2 class="title h4">
+                                            <a asp-page="/Product" asp-route-id="@product.Slug">@product.Name</a>
+                                        </h2>
+                                        <sub>@product.Price تومان</sub>
+                                        @if (product.HasDiscount)
+                                        {
+                                            <sup>@product.PriceWithDiscount تومان</sup>
+                                        }
+                                        <span class="description clearfix">
+                                            @product.ShortDescription
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    }
+
+                </div>
+
+                <!--Pagination-->
+
+                <div class="pagination-wrapper">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+
+            </div> <!--/product items-->
+
+        </div><!--/row-->
+
+    </div>
+
+</section>

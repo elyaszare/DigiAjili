@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using _01_Query.Contracts.Product;
 using CommentManagement.Application.Contract.Comment;
 using CommentManagement.Infrastructure.EFCore;
@@ -11,6 +12,7 @@ namespace ServiceHost.Pages
         public ProductQueryModel Product;
         private readonly IProductQuery _productQuery;
         private readonly ICommentApplication _commentApplication;
+        public List<ProductQueryModel> LatestProducts { get; set; }
 
         public ProductModel(IProductQuery productQuery, ICommentApplication commentApplication)
         {
@@ -21,6 +23,7 @@ namespace ServiceHost.Pages
         public void OnGet(string id)
         {
             Product = _productQuery.GetProductDetails(id);
+            LatestProducts = _productQuery.GetLastArrivals();
         }
 
 

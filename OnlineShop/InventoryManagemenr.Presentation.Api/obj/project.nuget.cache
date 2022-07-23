@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JS/2ycFCW2+YpQKuu/G7EF2xs5yqhjYfRa8D2Dr42vXXIWxDKYs4dBXW/blKEvSnWdQ7PHmcxj7jgc9tNDJ+mg==",
+  "dgSpecHash": "WoixoixSUl7MzU7/dDBOXRjBJzuYOnJ2zRAcmKWLZm77ptGM4gGUmYxL6rxGoHfvFmPkZ2kmebFzInLKx+fsJQ==",
   "success": true,
-  "projectFilePath": "D:\\OnlineShop\\OnlineShop\\InventoryManagemenr.Presentation.Api\\InventoryManagement.Presentation.Api.csproj",
+  "projectFilePath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagemenr.Presentation.Api\\InventoryManagement.Presentation.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\mailkit\\1.10.0\\mailkit.1.10.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

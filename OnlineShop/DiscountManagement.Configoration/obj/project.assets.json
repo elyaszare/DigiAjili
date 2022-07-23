@@ -8147,11 +8147,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\DiscountManagement.Configuration.csproj",
+      "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\DiscountManagement.Configuration.csproj",
       "projectName": "DiscountManagement.Configuration",
-      "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\DiscountManagement.Configuration.csproj",
+      "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\DiscountManagement.Configuration.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\obj\\",
+      "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -8174,14 +8174,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
             }
           }
         }

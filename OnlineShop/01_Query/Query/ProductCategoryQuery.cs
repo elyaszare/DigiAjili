@@ -28,15 +28,19 @@ namespace _01_Query.Query
 
         public List<ProductCategoryQueryModel> GetProductCategories()
         {
-            return context.ProductCategories.Select(x => new ProductCategoryQueryModel
-            {
-                Name = x.Name,
-                Picture = x.Picture,
-                PictureAlt = x.PictureAlt,
-                Id = x.Id,
-                PictureTitle = x.PictureTitle,
-                Slug = x.Slug
-            }).ToList();
+            return context.ProductCategories
+                .Where(x => !x.IsRemoved)
+                .Select(x => new ProductCategoryQueryModel
+                {
+                    Name = x.Name,
+                    Picture = x.Picture,
+                    PictureAlt = x.PictureAlt,
+                    Id = x.Id,
+                    PictureTitle = x.PictureTitle,
+                    Slug = x.Slug,
+                    IsRemoved = x.IsRemoved,
+                    Description = x.Description
+                }).ToList();
         }
 
         public List<ProductCategoryQueryModel> GetProductCategoryWithProducts()
@@ -93,6 +97,7 @@ namespace _01_Query.Query
 
 
             var category = context.ProductCategories
+                .Where(x => !x.IsRemoved)
                 .Include(x => x.Products)
                 .ThenInclude(x => x.Category)
                 .Select(x =>
@@ -104,6 +109,7 @@ namespace _01_Query.Query
                         Keywords = x.Keywords,
                         MetaDescription = x.MetaDescription,
                         Slug = x.Slug,
+                        IsRemoved = x.IsRemoved,
                         Products = MapProducts(x.Products)
                     }).FirstOrDefault(x => x.Slug == slug);
 
@@ -143,7 +149,8 @@ namespace _01_Query.Query
                 PictureAlt = x.PictureAlt,
                 Category = x.Category.Name,
                 Slug = x.Slug,
-                CategorySlug = x.Category.Slug
+                CategorySlug = x.Category.Slug,
+                Description = x.Description
             }).ToList();
         }
     }

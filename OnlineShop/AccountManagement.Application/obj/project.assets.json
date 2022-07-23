@@ -6895,11 +6895,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Application\\AccountManagement.Application.csproj",
+      "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Application\\AccountManagement.Application.csproj",
       "projectName": "AccountManagement.Application",
-      "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Application\\AccountManagement.Application.csproj",
+      "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Application\\AccountManagement.Application.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Application\\obj\\",
+      "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -6922,11 +6922,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
             }
           }
         }

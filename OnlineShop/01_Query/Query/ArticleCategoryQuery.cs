@@ -21,11 +21,13 @@ namespace _01_Query.Query
         public ArticleCategoryQueryModel GetArticleCategory(string slug)
         {
             var articleCategory = context.ArticleCategories
+                .Where(x => !x.IsRemoved)
                 .Include(x => x.Articles)
                 .Select(x => new ArticleCategoryQueryModel
                 {
                     Slug = x.Slug,
                     Name = x.Name,
+                    Id = x.Id,
                     Description = x.Description,
                     Picture = x.Picture,
                     PictureAlt = x.PictureAlt,
@@ -34,6 +36,7 @@ namespace _01_Query.Query
                     MetaDescription = x.MetaDescription,
                     CanonicalAddress = x.CanonicalAddress,
                     ArticlesCounts = x.Articles.Count,
+                    IsRemoved = x.IsRemoved,
                     Articles = MapArticles(x.Articles)
                 }).FirstOrDefault(x => x.Slug == slug);
 
@@ -45,7 +48,7 @@ namespace _01_Query.Query
 
         private static List<ArticleQueryModel> MapArticles(List<Article> articles)
         {
-            return articles.Select(x => new ArticleQueryModel
+            return articles.Where(x => !x.IsRemoved).Select(x => new ArticleQueryModel
             {
                 Slug = x.Slug,
                 ShortDescription = x.ShortDescription,
@@ -53,21 +56,26 @@ namespace _01_Query.Query
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
+                IsRemoved = x.IsRemoved,
                 PublishDate = x.PublishDate.ToFarsi()
             }).ToList();
         }
 
         public List<ArticleCategoryQueryModel> GetArticleCategories()
         {
-            return context.ArticleCategories.Include(x => x.Articles).Select(x => new ArticleCategoryQueryModel
-            {
-                Name = x.Name,
-                ArticlesCounts = x.Articles.Count,
-                Picture = x.Picture,
-                PictureTitle = x.PictureTitle,
-                PictureAlt = x.PictureAlt,
-                Slug = x.Slug
-            }).ToList();
+            return context.ArticleCategories
+                .Where(x => !x.IsRemoved)
+                .Include(x => x.Articles)
+                .Select(x => new ArticleCategoryQueryModel
+                {
+                    Name = x.Name,
+                    ArticlesCounts = x.Articles.Count,
+                    Picture = x.Picture,
+                    PictureTitle = x.PictureTitle,
+                    PictureAlt = x.PictureAlt,
+                    Slug = x.Slug,
+                    IsRemoved = x.IsRemoved
+                }).ToList();
         }
     }
 }

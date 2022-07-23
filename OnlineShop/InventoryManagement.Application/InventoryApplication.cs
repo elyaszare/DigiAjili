@@ -33,11 +33,11 @@ namespace InventoryManagement.Application
         {
             var operation = new OperationResult();
             var inventory = _inventoryRepository.Get(command.Id);
-            if (_inventoryRepository.Exists(x => x.Id != command.Id && x.ProductId != command.ProductId))
-                return operation.Failed(ApplicationMessages.RecordNotFound);
-
             if (inventory == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
+
+            if (_inventoryRepository.Exists(x => x.ProductId == command.ProductId && x.Id != command.Id))
+                return operation.Failed(ApplicationMessages.DuplicateRecord);
 
             inventory.Edit(command.ProductId, command.UnitPrice);
             _inventoryRepository.SaveChanges();

@@ -62,7 +62,7 @@
                             </div>
                             <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
                                 
-                                @if (Model.RegisterMessage !=null)
+                                @if (!string.IsNullOrWhiteSpace(Model.RegisterMessage))
                                 {
                                     <div class="alert alert-danger">@Model.RegisterMessage</div>
                                 }
@@ -79,6 +79,10 @@
                                             <div class="col-md-6">
                                                 <label>نام کاربری</label>
                                                 <input type="text" name="username" placeholder="مثال: ElyasZare4">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>ایمیل</label>
+                                                <input type="email" name="email" placeholder="ایمیل: elyas@elyaszare.ir">
                                             </div>
                                             <div class="col-md-12 col-12">
                                                 <label>شماره موبایل</label>

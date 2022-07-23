@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {}
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {}
   },
   "projects": {
-    "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
         "projectName": "0_Framework",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

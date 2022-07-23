@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {}
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {}
   },
   "projects": {
-    "D:\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj",
         "projectName": "01_Query",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\01_Query\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\01_Query\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,23 +34,23 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
         "projectName": "0_Framework",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -185,14 +185,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj",
         "projectName": "AccountManagement.Application.Contract",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -215,8 +215,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               }
             }
           }
@@ -255,14 +255,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj",
         "projectName": "AccountManagement.Domain",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -285,11 +285,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Application.Contract\\AccountManagement.Application.Contract.csproj"
               }
             }
           }
@@ -322,14 +322,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj",
         "projectName": "AccountManagement.Infrastructure.EFCore",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -352,8 +352,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
               }
             }
           }
@@ -402,14 +402,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj",
         "projectName": "BlogManagement.Application",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Application\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -432,11 +432,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj"
               }
             }
           }
@@ -469,14 +469,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
         "projectName": "BlogManagement.Domain",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -499,11 +499,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj"
               }
             }
           }
@@ -536,14 +536,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj",
         "projectName": "BlogManagement.Infrastructure.Configuration",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -566,17 +566,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj"
               }
             }
           }
@@ -615,14 +615,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj",
         "projectName": "BlogManagement.Infrastructure.EFCore",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -645,8 +645,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
               }
             }
           }
@@ -701,14 +701,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj",
         "projectName": "BlogManagement.Application.Contract",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -731,8 +731,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               }
             }
           }
@@ -765,14 +765,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj",
         "projectName": "CommentManagement.Application.Contract",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -795,8 +795,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               }
             }
           }
@@ -829,14 +829,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
         "projectName": "CommentManagement.Domain",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -859,11 +859,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj"
               }
             }
           }
@@ -896,14 +896,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj",
         "projectName": "CommentManagement.Infrastructure.EFCore",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -926,11 +926,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -979,14 +979,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
         "projectName": "DiscountManagement.Application.Contract",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1009,11 +1009,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -1046,14 +1046,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
         "projectName": "DiscountManagement.Application",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1076,11 +1076,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj"
               }
             }
           }
@@ -1113,14 +1113,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
         "projectName": "DiscountManagement.Infrastructure.EFCore",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1143,17 +1143,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -1202,14 +1202,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj",
         "projectName": "DiscountManagement.Domain",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\DM.Domain\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DM.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1232,11 +1232,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               }
             }
           }
@@ -1269,14 +1269,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
         "projectName": "InventoryManagement.Application.Contract",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1299,11 +1299,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -1336,14 +1336,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
         "projectName": "InventoryManagement.Domain",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Domain\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1366,11 +1366,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               }
             }
           }
@@ -1403,14 +1403,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj",
         "projectName": "InventoryManagement.Infrastructure.EFCore",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1433,14 +1433,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -1489,14 +1489,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
         "projectName": "ShopManagement.Application.Contracts",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1519,8 +1519,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               }
             }
           }
@@ -1553,14 +1553,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "projectName": "ShopManagement.Domain",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1583,11 +1583,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -1628,14 +1628,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
         "projectName": "ShopManagement.Infrastructure.EFCore",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1658,11 +1658,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.EFCore\\AccountManagement.Infrastructure.EFCore.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }

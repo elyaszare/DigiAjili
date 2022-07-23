@@ -10,6 +10,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
         public ProductCategorySearchModel SearchModel;
         public List<ProductCategoryViewModel> ProductCategories;
         private readonly IProductCategoryApplication ProductCategoryApplication;
+        public string Message { get; set; }
 
         public IndexModel(IProductCategoryApplication productCategoryApplication)
         {
@@ -46,6 +47,27 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.ProductCategories
         {
             var producategory = ProductCategoryApplication.GetDetail(id);
             return Partial("Edit", producategory);
+        }
+
+        public IActionResult OnGetRemove(long id)
+        {
+            var result = ProductCategoryApplication.Remove(id);
+            if (result.IsSucceeded)
+                return RedirectToPage("./Index");
+
+            Message = result.Message;
+            return RedirectToPage("./Index");
+        }
+
+
+        public IActionResult OnGetRestore(long id)
+        {
+            var result = ProductCategoryApplication.Restore(id);
+            if (result.IsSucceeded)
+                return RedirectToPage("./Index");
+
+            Message = result.Message;
+            return RedirectToPage("./Index");
         }
     }
 }

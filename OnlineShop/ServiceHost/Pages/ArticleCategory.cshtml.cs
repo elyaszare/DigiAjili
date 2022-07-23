@@ -10,6 +10,7 @@ namespace ServiceHost.Pages
         public ArticleCategoryQueryModel ArticleCategory;
         public List<ArticleCategoryQueryModel> ArticleCategories;
         public List<ArticleQueryModel> Articles;
+        public List<ArticleQueryModel> ArticlesByCategoryId;
 
         private readonly IArticleQuery _articleQuery;
         private readonly IArticleCategoryQuery _articleCategoryQuery;
@@ -25,6 +26,7 @@ namespace ServiceHost.Pages
             ArticleCategory = _articleCategoryQuery.GetArticleCategory(id);
             ArticleCategories = _articleCategoryQuery.GetArticleCategories();
             Articles = _articleQuery.LatestArticles();
+            ArticlesByCategoryId = _articleQuery.LatestArticlesBy(ArticleCategory.Id);
         }
     }
 }

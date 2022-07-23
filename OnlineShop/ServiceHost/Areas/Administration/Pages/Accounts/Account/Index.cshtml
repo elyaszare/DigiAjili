@@ -68,8 +68,10 @@
                                     <th class="sorting_asc">نام</th>
                                     <th class="sorting_asc">نام کاربری</th>
                                     <th class="sorting_asc">موبایل</th>
+                                    <th class="sorting_asc">ایمیل</th>
                                     <th class="sorting_asc">نقش</th>
                                     <th class="sorting_asc">تاریخ ثبت نام</th>
+                                    <th class="sorting_asc">وضعیت</th>
                                     <th class="sorting_asc">عملیات</th>
                                 </tr>
                             </thead>
@@ -84,8 +86,19 @@
                                     <td>@item.Fullname</td>
                                     <td>@item.Username</td>
                                     <td>@item.Mobile</td>
+                                    <td>@item.Email</td>
                                     <td>@item.Role</td>
                                     <td>@item.CreationDate</td>
+                                    <td class="text-center">
+                                        @if (!item.IsActive)
+                                        {
+                                            <i class="fa fa-remove fa-3x text-danger"></i>
+                                        }
+                                        else
+                                        {
+                                            <i class="fa fa-check fa-3x text-success"></i>
+                                        }
+                                    </td>
                                     <td>
                                         <a class="btn btn-warning waves-effect waves-light m-b-5"
                                            href="#showmodal=@Url.Page("./Index", "Edit", new { id = item.Id})">
@@ -95,6 +108,13 @@
                                            href="#showmodal=@Url.Page("./Index", "ChangePassword", new { id = item.Id})">
                                             <i class="fa fa-key"></i> تغییر پسورد
                                         </a>
+                                        @if (!item.IsActive)
+                                        {
+                                            <a asp-page="./Index" asp-page-handler="Active" asp-route-id="@item.Id"
+                                               class="btn btn-success waves-effect waves-light m-b-5">
+                                                فعال سازی
+                                            </a>
+                                        }
                                     </td>
                                 </tr>
                                 }

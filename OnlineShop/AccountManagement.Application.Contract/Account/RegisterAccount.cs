@@ -12,10 +12,16 @@ namespace AccountManagement.Application.Contract.Account
         public string Fullname { get; set; }
 
         [Required(ErrorMessage = ValidationMessage.IsRequired)]
+        public string Email { get; set; }
+
+        [Required(ErrorMessage = ValidationMessage.IsRequired)]
         public string Username { get; set; }
 
         [Required(ErrorMessage = ValidationMessage.IsRequired)]
         public string Password { get; set; }
+
+        [Required(ErrorMessage = ValidationMessage.IsRequired)]
+        public string ActiveCode { get; set; }
 
         [Required(ErrorMessage = ValidationMessage.IsRequired)]
         public string Mobile { get; set; }

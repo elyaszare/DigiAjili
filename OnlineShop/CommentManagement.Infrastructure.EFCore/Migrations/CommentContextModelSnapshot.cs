@@ -59,11 +59,6 @@ namespace CommentManagement.Infrastructure.EFCore.Migrations
                     b.Property<int>("Type")
                         .HasColumnType("int");
 
-                    b.Property<string>("Website")
-                        .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("ParentId");

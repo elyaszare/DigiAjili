@@ -1,4 +1,6 @@
 ﻿@page
+@using CommentManagement.Domain.CommentAgg
+@using CommentManagement.Infrastructure.EFCore
 @model ServiceHost.Areas.Administration.Pages.Comments.IndexModel
 @{
 }
@@ -59,7 +61,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (var item in Model.Comments)
+                                @foreach (var item in Model.Comments.Where(x=>x.Type!=CommentType.Message))
                                 {
                                     <tr>
                                         <td>@item.Id</td>
@@ -90,7 +92,7 @@
                                                 <a asp-page="./Index" asp-page-handler="Confirm" asp-route-id="@item.Id"
                                                    class="btn btn-success waves-effect waves-light m-b-5">تایید</a>
                                             }
-
+                                           
                                         </td>
                                     </tr>
                                 }

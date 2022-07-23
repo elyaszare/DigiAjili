@@ -1,30 +1,57 @@
 ﻿@using _01_Query.Contracts.ProductCategory
 @model List<ProductCategoryQueryModel>
 
-   
-<div class="category-area section-space">
-    <div class="container">
-        <div class="row">
+<section class="blog blog-block">
 
-            @foreach (var item in Model)
-            {
-                <div class="col-lg-4 col-sm-6 grid-item">
-                    <div class="single-category-item">
-                        <div class="single-category-item__image">
-                            <a asp-page="/ProductCategory" asp-route-id="@item.Slug">
-                                <img src="~/ProductPictures/@item.Picture" class="img-fluid" alt="@item.PictureAlt" title="@item.PictureTitle" />
-                            </a>
-                        </div>
-                        <div class="single-category-item__content">
-                            <h3 class="title">@item.Name</h3>
-                            <a asp-page="/ProductCategory" asp-route-id="@item.Slug">
-                                <i class="ion-android-arrow-dropleft-circle"></i> خرید
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            }
+    <!--Header-->
 
+    <header>
+        <div class="container">
+            <h2 class="title">دسته های ویژه</h2>
+            <div class="text">
+                <p>ما فقط چیزها را به حداقل می رسانیم</p>
+            </div>
         </div>
-    </div>
-</div>
+    </header>
+
+    <!--Content-->
+
+    <div class="container">
+
+        <div class="scroll-wrapper">
+
+            <div class="row scroll text-center">
+
+                <!--Item-->
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4">
+                        <article data-3d>
+                            <a asp-page="/ProductCategory" asp-route-id="@item.Slug">
+                                <div class="image">
+                                    <img src="ProductPictures/@item.Picture" alt="@item.PictureAlt" title="@item.PictureTitle" />
+                                </div>
+                                <div class="entry entry-block">
+                                    <div class="title">
+                                        <p class="h4" asp-page="/ProductCategory" asp-route-id="@item.Slug">@item.Name</p>
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            @item.Description
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="show-more">
+                                    <p class="btn btn-secondary" asp-page="/ProductCategory" asp-route-id="@item.Slug">دیدن محصولات</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                }
+
+            </div><!--/row-->
+        </div>
+
+    </div><!--/container-->
+
+</section>

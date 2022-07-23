@@ -2,67 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    @if (ViewData["Title"] != null)
-    {
-        <title>@ViewData["Title"] | تاپ مارکت</title>
-    }
-    else
-    {
-        <title>تاپ مارکت</title>
-    }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="keywords" content="@ViewData["keywords"]">
-    <meta name="description" content="@ViewData["metaDescription"]">
+    <!-- Mobile Web-app fullscreen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
 
-    <link href="~/Theme/assets/css/vendors.css" rel="stylesheet">
-    <link href="~/Theme/assets/css/style.css" rel="stylesheet">
-    <link href="~/Theme/assets/css/Custom.css" rel="stylesheet">
+    <!-- Meta tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--Title-->
+    <title>دیوانو | قالب چند منظوره </title>
+
+    <!--CSS bundle -->
+    <link rel="stylesheet" media="all" href="~/Theme/assets/css/bootstrap.css" />
+    <link rel="stylesheet" media="all" href="~/Theme/assets/css/animate.css" />
+    <link rel="stylesheet" media="all" href="~/Theme/assets/css/font-awesome.css" />
+    <link rel="stylesheet" media="all" href="~/Theme/assets/css/ion-range-slider.css" />
+    <link rel="stylesheet" media="all" href="~/Theme/assets/css/linear-icons.css" />
+    <link rel="stylesheet" media="all" href="~/Theme/assets/css/magnific-popup.css" />
+    <link rel="stylesheet" media="all" href="~/Theme/assets/css/owl.carousel.css" />
+    <link rel="stylesheet" media="all" href="~/Theme/assets/css/theme.css" />
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
-    @await Component.InvokeAsync("Menu")
+<body style="direction: rtl;text-align: right">
 
-    @RenderBody()
-
-
-    @await Component.InvokeAsync("Footer")
-
-
-    <div class="search-overlay" id="search-overlay">
-        <a href="javascript:void(0)" class="close-search-overlay" id="close-search-overlay">
-            <i class="ion-ios-close-empty"></i>
-        </a>
-
-
-        <div class="search-form">
-            <form method="get" asp-page="/Search">
-                <input type="search" name="searchModel" id="searchModel" placeholder="جستجو در محصولات فروشگاه...">
-                <button type="submit">
-                    <i class="ion-android-search"></i>
-                </button>
-            </form>
+    <div class="page-loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-
     </div>
 
+    <div class="wrapper">
 
-    @*<div id="scroll-top">
-        <span>برو بالا</span><i class="ion-chevron-right"></i><i class="ion-chevron-right"></i>
-    </div>*@
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/Theme/assets/js/vendors.js"></script>
-    <script src="~/Theme/assets/js/active.js"></script>
-    <script src="~/Theme/assets/js/plugins.js"></script>
+        @await Component.InvokeAsync("Menu")
+
+        @RenderBody()
+
+        @await Component.InvokeAsync("Footer")
+
+
+
+    </div> <!--/wrapper-->
+    <!--Scripts -->
+    <script src="~/Theme/assets/js/jquery.min.js"></script>
+    <script src="~/Theme/assets/js/bootstrap.js"></script>
+    <script src="~/Theme/assets/js/ion.rangeSlider.js"></script>
+    <script src="~/Theme/assets/js/magnific-popup.js"></script>
+    <script src="~/Theme/assets/js/owl.carousel.js"></script>
+    <script src="~/Theme/assets/js/tilt.jquery.js"></script>
+    <script src="~/Theme/assets/js/jquery.easypiechart.js"></script>
+    <script src="~/Theme/assets/js/bigtext.js"></script>
+    <script src="~/Theme/assets/js/main.js"></script>
     <script src="~/Theme/assets/js/custom.js"></script>
     <script>
         $(document).ready(function () {
             updateCart();
         });
-
     </script>
+
 </body>
 
 </html>

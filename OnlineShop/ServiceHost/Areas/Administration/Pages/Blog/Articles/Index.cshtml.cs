@@ -3,6 +3,7 @@ using _0_Framework.Infrastructure;
 using BlogManagement.Application.Contract.Article;
 using BlogManagement.Application.Contract.ArticleCategory;
 using BlogManagement.Infrastructure.Configuration;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -15,6 +16,7 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.Articles
         public List<ArticleViewModel> Articles;
         public ArticleSearchModel SearchModel;
         public SelectList ArticleCategories;
+        public string Message { get; set; }
 
         public IndexModel(IArticleApplication articleApplication,
             IArticleCategoryApplication articleCategoryApplication)
@@ -29,6 +31,27 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.Articles
             ArticleCategories = new SelectList(_articleCategoryApplication.GetArticleCategories(), "Id", "Name");
 
             Articles = _articleApplication.Search(searchModel);
+        }
+
+        public IActionResult OnGetRemove(long id)
+        {
+            var result = _articleApplication.Remove(id);
+            if (result.IsSucceeded)
+                return RedirectToPage("./Index");
+
+            Message = result.Message;
+            return RedirectToPage("./Index");
+        }
+
+
+        public IActionResult OnGetRestore(long id)
+        {
+            var result = _articleApplication.Restore(id);
+            if (result.IsSucceeded)
+                return RedirectToPage("./Index");
+
+            Message = result.Message;
+            return RedirectToPage("./Index");
         }
     }
 }

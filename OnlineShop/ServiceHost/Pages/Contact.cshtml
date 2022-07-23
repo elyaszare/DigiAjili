@@ -1,0 +1,142 @@
+﻿@page
+@model ServiceHost.Pages.ContactModel
+@{
+}
+
+
+<section class="contact">
+
+    <!-- === Goolge map === -->
+
+    <div id="map"></div>
+
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-11  m-auto">
+
+                <div class="contact-block">
+
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <figure class="text-center">
+                                    <span class="icon icon-map-marker"></span>
+                                    <figcaption>
+                                        <strong>ما اینجا هستیم</strong>
+                                        <span>خراسان رضوی <br/> فیض آباد</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4">
+                                <figure class="text-center">
+                                    <span class="icon icon-phone"></span>
+                                    <figcaption>
+                                        <strong>با ما تماس بگیرید</strong>
+                                        <span>
+                                            <strong>شرکت</strong> 05156729090 <br />
+                                            <strong>تلفن</strong> +98 9025171810
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4">
+                                <figure class="text-center">
+                                    <span class="icon icon-clock"></span>
+                                    <figcaption>
+                                        <strong>ساعات کاری</strong>
+                                        <span>
+                                            <strong>دوشنبه</strong> - شنبه: 10 صبح - 6 بعد از ظهر <br />
+                                            <strong>یک شنبه</strong> 12بعد از ظهر - 2 بعد از ظهر
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <h2 class="title">ارسال ایمیل</h2>
+                        <p>
+                            با تشکر از علاقه شما به تم مبال . ما به خلاقیت به عنوان یکی از اصلی ترین نیروهای پیشرفت اعتقاد داریم.
+                            اگر در مورد محصولات ما سوالی دارید لطفا از این فرم استفاده کنید و ما خیلی زود با شما تماس خواهیم گرفت.
+                        </p>
+
+                        <div class="contact-form-wrapper">
+
+                            <div class="contact-form clearfix">
+                                <form method="post">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control" placeholder="اسم شما" required="required">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="email" name="email" class="form-control" placeholder="ایمیل شما" required="required">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control" name="message" placeholder="پیام شما" rows="10"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 text-center">
+                                            <input type="submit" class="btn btn-primary" value=" فرستادن پیام" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!--/contact-block-->
+            </div><!--col-sm-8-->
+        </div> <!--/row-->
+    </div><!--/container-->
+</section>
+
+<!-- ========================  Newsletter ======================== -->
+
+<section class="banner">
+
+    <div class="container-fluid">
+
+        <div class="banner-image" style="background-image:url(~/Theme/assets/images/gallery-1.jpg)">
+            <!--Header-->
+
+            <header>
+                <div class="container">
+
+                    <h2 class="h2 title">در تماس باش!</h2>
+                    <div class="text">
+                        <p>اولین کسی باشید که در مورد تمام ویژگی های داخلی جدید مطلع شوید</p>
+                    </div>
+
+                </div>
+            </header>
+
+            <!--Content-->
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <input type="email" class="form-control" name="name" value="" placeholder="ایمیل خود را وارد کنید">
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="btn btn-clean">اکنون مشترک شوید</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!--/container-fluid-->
+
+</section>

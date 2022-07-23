@@ -13,7 +13,6 @@ namespace CommentManagement.Infrastructure.EFCore.Mapping
 
             builder.Property(x => x.Name).HasMaxLength(500).IsRequired();
             builder.Property(x => x.Email).HasMaxLength(1000).IsRequired();
-            builder.Property(x => x.Website).HasMaxLength(1000).IsRequired();
             builder.Property(x => x.Message).HasMaxLength(1000).IsRequired();
         }
     }

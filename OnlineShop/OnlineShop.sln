@@ -121,7 +121,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagement.Infrastructu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IM.Presentation", "IM.Presentation", "{FD60954C-CDC3-4612-B01B-93525DFEDE87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement.Presentation.Api", "InventoryManagemenr.Presentation.Api\InventoryManagement.Presentation.Api.csproj", "{4BB76210-70E2-412C-9252-63D949C23F3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryManagement.Presentation.Api", "InventoryManagemenr.Presentation.Api\InventoryManagement.Presentation.Api.csproj", "{4BB76210-70E2-412C-9252-63D949C23F3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pistachio", "Pistachio", "{CD9DDBAA-D2DD-4FAA-95E5-29750A8C67AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

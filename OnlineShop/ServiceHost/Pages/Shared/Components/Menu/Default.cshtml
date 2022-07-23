@@ -5,278 +5,417 @@
 }
 
 
-<div class="header-area header-sticky">
-    <div>
-        <div class="row">
-            <div class="col-lg-10">
-                <!--=======  header wrapper  =======-->
-                <div class="header-wrapper d-none d-lg-flex">
-                    <!-- logo -->
-                    <div class="logo" style="margin-right: 40px">
-                        <a asp-page="/Index">
-                            <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
-                        </a>
-                    </div>
-                    <!-- menu wrapper -->
-                    <div class="navigation-menu-wrapper">
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a asp-page="/Index">صفحه اصلی</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a>گروه محصولات</a>
-                                    <ul class="sub-menu">
-                                        @foreach (var category in Model.ProductCategories)
-                                        {
-                                            <li>
-                                                <a asp-page="/ProductCategory" asp-route-id="@category.Slug">@category.Name</a>
-                                            </li>
-                                        }
-                                    </ul>
-                                <li class="menu-item-has-children">
-                                    <a>مقالات</a>
-                                    <ul class="sub-menu">
-                                        @foreach (var category in Model.ArticleCategories)
-                                        {
-                                            <li>
-                                                <a asp-page="/ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
-                                            </li>
-                                        }
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="contact.html">تماس با ما</a>
-                                </li>
-                                @if (AuthHelper.IsAuthenticated())
-                                {
+<div>
+    <!--<div class="header-area header-sticky">
+        <div>
+            <div class="row">
+                <div class="col-lg-10">-->
+                    <!--=======  header wrapper  =======-->
+                    <!--<div class="header-wrapper d-none d-lg-flex">-->
+                        <!-- logo -->
+                        <!--<div class="logo" style="margin-right: 40px">
+                            <a asp-page="/Index">
+                                <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
+                            </a>
+                        </div>-->
+                        <!-- menu wrapper -->
+                        <!--<div class="navigation-menu-wrapper">
+                            <nav>
+                                <ul>
                                     <li>
-                                        <a class="md md-add-box" asp-page="/Account" asp-page-handler="Logout">خروج</a>
+                                        <a asp-page="/Index">صفحه اصلی</a>
                                     </li>
-                                }
-                                else
-                                {
+                                    <li class="menu-item-has-children">
+                                        <a>گروه محصولات</a>
+                                        <ul class="sub-menu">
+                                            @foreach (var category in Model.ProductCategories)
+                                            {
+                                                <li>
+                                                    <a asp-page="/ProductCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    <li class="menu-item-has-children">
+                                        <a>مقالات</a>
+                                        <ul class="sub-menu">
+                                            @foreach (var category in Model.ArticleCategories)
+                                            {
+                                                <li>
+                                                    <a asp-page="/ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </li>
                                     <li>
-                                        <a class="md md-add-box" asp-page="/Account">ورود / ثبت نام</a>
+                                        <a href="contact.html">تماس با ما</a>
                                     </li>
-                                    
-                                }
-
-                            </ul>
-                        </nav>
-                    </div>
-                    <!-- header icon -->
-                    <div class="header-icon-wrapper">
-                        <ul class="icon-list">
-                            <li>
-                                <a href="javascript:void(0)" id="search-overlay-trigger">
-                                    <i class="ion-ios-search-strong"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <div class="header-cart-icon">
-                                    <a href="#" id="minicart-trigger">
-                                        <i class="ion-bag"></i>
-                                        <span class="counter" id="cart_items_count">0</span>
-                                    </a>
-                                    <!-- mini cart  -->
-                                    <div class="mini-cart" id="mini-cart">
-                                        <div class="cart-items-wrapper ps-scroll" id="cart_items_wrapper">
-
-                                        </div>
-                                        <div class="cart-buttons">
-                                            <a asp-page="/Cart">مشاهده سبد خرید</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="header-settings-icon">
-                                    <a href="javascript:void(0)" class="header-settings-trigger"
-                                       id="header-settings-trigger">
-                                        <div class="setting-button">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                    </a>
-
-                                    <!-- settings menu -->
-                                    <div class="settings-menu-wrapper" id="settings-menu-wrapper">
-                                        <div class="single-settings-block">
-                                            <h4 class="title">حساب کاربری</h4>
-                                            <ul>
-                                                <li>
-                                                    <a href="login-register.html">ثبت نام</a>
-                                                </li>
-                                                <li>
-                                                    <a href="login-register.html">ورود</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--=======  End of header wrapper  =======-->
-                <!--=======  mobile navigation area  =======-->
-
-                <div class="header-mobile-navigation d-block d-lg-none">
-                    <div class="row align-items-center">
-                        <div class="col-6 col-md-6">
-                            <div class="header-logo">
-                                <a href="index.html">
-                                    <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-6">
-                            <div class="mobile-navigation text-right">
-                                <div class="header-icon-wrapper">
-                                    <ul class="icon-list justify-content-end">
+                                    @if (AuthHelper.IsAuthenticated())
+                                    {
                                         <li>
-                                            <div class="header-cart-icon">
-                                                <a href="cart.html">
-                                                    <i class="ion-bag"></i>
-                                                    <span class="counter">3</span>
-                                                </a>
+                                            <a class="md md-add-box" asp-page="/Account" asp-page-handler="Logout">خروج</a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            <a class="md md-add-box" asp-page="/Account">ورود / ثبت نام</a>
+                                        </li>
+
+                                    }
+
+                                </ul>
+                            </nav>
+                        </div>-->
+                        <!-- header icon -->
+                        <!--<div class="header-icon-wrapper">
+                            <ul class="icon-list">
+                                <li>
+                                    <a href="javascript:void(0)" id="search-overlay-trigger">
+                                        <i class="ion-ios-search-strong"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="header-cart-icon">
+                                        <a href="#" id="minicart-trigger">
+                                            <i class="ion-bag"></i>
+                                            <span class="counter" id="cart_items_count">0</span>
+                                        </a>-->
+                                        <!-- mini cart  -->
+                                        <!--<div class="mini-cart" id="mini-cart">
+                                            <div class="cart-items-wrapper ps-scroll" id="cart_items_wrapper">
+
                                             </div>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)" class="mobile-menu-icon"
-                                               id="mobile-menu-trigger">
-                                                <i class="fa fa-bars"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                            <div class="cart-buttons">
+                                                <a asp-page="/Cart">مشاهده سبد خرید</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="header-settings-icon">
+                                        <a href="javascript:void(0)" class="header-settings-trigger"
+                                           id="header-settings-trigger">
+                                            <div class="setting-button">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </a>-->
+
+                                        <!-- settings menu -->
+                                        <!--<div class="settings-menu-wrapper" id="settings-menu-wrapper">
+                                            <div class="single-settings-block">
+                                                <h4 class="title">حساب کاربری</h4>
+                                                <ul>
+                                                    <li>
+                                                        <a href="login-register.html">ثبت نام</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="login-register.html">ورود</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>-->
+                    <!--=======  End of header wrapper  =======-->
+                    <!--=======  mobile navigation area  =======-->
+
+                    <!--<div class="header-mobile-navigation d-block d-lg-none">
+                        <div class="row align-items-center">
+                            <div class="col-6 col-md-6">
+                                <div class="header-logo">
+                                    <a href="index.html">
+                                        <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <div class="mobile-navigation text-right">
+                                    <div class="header-icon-wrapper">
+                                        <ul class="icon-list justify-content-end">
+                                            <li>
+                                                <div class="header-cart-icon">
+                                                    <a href="cart.html">
+                                                        <i class="ion-bag"></i>
+                                                        <span class="counter">3</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="mobile-menu-icon"
+                                                   id="mobile-menu-trigger">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div>-->
 
-                <!--=======  End of mobile navigation area  =======-->
+                    <!--=======  End of mobile navigation area  =======-->
 
+                <!--</div>
             </div>
         </div>
-    </div>
+    </div>-->
+
 </div>
 
+<nav>
 
+    <div class="container">
 
-<div class="offcanvas-mobile-menu" id="offcanvas-mobile-menu">
-    <a href="javascript:void(0)" class="offcanvas-menu-close" id="offcanvas-menu-close-trigger">
-        <i class="ion-android-close"></i>
-    </a>
+        <a href="index.html" class="logo"><img src="~/Theme/assets/images/divano-logo.png" alt="" width="130" height="55" /></a>
 
-    <div class="offcanvas-wrapper">
+        <!-- ==========  Top navigation ========== -->
 
-        <div class="offcanvas-inner-content">
-            <div class="offcanvas-mobile-search-area">
-                <form action="#">
-                    <input type="search" placeholder="جستجو...">
-                    <button type="submit">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </form>
-            </div>
-            <nav class="offcanvas-navigation">
+    <div class="navigation navigation-top clearfix">
+        
+
+        <ul>
+            <!--add active class for current page-->
+            <li class="left-side"><a href="index.html" class="logo-icon"><img src="~/Theme/assets/images/divano-logo.png" alt="Alternate Text" width="150" height="34"/></a></li>
+            <li><a href="javascript:void(0);" class="open-login"><i class="icon icon-user"></i></a></li>
+            <li><a href="javascript:void(0);" class="open-search"><i class="icon icon-magnifier"></i></a></li>
+            <li><a href="javascript:void(0);" class="open-cart"><i class="icon icon-cart"></i> <span>4</span></a></li>
+        </ul>
+    </div>
+
+        <!-- ==========  Main navigation ========== -->
+
+        <div class="navigation navigation-main">
+            <a href="#" class="open-login"><i class="icon icon-user"></i></a>
+            <a href="#" class="open-search"><i class="icon icon-magnifier"></i></a>
+            <a href="#" class="open-cart"><i class="icon icon-cart"></i> <span>4</span></a>
+            <a href="#" class="open-menu"><i class="icon icon-menu"></i></a>
+
+            <div class="floating-menu">
+                <!--mobile toggle menu trigger-->
+                <div class="close-menu-wrapper">
+                    <span class="close-menu"><i class="icon icon-cross"></i></span>
+                </div>
                 <ul>
-                    <li class="menu-expand">
-                        <a asp-page="./Index">صفحه اصلی</a>
+                    <li>
+                        <a asp-page="/Index">خانه</a>
                     </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">محصولات</a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="blog-left-sidebar.html">مبلمان</a>
-                            </li>
-                            <li>
-                                <a href="blog-right-sidebar.html">آباژور</a>
-                            </li>
-                            <li>
-                                <a href="blog-post-left-sidebar.html">لوستر</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="#">محصولات<span class="open-dropdown"><i class="md md-pages"></i></span></a>
+                        <div class="navbar-dropdown navbar-dropdown-single">
+                            <div class="navbar-box">
+                                <div class="box-full">
+                                    <div class="box clearfix">
+                                        <ul>
+                                            @foreach (var productCategory in Model.ProductCategories)
+                                            {
+                                                <li>
+                                                    <a asp-page="/ProductCategory" asp-route-id="@productCategory.Slug">@productCategory.Name</a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">مقالات</a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="blog-left-sidebar.html">گروه مقالات 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-right-sidebar.html">گروه مقالات 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post-left-sidebar.html">گروه مقالات 3</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="#">مقالات<span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
+                        <div class="navbar-dropdown navbar-dropdown-single">
+                            <div class="navbar-box">
+                                <div class="box-full">
+                                    <div class="box clearfix">
+                                        <ul>
+                                            @foreach (var category in Model.ArticleCategories)
+                                            {
+                                                <li>
+                                                    <a asp-page="/ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="menu-expand">
+                    <li>
                         <a asp-page="/Contact">تماس با ما</a>
                     </li>
                 </ul>
-            </nav>
-
-            <div class="offcanvas-settings">
-                <nav class="offcanvas-navigation">
-                    <ul>
-                        <li class="menu-item-has-children">
-                            <a href="#">حساب کاربری</a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="login-register.html">ثبت نام</a>
-                                </li>
-                                <li>
-                                    <a href="login-register.html">ورود</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
             </div>
+        </div>
 
-            <div class="offcanvas-widget-area">
-                <div class="off-canvas-contact-widget">
-                    <div class="header-contact-info">
-                        <ul class="header-contact-info__list">
-                            <li>
-                                <i class="ion-android-phone-portrait"></i> <a href="tel://12452456012">
-                                    (1245) 2456
-                                    012
-                                </a>
-                            </li>
-                            <li>
-                                <i class="ion-android-mail"></i> <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
-                            </li>
-                        </ul>
+        <!-- ==========  Search wrapper ========== -->
+
+    <div class="search-wrapper">
+        <form method="get" asp-page="/Search">
+            <input class="form-control" type="search" name="searchModel" id="searchModel" placeholder="جستجو کردن..."/>
+            <button class="btn btn-outline-dark btn-sm">اکنون جستجو کن</button>
+        </form>
+        
+    </div>
+
+        <!-- ==========  Login wrapper ========== -->
+
+        <div class="login-wrapper">
+            <div class="h5">ورود</div>
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="پست الکترونیک">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="کلمه عبور">
+                </div>
+                <div class="form-group">
+                    <a href="#forgotpassword" class="open-popup btn btn-main btn-sm">رمز عبور خود را فراموش کرده اید؟</a>
+                    <a href="#createaccount" class="open-popup btn btn-main btn-sm">حساب ندارید؟</a>
+                </div>
+                <button type="submit" class="btn btn-block btn-outline-primary">ارسال</button>
+            </form>
+        </div>
+
+        <!-- ==========  Cart wrapper ========== -->
+
+        <div class="cart-wrapper">
+            <div class="checkout">
+                <div class="clearfix">
+
+                    <!--cart item-->
+
+                    <div class="row">
+
+                        <div class="cart-block cart-block-item clearfix">
+                            <div class="image">
+                                <a href="product.html"><img src="~/Theme/assets/images/item-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="title">
+                                <div><a href="product.html">مورد محصول</a></div>
+                                <small> محصول دسته بندی</small>
+                            </div>
+                            <div class="quantity">
+                                <input type="number" value="2" class="form-control form-quantity" />
+                            </div>
+                            <div class="price">
+                                <span class="final"> تومان 1.998</span>
+                                <span class="discount"> تومان 2.666</span>
+                            </div>
+                            <!--delete-this-item-->
+                            <span class="icon icon-cross icon-delete"></span>
+                        </div>
+
+                        <!--cart item-->
+
+                        <div class="cart-block cart-block-item clearfix">
+                            <div class="image">
+                                <a href="product.html"><img src="~/Theme/assets/images/item-2.jpg" alt="" /></a>
+                            </div>
+                            <div class="title">
+                                <div><a href="product.html"> مورد محصول</a></div>
+                                <small> محصول دسته بندی</small>
+                            </div>
+                            <div class="quantity">
+                                <input type="number" value="2" class="form-control form-quantity" />
+                            </div>
+                            <div class="price">
+                                <span class="final"> تومان 1.998</span>
+                                <span class="discount"> تومان 2.666</span>
+                            </div>
+                            <!--delete-this-item-->
+                            <span class="icon icon-cross icon-delete"></span>
+                        </div>
+
+                        <!--cart item-->
+
+                        <div class="cart-block cart-block-item clearfix">
+                            <div class="image">
+                                <a href="product.html"><img src="~/Theme/assets/images/item-3.jpg" alt="" /></a>
+                            </div>
+                            <div class="title">
+                                <div><a href="product.html">مورد محصول</a></div>
+                                <small> محصول دسته بندی</small>
+                            </div>
+                            <div class="quantity">
+                                <input type="number" value="2" class="form-control form-quantity" />
+                            </div>
+                            <div class="price">
+                                <span class="final"> تومان 1.998</span>
+                                <span class="discount"> تومان 2.666</span>
+                            </div>
+                            <!--delete-this-item-->
+                            <span class="icon icon-cross icon-delete"></span>
+                        </div>
+
                     </div>
+
+                    <hr />
+
+                    <!--cart prices -->
+
+                    <div class="clearfix">
+                        <div class="cart-block cart-block-footer clearfix">
+                            <div>
+                                <strong>تخفیف 15٪</strong>
+                            </div>
+                            <div>
+                                <span> 1500000 تومان</span>
+                            </div>
+                        </div>
+
+                        <div class="cart-block cart-block-footer clearfix">
+                            <div>
+                                <strong>حمل دریایی</strong>
+                            </div>
+                            <div>
+                                <span> 30000 تومان</span>
+                            </div>
+                        </div>
+
+                        <div class="cart-block cart-block-footer clearfix">
+                            <div>
+                                <strong>مالیات بر ارزش افزوده</strong>
+                            </div>
+                            <div>
+                                <span> 500000 تومان</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <!--cart final price -->
+
+                    <div class="clearfix">
+                        <div class="cart-block cart-block-footer clearfix">
+                            <div>
+                                <strong>جمع</strong>
+                            </div>
+                            <div>
+                                <div class="h4 title"> 125890000 تومان</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--cart navigation -->
+
+                    <div class="cart-block-buttons clearfix">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="products-grid.html" class="btn btn-outline-info">به خرید ادامه دهید</a>
+                            </div>
+                            <div class="col-sm-6 text-right">
+                                <a href="checkout-1.html" class="btn btn-outline-warning"><span class="icon icon-cart"></span> تسویه حساب</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <!--Off Canvas Widget Social Start-->
-                <div class="off-canvas-widget-social">
-                    <a href="#" title="Facebook">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="#" title="Twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#" title="LinkedIn">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="#" title="Youtube">
-                        <i class="fa fa-youtube-play"></i>
-                    </a>
-                    <a href="#" title="Vimeo">
-                        <i class="fa fa-vimeo-square"></i>
-                    </a>
-                </div>
-                <!--Off Canvas Widget Social End-->
             </div>
         </div>
     </div>
-
-</div>
+</nav>

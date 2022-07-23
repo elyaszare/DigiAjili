@@ -59,7 +59,6 @@ function updateCart() {
 }
 
 function removeFromCart(id) {
-    
     let products = $.cookie(cookieName);
     products = JSON.parse(products);
     const itemToRemove = products.findIndex(x => x.id === id);

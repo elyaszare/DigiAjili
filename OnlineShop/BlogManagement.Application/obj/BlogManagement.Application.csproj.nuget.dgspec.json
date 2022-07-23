@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj": {}
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj": {}
   },
   "projects": {
-    "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
         "projectName": "0_Framework",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -106,14 +106,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj",
         "projectName": "BlogManagement.Application",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Application\\BlogManagement.Application.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Application\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -136,11 +136,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj"
               }
             }
           }
@@ -173,14 +173,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
         "projectName": "BlogManagement.Domain",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -203,11 +203,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               },
-              "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj"
               }
             }
           }
@@ -240,14 +240,14 @@
         }
       }
     },
-    "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
+    "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj",
+        "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj",
         "projectName": "BlogManagement.Application.Contract",
-        "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj",
+        "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\BlogManagement.Application.Contract.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\obj\\",
+        "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagementApplication.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -270,8 +270,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "D:\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
+              "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\0_Framework\\0_Framework.csproj"
               }
             }
           }

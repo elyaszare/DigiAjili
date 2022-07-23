@@ -6909,11 +6909,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+      "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
       "projectName": "DiscountManagement.Application",
-      "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+      "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\obj\\",
+      "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -6936,11 +6936,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Application.Contract\\DiscountManagement.Application.Contract.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DM.Domain\\DiscountManagement.Domain.csproj"
             }
           }
         }

@@ -1,4 +1,4 @@
-using AccountManagement.Application.Contract.Account;
+﻿using AccountManagement.Application.Contract.Account;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -40,10 +40,19 @@ namespace ServiceHost.Pages
         {
             var result = _accountApplication.Register(command);
             if (result.IsSucceeded)
+            {
+                RegisterMessage =
+                    "ثبت نام شما با موفقیت انجام شد جهت فعال سازی حساب کاربری خود از طریق لینک ارسال شده در ایمیل خود وارد شوید.";
                 return RedirectToPage("/Account");
+            }
 
             RegisterMessage = result.Message;
             return RedirectToPage("/Account");
+        }
+
+        public IActionResult OnPostActiveAccount(string activeAccount)
+        {
+            return RedirectToPage("Account");
         }
     }
 }

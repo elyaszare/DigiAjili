@@ -16,6 +16,7 @@ namespace BlogManagement.Domain.ArticleCategoryAgg
         public string Keywords { get; private set; }
         public string MetaDescription { get; private set; }
         public string CanonicalAddress { get; private set; }
+        public bool IsRemoved { get; set; }
         public List<Article> Articles { get; set; }
 
         public ArticleCategory(string name, string description, string picture, string pictureAlt, string pictureTitle,
@@ -32,6 +33,7 @@ namespace BlogManagement.Domain.ArticleCategoryAgg
             Keywords = keywords;
             MetaDescription = metaDescription;
             CanonicalAddress = canonicalAddress;
+            IsRemoved = false;
         }
 
         public void Edit(string name, string description, string picture, string pictureAlt, string pictureTitle,
@@ -49,6 +51,15 @@ namespace BlogManagement.Domain.ArticleCategoryAgg
             Keywords = keywords;
             MetaDescription = metaDescription;
             CanonicalAddress = canonicalAddress;
+        }
+        public void Remove()
+        {
+            IsRemoved = true;
+        }
+
+        public void Restore()
+        {
+            IsRemoved = false;
         }
     }
 }

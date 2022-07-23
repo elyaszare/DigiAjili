@@ -7,6 +7,8 @@ namespace BlogManagement.Application.Contract.Article
     {
         OperationResult Create(CreateArticle command);
         OperationResult Edit(EditArticle command);
+        OperationResult Remove(long id);
+        OperationResult Restore(long id);
         EditArticle GetDetails(long id);
         List<ArticleViewModel> Search(ArticleSearchModel searchModel);
     }

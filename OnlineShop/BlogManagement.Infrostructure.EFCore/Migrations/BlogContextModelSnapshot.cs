@@ -40,6 +40,9 @@ namespace BlogManagement.Infrastructure.EFCore.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Keywords")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -102,6 +105,9 @@ namespace BlogManagement.Infrastructure.EFCore.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Keywords")
                         .IsRequired()

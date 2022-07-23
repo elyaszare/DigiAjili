@@ -14,6 +14,7 @@ namespace _01_Query.Contracts.ProductCategory
         public string Keywords { get; set; }
         public string MetaDescription { get; set; }
         public string Description { get; set; }
+        public bool IsRemoved { get; set; }
         public List<ProductQueryModel> Products { get; set; }
     }
 }

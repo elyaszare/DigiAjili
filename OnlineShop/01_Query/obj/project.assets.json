@@ -8324,11 +8324,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj",
+      "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj",
       "projectName": "01_Query",
-      "projectPath": "D:\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj",
+      "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\01_Query\\01_Query.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\OnlineShop\\OnlineShop\\01_Query\\obj\\",
+      "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\01_Query\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -8351,23 +8351,23 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrostructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Infrostructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
             }
           }
         }

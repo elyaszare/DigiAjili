@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7cXZYtAgmy01+Bdr6dxhzHzr77vMwvvUCiVOsAZTRBtoNp226KdSVXbG2N/8H+shZYsV/wG1SBX5D+JOKOU7QQ==",
+  "dgSpecHash": "QWjr1FVCcTSm1mlpHTOK8GADClFoEJr9sTxyNqdKJIb9qNxo/aLT3k0YFhLl3b4gnx6/JFk7sIqjTr7P2AU5WA==",
   "success": true,
-  "projectFilePath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
+  "projectFilePath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\mailkit\\1.10.0\\mailkit.1.10.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

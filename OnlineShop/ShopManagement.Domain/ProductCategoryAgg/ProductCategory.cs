@@ -17,6 +17,7 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         public string Keywords { get; private set; }
         public string MetaDescription { get; private set; }
         public string Slug { get; private set; }
+        public bool IsRemoved { get; set; }
         public List<Product> Products { get; }
 
         public ProductCategory()
@@ -35,6 +36,7 @@ namespace ShopManagement.Domain.ProductCategoryAgg
             Keywords = keywords;
             MetaDescription = metaDescription;
             Slug = slug;
+            IsRemoved = false;
         }
 
         public void Edit(string name, string description, string picture, string pictureAlt, string pictureTitle,
@@ -49,6 +51,16 @@ namespace ShopManagement.Domain.ProductCategoryAgg
             Keywords = keywords;
             MetaDescription = metaDescription;
             Slug = slug;
+        }
+
+        public void Remove()
+        {
+            IsRemoved = true;
+        }
+
+        public void Restore()
+        {
+            IsRemoved = false;
         }
     }
 }

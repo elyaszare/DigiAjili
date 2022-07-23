@@ -10,3 +10,15 @@ D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.dll
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\ref\0_Framework.dll
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.pdb
 D:\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.csproj.AssemblyReference.cache
+D:\PistachioShop\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\0_Framework.deps.json
+D:\PistachioShop\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\0_Framework.dll
+D:\PistachioShop\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\ref\0_Framework.dll
+D:\PistachioShop\OnlineShop\OnlineShop\0_Framework\bin\Debug\net5.0\0_Framework.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.csproj.AssemblyReference.cache
+D:\PistachioShop\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.GeneratedMSBuildEditorConfig.editorconfig
+D:\PistachioShop\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.AssemblyInfoInputs.cache
+D:\PistachioShop\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.AssemblyInfo.cs
+D:\PistachioShop\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.csproj.CoreCompileInputs.cache
+D:\PistachioShop\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.dll
+D:\PistachioShop\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\ref\0_Framework.dll
+D:\PistachioShop\OnlineShop\OnlineShop\0_Framework\obj\Debug\net5.0\0_Framework.pdb

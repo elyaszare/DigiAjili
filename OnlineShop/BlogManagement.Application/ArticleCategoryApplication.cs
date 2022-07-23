@@ -56,6 +56,31 @@ namespace BlogManagement.Application
             _articleCategoryRepository.SaveChanges();
             return operation.Succeeded();
         }
+        public OperationResult Remove(long id)
+        {
+            var operation = new OperationResult();
+            var articleCategory = _articleCategoryRepository.Get(id);
+
+            if (articleCategory == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+
+            articleCategory.Remove();
+            _articleCategoryRepository.SaveChanges();
+            return operation.Succeeded();
+        }
+
+        public OperationResult Restore(long id)
+        {
+            var operation = new OperationResult();
+            var articleCategory = _articleCategoryRepository.Get(id);
+
+            if (articleCategory == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+
+            articleCategory.Restore();
+            _articleCategoryRepository.SaveChanges();
+            return operation.Succeeded();
+        }
 
         public EditArticleCategory GetDetails(long id)
         {

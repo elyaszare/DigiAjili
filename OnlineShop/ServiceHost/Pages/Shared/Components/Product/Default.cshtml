@@ -1,0 +1,74 @@
+﻿@model List<_01_Query.Contracts.Product.ProductQueryModel>
+
+
+<section class="products">
+
+    <!--Header-->
+
+    <header>
+        <div class="container">
+            <h2 class="title">محصولات محبوب</h2>
+            <div class="text">
+                <p>
+                    مطابقت کامل خود را پیدا کنید <a asp-page="/Products" class="btn btn-main">مشاهده همه</a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!--Content-->
+
+    <div class="container">
+
+        <div class="row">
+
+            <!--Product item-->
+
+            @foreach (var product in Model)
+            {
+                <div class="col-6 col-lg-4">
+                    <article>
+                        <div class="info">
+                            <span class="add-favorite">
+                                <a href="javascript:void(0);" data-title="افزودن به علاقه مندی ها" data-title-added="افزودن به  لیست علاقه مندی ">
+                                    <i class="icon icon-heart"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="#productid1" class="mfp-open" data-title="نمایش سریع ">
+                                    <i class="icon icon-eye"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="btn btn-add">
+                            <i class="icon icon-cart"></i>
+                        </div>
+                        <div class="figure-grid">
+                            <div class="image">
+                                <a asp-page="/Product" asp-route-id="@product.Slug">
+                                    <img src="ProductPictures/@product.Picture" alt="@product.PictureAlt" title="@product.PictureTitle" />
+                                </a>
+                            </div>
+                            <div class="text">
+                                <h2 class="title h4">
+                                    <a asp-page="/Product" asp-route-id="@product.Slug">@product.Name</a>
+                                </h2>
+                                <sub>@product.Price تومان</sub>
+                                @if (product.HasDiscount)
+                                {
+                                    <sup>@product.PriceWithDiscount تومان</sup>
+                                }                               
+                                <span class="description clearfix">
+                                    @product.ShortDescription
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            }
+
+        </div> <!--/row-->
+
+    </div>
+
+</section>

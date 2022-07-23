@@ -9886,6 +9886,7 @@
       "DiscountManagement.Configuration >= 1.0.0",
       "InventoryManagement.Infrastructure.Configuration >= 1.0.0",
       "InventoryManagement.Presentation.Api >= 1.0.0",
+      "Microsoft.AspNetCore.Mvc.Core >= 2.2.5",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.1.8",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.11",
       "Nancy >= 2.0.0",
@@ -9900,11 +9901,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\ServiceHost\\ServiceHost.csproj",
+      "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ServiceHost\\ServiceHost.csproj",
       "projectName": "ServiceHost",
-      "projectPath": "D:\\OnlineShop\\OnlineShop\\ServiceHost\\ServiceHost.csproj",
+      "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ServiceHost\\ServiceHost.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\OnlineShop\\OnlineShop\\ServiceHost\\obj\\",
+      "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ServiceHost\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -9927,29 +9928,29 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Application.Contract\\CommentManagement.Application.Contract.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\DiscountManagement.Configuration.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\DiscountManagement.Configuration.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\DiscountManagement.Configuration.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\DiscountManagement.Configuration.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\InventoryManagemenr.Presentation.Api\\InventoryManagement.Presentation.Api.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagemenr.Presentation.Api\\InventoryManagement.Presentation.Api.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagemenr.Presentation.Api\\InventoryManagement.Presentation.Api.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagemenr.Presentation.Api\\InventoryManagement.Presentation.Api.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
             }
           }
         }
@@ -9964,6 +9965,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": {
+            "target": "Package",
+            "version": "[2.2.5, )"
+          },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
             "version": "[3.1.8, )"

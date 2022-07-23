@@ -40,6 +40,7 @@
           "DiscountManagement.Configuration": "1.0.0",
           "InventoryManagement.Infrastructure.Configuration": "1.0.0",
           "InventoryManagement.Presentation.Api": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.1.8",
           "Microsoft.EntityFrameworkCore.Design": "5.0.11",
           "Nancy": "2.0.0",

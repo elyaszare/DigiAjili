@@ -59,27 +59,49 @@
                                     <th>گروه</th>
                                     <th>توضیحات کوتاه</th>
                                     <th>تاریخ انتشار</th>
+                                    <th>وضعیت</th>
                                     <th>عملیات</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach (var item in Model.Articles)
                                 {
-                                    <tr>
-                                        <td>@item.Id</td>
-                                        <td>
-                                            <img src="~/ProductPictures/@item.Picture" style="width: 70px; height: 70px" />
-                                        </td>
-                                        <td>@item.Title</td>
-                                        <td>@item.Category</td>
-                                        <td>@item.ShortDescription</td>
-                                        <td>@item.PublishDate</td>
-                                        <td>
-                                            <a permission="@BlogPermissions.EditArticle" class="btn btn-warning pull-right m-rl-5" asp-page="./Edit" asp-route-id="@item.Id">
-                                                <i class="fa fa-edit"></i> ویرایش
-                                            </a>
-                                        </td>
-                                    </tr>
+                                <tr>
+                                    <td>@item.Id</td>
+                                    <td>
+                                        <img src="~/ProductPictures/@item.Picture" style="width: 70px; height: 70px" />
+                                    </td>
+                                    <td>@item.Title</td>
+                                    <td>@item.Category</td>
+                                    <td>@item.ShortDescription</td>
+                                    <td>@item.PublishDate</td>
+                                    <td class="text-center">
+                                        @if (item.IsRemoved)
+                                        {
+                                            <i class="fa fa-remove fa-3x text-danger"></i>
+                                        }
+                                        else
+                                        {
+                                            <i class="fa fa-check fa-3x text-success"></i>
+                                        }
+                                    </td>
+                                    <td>
+                                        <a permission="@BlogPermissions.EditArticle" class="btn btn-warning pull-right m-rl-5" asp-page="./Edit" asp-route-id="@item.Id">
+                                            <i class="fa fa-edit"></i> ویرایش
+                                        </a>
+
+                                        @if (!item.IsRemoved)
+                                        {
+                                            <a asp-page="./Index" asp-page-handler="Remove" asp-route-id="@item.Id"
+                                               class="btn btn-danger waves-effect waves-light m-b-5">حذف</a>
+                                        }
+                                        else
+                                        {
+                                            <a asp-page="./Index" asp-page-handler="Restore" asp-route-id="@item.Id"
+                                               class="btn btn-success waves-effect waves-light m-b-5">فعال سازی</a>
+                                        }
+                                    </td>
+                                </tr>
                                 }
                             </tbody>
                         </table>

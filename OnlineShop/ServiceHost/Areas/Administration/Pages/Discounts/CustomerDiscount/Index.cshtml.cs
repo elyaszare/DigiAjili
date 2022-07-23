@@ -16,9 +16,11 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscount
 
         private readonly IProductApplication _productApplication;
         private readonly ICustomerDiscountApplication _customerDiscountApplication;
-        public IndexModel(IProductApplication productApplication, ICustomerDiscountApplication customerDiscountApplication)
+
+        public IndexModel(IProductApplication ProductApplication,
+            ICustomerDiscountApplication customerDiscountApplication)
         {
-            _productApplication = productApplication;
+            _productApplication = ProductApplication;
             _customerDiscountApplication = customerDiscountApplication;
         }
 
@@ -43,18 +45,17 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscount
             return new JsonResult(result);
         }
 
-        public JsonResult OnPostEdit(EditCustomerDiscount command)
-        {
-            var result = _customerDiscountApplication.Edit(command);
-
-            return new JsonResult(result);
-        }
-
         public IActionResult OnGetEdit(long id)
         {
             var customerDiscount = _customerDiscountApplication.GetDetails(id);
             customerDiscount.Products = _productApplication.GetProducts();
             return Partial("Edit", customerDiscount);
+        }
+
+        public JsonResult OnPostEdit(EditCustomerDiscount command)
+        {
+            var result = _customerDiscountApplication.Edit(command);
+            return new JsonResult(result);
         }
     }
 }

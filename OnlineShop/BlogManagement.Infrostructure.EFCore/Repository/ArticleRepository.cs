@@ -52,6 +52,7 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
                 Picture = x.Picture,
                 Category = x.Category.Name,
                 PublishDate = x.PublishDate.ToFarsi(),
+                IsRemoved = x.IsRemoved,
                 ShortDescription = x.ShortDescription.Substring(0, Math.Min(x.ShortDescription.Length, 50)) + "..."
             });
 

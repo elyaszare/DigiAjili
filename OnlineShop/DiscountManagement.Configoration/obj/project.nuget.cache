@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c5Gpj1XjPBYFPH4gQRf9v9mXu8T8to3CQnGq4I89gHTuP2STs1qxVxJVRLsckmylpzXSOG7vTcpBeoVtWTrzgw==",
+  "dgSpecHash": "0SHHVlp6Qk1wrKgQjFExHScWTFXsRLE7nd2f45V/uqoQRYDxXRNVzP1B3TrTT+zBT4n9eFvdmKKei9kP4AN1IA==",
   "success": true,
-  "projectFilePath": "D:\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\DiscountManagement.Configuration.csproj",
+  "projectFilePath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\DiscountManagement.Configoration\\DiscountManagement.Configuration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\mailkit\\1.10.0\\mailkit.1.10.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

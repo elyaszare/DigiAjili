@@ -47,7 +47,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label">ایمیل</label>
+                    <input type="email" class="form-control" asp-for="Email" >
+                    <span asp-validation-for="Email" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="ProfilePhoto" class="control-label">پروفایل</label>
                     <input type="file" class="form-control" asp-for="ProfilePhoto" accept="image/*">

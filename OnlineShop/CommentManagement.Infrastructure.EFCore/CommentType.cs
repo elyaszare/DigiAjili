@@ -4,5 +4,6 @@
     {
         public const int Product = 1;
         public const int Article = 2;
+        public const int Message = 3;
     }
 }

@@ -4,7 +4,7 @@ using BlogManagement.Domain.ArticleCategoryAgg;
 
 namespace BlogManagement.Domain.ArticleAgg
 {
-    public class Article:EntityBase
+    public class Article : EntityBase
     {
         public string Title { get; private set; }
         public string ShortDescription { get; private set; }
@@ -18,6 +18,7 @@ namespace BlogManagement.Domain.ArticleAgg
         public string Keywords { get; private set; }
         public string CanonicalAddress { get; private set; }
         public long CategoryId { get; private set; }
+        public bool IsRemoved { get; set; }
         public ArticleCategory Category { get; set; }
 
         public Article(string title, string shortDescription, string description, string picture, string pictureAlt,
@@ -35,6 +36,7 @@ namespace BlogManagement.Domain.ArticleAgg
             MetaDescription = metaDescription;
             Keywords = keywords;
             CanonicalAddress = canonicalAddress;
+            IsRemoved = false;
             CategoryId = categoryId;
         }
 
@@ -57,6 +59,16 @@ namespace BlogManagement.Domain.ArticleAgg
             Keywords = keyWords;
             CanonicalAddress = canonicalAddress;
             CategoryId = categoryId;
+        }
+
+        public void Remove()
+        {
+            IsRemoved = true;
+        }
+
+        public void Restore()
+        {
+            IsRemoved = false;
         }
     }
 }

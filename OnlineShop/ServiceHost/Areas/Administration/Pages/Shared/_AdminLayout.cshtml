@@ -205,10 +205,6 @@
                         <li>
                             <a asp-page="/Index" class="waves-effect active"><i class="md md-home"></i><span> داشبورد </span></a>
                         </li>
-
-                        <li>
-                            <a asp-page="/Comments/Index" class="waves-effect"><i class="md md-comment"></i><span> نظرات </span></a>
-                        </li>
                         @if (authHelper.CurrentAccountRole() == Roles.Administrator)
                         {
                             <li>
@@ -225,7 +221,6 @@
                                     <li><a asp-page="/shop/productcategories/index">گروه محصولات</a></li>
                                     <li><a asp-page="/shop/product/index">محصولات</a></li>
                                     <li><a asp-page="/shop/productPicture/index">عکس محصولات</a></li>
-                                    <li><a asp-page="/shop/Comment/index">نظرات</a></li>
                                 </ul>
                             </li>
                             <li class="has_sub">
@@ -252,9 +247,14 @@
                                 <li><a asp-page="/Blog/Articles/Index">مقالات</a></li>
                             </ul>
                         </li>
-
                         <li>
-                            <a asp-page="/Comments/Index" class="waves-effect"><i class="fa fa-times"></i><span> خروج </span></a>
+                            <a asp-page="/Comments/Index" class="waves-effect"><i class="md md-comment"></i><span> نظرات </span></a>
+                        </li>
+                        <li>
+                            <a asp-page="/Message/Index" class="waves-effect"><i class="md md-message"></i><span> پیام ها </span></a>
+                        </li>
+                        <li>
+                            <a asp-page="/Account" asp-page-handler="Logout" class="waves-effect"><i class="fa fa-times"></i><span> خروج </span></a>
                         </li>
                     </ul>
                     <div class="clearfix"></div>

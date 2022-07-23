@@ -1,0 +1,53 @@
+﻿@page "{activeCode}"
+@model ServiceHost.Pages.ActiveAccountModel
+@{
+    ViewData["Title"] = "فعالسازی حساب کاربری";
+}
+<div class="breadcrumb-area section-space--half">
+    <div class="container wide">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-wrapper breadcrumb-bg">
+                    <div class="breadcrumb-content">
+                        <h2 class="breadcrumb-content__title">فعالسازی حساب کاربری </h2>
+                        <ul class="breadcrumb-content__page-map">
+                            <li><a asp-page="/Index">صفحه اصلی</a></li>
+                            <li class="active">فعالسازی حساب کاربری</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-wrapper">
+                    <div class="page-content-wrapper">
+                        @if (!string.IsNullOrWhiteSpace(Model.Message) && Model.IsSuccess)
+                        {
+                            <div class="alert alert-success">
+                                <i class="fa fa-check"></i> @Model.Message
+                            </div>
+                            <br/>
+                            <div class="col-md-12">
+                                <a class="btn btn-success" asp-page="/Account">ورود </a>
+                            </div>
+                            <br/>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(Model.Message) && !Model.IsSuccess)
+                        {
+                            <div class="alert alert-warning">
+                                <i class="fa fa-warning"></i> @Model.Message
+                            </div>
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

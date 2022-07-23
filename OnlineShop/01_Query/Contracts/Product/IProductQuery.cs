@@ -7,6 +7,7 @@ namespace _01_Query.Contracts.Product
     {
         ProductQueryModel GetProductDetails(string slug);
         List<ProductQueryModel> GetLastArrivals();
+        List<ProductQueryModel> GetProductsBy(long categoryId);
         List<ProductQueryModel> Search(string searchModel);
         List<CartItem> CheckInventoryStock(List<CartItem> cartItems);
     }

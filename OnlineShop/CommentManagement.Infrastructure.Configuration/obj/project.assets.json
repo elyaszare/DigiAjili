@@ -8144,11 +8144,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj",
+      "projectUniqueName": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj",
       "projectName": "CommentManagement.Infrastructure.Configuration",
-      "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj",
+      "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.Configuration\\obj\\",
+      "outputPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.Configuration\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -8171,14 +8171,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\OnlineShop\\OnlineShop\\CommentManagement.Application\\CommentManagement.Application.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Application\\CommentManagement.Application.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Application\\CommentManagement.Application.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Application\\CommentManagement.Application.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
             },
-            "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
-              "projectPath": "D:\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj"
+            "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "D:\\PistachioShop\\OnlineShop\\OnlineShop\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj"
             }
           }
         }

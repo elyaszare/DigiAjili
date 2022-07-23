@@ -23,22 +23,45 @@ namespace _01_Query.Query
 
         public List<ArticleQueryModel> LatestArticles()
         {
-            return context.Articles.Include(x => x.Category).Where(x => x.PublishDate <= DateTime.Now).Select(x =>
-                new ArticleQueryModel
-                {
-                    Title = x.Title,
-                    Picture = x.Picture,
-                    PictureAlt = x.PictureAlt,
-                    PictureTitle = x.PictureTitle,
-                    PublishDate = x.PublishDate.ToFarsi(),
-                    ShortDescription = x.ShortDescription,
-                    Slug = x.Slug
-                }).ToList();
+            return context.Articles.Where(x => !x.IsRemoved).Include(x => x.Category)
+                .Where(x => x.PublishDate <= DateTime.Now).Select(x =>
+                    new ArticleQueryModel
+                    {
+                        Title = x.Title,
+                        Picture = x.Picture,
+                        PictureAlt = x.PictureAlt,
+                        PictureTitle = x.PictureTitle,
+                        PublishDate = x.PublishDate.ToFarsi(),
+                        ShortDescription = x.ShortDescription,
+                        Slug = x.Slug,
+                        IsRemoved = x.IsRemoved
+                    }).ToList();
+        }
+
+        public List<ArticleQueryModel> LatestArticlesBy(long categoryId)
+        {
+            return context.Articles
+                .Where(x => x.CategoryId == categoryId)
+                .Where(x => !x.IsRemoved)
+                .Include(x => x.Category)
+                .Where(x => x.PublishDate <= DateTime.Now).Select(x =>
+                    new ArticleQueryModel
+                    {
+                        Title = x.Title,
+                        Picture = x.Picture,
+                        PictureAlt = x.PictureAlt,
+                        PictureTitle = x.PictureTitle,
+                        PublishDate = x.PublishDate.ToFarsi(),
+                        ShortDescription = x.ShortDescription,
+                        Slug = x.Slug,
+                        IsRemoved = x.IsRemoved
+                    }).ToList();
         }
 
         public ArticleQueryModel GetArticleDetails(string slug)
         {
             var article = context.Articles
+                .Where(x => !x.IsRemoved)
                 .Include(x => x.Category)
                 .Where(x => x.PublishDate <= DateTime.Now)
                 .Select(x => new ArticleQueryModel
@@ -50,6 +73,7 @@ namespace _01_Query.Query
                     Slug = x.Slug,
                     CanonicalAddress = x.CanonicalAddress,
                     Description = x.Description,
+                    IsRemoved = x.IsRemoved,
                     Keywords = x.Keywords,
                     MetaDescription = x.MetaDescription,
                     Picture = x.Picture,
@@ -59,6 +83,7 @@ namespace _01_Query.Query
                     ShortDescription = x.ShortDescription
                 }).FirstOrDefault(x => x.Slug == slug);
 
+            if (article == null) return new ArticleQueryModel();
             if (!string.IsNullOrWhiteSpace(article.Keywords))
                 article.KeywordList = article.Keywords.Split(",").ToList();
 
@@ -76,7 +101,6 @@ namespace _01_Query.Query
                     Message = x.Message,
                     CreationDate = x.CreationDate.ToFarsi()
                 }).OrderByDescending(x => x.Id).ToList();
-
 
             foreach (var comment in comments)
                 if (comment.ParentId > 0)

@@ -51,8 +51,7 @@ namespace BlogManagement.Application
 
             if (article == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
-
-            if (_articleRepository.Exists(x => x.Title == command.Title && x.Id == command.Id))
+            if (_articleRepository.Exists(x => x.Title == command.Title && x.Id != command.Id))
                 return operation.Failed(ApplicationMessages.DuplicateRecord);
 
             var slug = command.Slug.Slugify();
@@ -65,6 +64,33 @@ namespace BlogManagement.Application
                 command.PictureAlt, command.PictureTitle, publishDate, slug, command.MetaDescription,
                 command.KeyWords, command.CanonicalAddress, command.CategoryId);
 
+            _articleRepository.SaveChanges();
+            return operation.Succeeded();
+        }
+
+        public OperationResult Remove(long id)
+        {
+            var operation = new OperationResult();
+            var article = _articleRepository.Get(id);
+
+            if (article == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+           
+            article.Remove();
+            _articleRepository.SaveChanges();
+            return operation.Succeeded();
+        }
+
+        public OperationResult Restore(long id)
+        {
+
+            var operation = new OperationResult();
+            var article = _articleRepository.Get(id);
+
+            if (article == null)
+                return operation.Failed(ApplicationMessages.RecordNotFound);
+
+            article.Restore();
             _articleRepository.SaveChanges();
             return operation.Succeeded();
         }

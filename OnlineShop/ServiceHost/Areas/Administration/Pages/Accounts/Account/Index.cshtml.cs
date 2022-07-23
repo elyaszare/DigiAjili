@@ -69,5 +69,11 @@ namespace ServiceHost.Areas.Administration.Pages.Accounts.Account
             var command = new ChangePassword {Id = id};
             return Partial("ChangePassword", command);
         }
+
+        public IActionResult OnGetActive(long id)
+        {
+            _accountApplication.Active(id);
+            return RedirectToPage("/Index");
+        }
     }
 }

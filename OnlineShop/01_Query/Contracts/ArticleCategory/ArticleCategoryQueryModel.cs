@@ -5,6 +5,7 @@ namespace _01_Query.Contracts.ArticleCategory
 {
     public class ArticleCategoryQueryModel
     {
+        public long Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Picture { get; set; }
@@ -17,6 +18,7 @@ namespace _01_Query.Contracts.ArticleCategory
         public string MetaDescription { get; set; }
         public string CanonicalAddress { get; set; }
         public long ArticlesCounts { get; set; }
+        public bool IsRemoved { get; set; }
         public List<ArticleQueryModel> Articles { get; set; }
     }
 }
