@@ -7,6 +7,9 @@ namespace ShopManagement.Domain.OrderAgg
     public interface IOrderRepository : IRepository<long, Order>
     {
         List<OrderItemViewModel> GetItems(long orderId);
+        double GetTotalSale();
+        long GetOrderCounts();
+        OrderViewModel GetInfoBy(long id);
         double GetAmountBy(long id);
         List<OrderViewModel> Search(OrderSearchModel searchModel);
     }

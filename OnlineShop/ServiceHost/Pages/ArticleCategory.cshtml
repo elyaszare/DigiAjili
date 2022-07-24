@@ -6,151 +6,7 @@
     ViewData["metaDescription"] = Model.ArticleCategory.MetaDescription;
 }
 
-
-@*<div class="breadcrumb-area section-space--half">
-    <div class="container wide">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb-wrapper breadcrumb-bg">
-                    <div class="breadcrumb-content">
-                        <h1 class="breadcrumb-content__title">@Model.ArticleCategory.Name</h1>
-                        <ul class="breadcrumb-content__page-map">
-                            <li>
-                                <a asp-page="/Index">صفحه اصلی</a>
-                            </li>
-                            <li class="active">@Model.ArticleCategory.Name</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="page-content-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="page-wrapper">
-                    <div class="page-content-wrapper">
-                        <div class="row">
-
-                            <div class="col-lg-9 order-1 order-lg-1">
-                                <div class="blog-page-content">
-                                    <div class="row">
-
-                                        @foreach (var article in Model.ArticleCategory.Articles)
-                                        {
-
-                                            <div class="col-md-6">
-                                                <div class="single-blog-post">
-                                                    <div class="single-blog-post__image">
-                                                        <a asp-page="/Article" asp-route-id="@article.Slug">
-                                                            <img src="~/ProductPictures/@article.Picture"
-                                                                 class="img-fluid" alt="@article.PictureAlt" title="@article.PictureTitle">
-                                                        </a>
-
-                                                    </div>
-                                                    <div class="single-blog-post__content">
-                                                        <h2 class="title">
-                                                            <a href="blog-post-left-sidebar.html">
-                                                                @article.Title
-                                                            </a>
-                                                        </h2>
-                                                        <p class="post-meta">
-                                                            <span class="date">@article.PublishDate</span>
-                                                        </p>
-                                                        <p class="short-desc">
-                                                            @article.ShortDescription
-                                                        </p>
-                                                        <a asp-page="/Article" asp-route-id="@article.Slug"
-                                                           class="blog-post-link">بخوووون</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        }
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 order-2 order-lg-2">
-                                <div class="page-sidebar-wrapper">
-                                    <div class="single-sidebar-widget">
-
-                                        <h4 class="single-sidebar-widget__title">گروه مقالات</h4>
-                                        <ul class="single-sidebar-widget__category-list">
-                                            @foreach (var category in Model.ArticleCategories)
-                                            {
-                                                <li>
-                                                    <a asp-page="/ArticleCategory" asp-route-id="@category.Slug">@category.Name <span class="counter">@category.ArticlesCounts</span></a>
-                                                </li>
-                                            }
-                                        </ul>
-
-                                    </div>
-                                    <div class="single-sidebar-widget">
-
-                                        <h4 class="single-sidebar-widget__title">آخرین مقالات</h4>
-                                        <div class="block-container">
-                                            @foreach (var item in Model.Articles)
-                                            {
-                                                <div class="single-block d-flex">
-                                                    <div class="image">
-                                                        <a asp-page="/Article" asp-route-id="@item.Slug">
-                                                            <img src="~/ProductPictures/@item.Picture"
-                                                                 class="img-fluid" alt="@item.PictureAlt" title="@item.PictureTitle">
-                                                        </a>
-                                                    </div>
-                                                    <div class="content">
-                                                        <p>
-                                                            <a asp-page="/Article" asp-route-id="@item.Slug">
-                                                                @item.Title
-                                                            </a> <span>@item.PublishDate</span>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            }
-
-                                        </div>
-
-                                    </div>
-                                    <div class="single-sidebar-widget">
-                                        <h4 class="single-sidebar-widget__title">تگ های محبوب</h4>
-                                        <ul class="single-sidebar-widget__tag-list">
-                                            @foreach (var tag in Model.ArticleCategory.KeywordList)
-                                            {
-                                                <li>
-                                                    <a asp-page="/Search" asp-route-searchModel="@tag">@tag</a>
-                                                </li>
-                                            }
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>*@
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="blog blog-category blog-animated pt-0">
-
-    <!--Header-->
-
     <header>
         <div class="container">
             <ol class="breadcrumb">
@@ -164,19 +20,16 @@
         </div>
     </header>
 
-    <!--Content-->
 
     <div class="container">
 
         <div class="row">
 
-            <!--Blog content-->
 
             <div class="col-lg-9">
 
                 <div class="row">
 
-                    <!--Blog item-->
                     @foreach (var article in Model.ArticlesByCategoryId)
                     {
                         <div class="col-md-6">
@@ -187,9 +40,6 @@
                                     </div>
                                     <div class="entry entry-table">
                                         <div class="date-wrapper">
-                                            <div class="date" style="font-size: 10px">
-                                                @article.PublishDate
-                                            </div>
                                         </div>
                                         <div class="title">
                                             <h2 class="h5">@article.Title</h2>
@@ -204,7 +54,6 @@
 
                 </div>
 
-                <!--Pagination-->
 
                 <div class="pagination-wrapper">
                     <ul class="pagination justify-content-center">
@@ -218,13 +67,11 @@
 
             </div>
 
-            <!--Blog menu-->
 
             <div class="col-lg-3">
 
                 <aside>
 
-                    <!--Box categories-->
 
                     <div class="box box-animated box-categories">
                         <h5 class="title">دسته های وبلاگ</h5>
@@ -236,7 +83,6 @@
                         </ul>
                     </div>
 
-                    <!--Box posts-->
 
                     <div class="box box-animated box-posts">
                         <h5 class="title">پست های اخیر</h5>
@@ -256,7 +102,6 @@
                         </ul>
                     </div>
 
-                    <!--Box tags-->
 
                     <div class="box box-tags">
                         <h5 class="title">تگ ها: </h5>

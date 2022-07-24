@@ -5,6 +5,9 @@ namespace ShopManagement.Domain.OrderAgg
 {
     public class Order : EntityBase
     {
+        public string Address { get; }
+        public string Mobile { get; }
+        public string Postalcode { get; }
         public long AccountId { get; }
         public double TotalAmount { get; }
         public double DiscountAmount { get; }
@@ -15,12 +18,16 @@ namespace ShopManagement.Domain.OrderAgg
         public long RefId { get; private set; }
         public List<OrderItem> Items { get; }
 
-        public Order(long accountId, double totalAmount, double discountAmount, double payAmount)
+        public Order(long accountId, double totalAmount, double discountAmount, double payAmount, string address,
+            string mobile, string postalcode)
         {
             AccountId = accountId;
             TotalAmount = totalAmount;
             DiscountAmount = discountAmount;
             PayAmount = payAmount;
+            Address = address;
+            Mobile = mobile;
+            Postalcode = postalcode;
             IsCanceled = false;
             IsPaid = false;
             RefId = 0;

@@ -21,15 +21,13 @@ namespace ServiceHost
 
         public void OnPageHandlerExecuting(PageHandlerExecutingContext context)
         {
-            //Get Method Permission
             var handlerPermission = (NeedsPermissionAttribute) context
                 .HandlerMethod.MethodInfo
                 .GetCustomAttribute(typeof(NeedsPermissionAttribute));
 
-            if (handlerPermission == null)
+            if (handlerPermission is null)
                 return;
 
-            //Get Account Permission
             var accountPermissions = _authHelper.GetPermissions();
 
             var ap = accountPermissions;

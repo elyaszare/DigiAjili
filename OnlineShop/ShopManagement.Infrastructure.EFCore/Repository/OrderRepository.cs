@@ -39,6 +39,58 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             return items;
         }
 
+        public double GetTotalSale()
+        {
+            var orders = _shopContext.Orders.Select(x => new OrderViewModel
+            {
+                Id = x.Id,
+                IsPaid = x.IsPaid,
+                PayAmount = x.PayAmount
+            }).AsEnumerable().Where(x => x.IsPaid).OrderByDescending(x => x.Id).ToList();
+
+            var Sale = orders.Sum(order => order.PayAmount);
+
+            return Sale;
+        }
+
+        public long GetOrderCounts()
+        {
+            return _shopContext.Orders.Where(x => x.IsPaid).ToList().Count();
+        }
+
+        public OrderViewModel GetInfoBy(long id)
+        {
+            var accountId = _shopContext.Orders
+                .Select(x => new {x.AccountId, x.Id})
+                .ToList()
+                .FirstOrDefault(x => x.Id == id)?.AccountId;
+
+            var account = _accountContext.Accounts
+                .Select(x => new {x.Id, x.Fullname})
+                .ToList()
+                .FirstOrDefault(x => x.Id == accountId);
+
+            var query = _shopContext.Orders.Select(x => new OrderViewModel
+            {
+                Id = x.Id,
+                AccountId = x.AccountId,
+                Address = x.Address,
+                Mobile = x.Mobile,
+                Postalcode = x.Postalcode,
+                DiscountAmount = x.DiscountAmount,
+                IsCanceled = x.IsCanceled,
+                IsPaid = x.IsPaid,
+                IssueTrackingNo = x.IssueTrackingNo,
+                PayAmount = x.PayAmount,
+                RefId = x.RefId,
+                TotalAmount = x.TotalAmount,
+                CreationDate = x.CreationDate.ToFarsi(),
+                AccountFullName = account.Fullname
+            }).FirstOrDefault(x => x.Id == id);
+            return query;
+        }
+
+
         public double GetAmountBy(long id)
         {
             var amount = _shopContext.Orders.Select(x => new {x.PayAmount, x.Id}).FirstOrDefault(x=>x.Id==id);
@@ -55,6 +107,9 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             {
                 Id = x.Id,
                 AccountId = x.AccountId,
+                Address = x.Address,
+                Mobile = x.Mobile,
+                Postalcode = x.Postalcode,
                 DiscountAmount = x.DiscountAmount,
                 IsCanceled = x.IsCanceled,
                 IsPaid = x.IsPaid,

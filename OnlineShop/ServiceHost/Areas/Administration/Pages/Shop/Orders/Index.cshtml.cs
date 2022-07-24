@@ -45,5 +45,11 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Orders
             var items = _orderApplication.GetItems(id);
             return Partial("Items", items);
         }
+
+        public IActionResult OnGetInfo(long id)
+        {
+            var items = _orderApplication.GetInfoBy(id);
+            return Partial("Info", items);
+        }
     }
 }

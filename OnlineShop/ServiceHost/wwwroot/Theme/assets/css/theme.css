@@ -2702,7 +2702,6 @@ nav .cart-wrapper.open {
 }
 
 .products article .text sub {
-    text-decoration: line-through;
     font-weight: 300;
 }
 
@@ -4117,7 +4116,7 @@ nav .cart-wrapper.open {
     /* FF3.6-15 */
     background: -webkit-linear-gradient(top, black 0%, rgba(255, 255, 255, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, black 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, #8b8b8b 0%, rgba(255, 255, 255, 0) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00ffffff',GradientType=0 );
     /* IE6-9 */

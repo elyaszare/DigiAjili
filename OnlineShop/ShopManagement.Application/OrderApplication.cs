@@ -23,11 +23,12 @@ namespace ShopManagement.Application
             _shopInventoryAcl = shopInventoryAcl;
         }
 
-        public long PlaceOrder(Cart cart)
+        public long PlaceOrder(Cart cart, OrderInfo orderInfo)
         {
             var currentAccountId = _authHelper.CurrentAccountId();
 
-            var order = new Order(currentAccountId, cart.TotalAmount, cart.DiscountAmount, cart.PayAmount);
+            var order = new Order(currentAccountId, cart.TotalAmount, cart.DiscountAmount, cart.PayAmount,
+                orderInfo.Address, orderInfo.Mobile, orderInfo.Postalcode);
 
             foreach (var cartItem in cart.Items)
             {
@@ -44,6 +45,16 @@ namespace ShopManagement.Application
         public double GetAmountBy(long id)
         {
             return _orderRepository.GetAmountBy(id);
+        }
+
+        public double GetTotalSale()
+        {
+            return _orderRepository.GetTotalSale();
+        }
+
+        public long GetOrderCounts()
+        {
+            return _orderRepository.GetOrderCounts();
         }
 
         public string PaymentSucceeded(long orderId, long refId)
@@ -77,6 +88,11 @@ namespace ShopManagement.Application
         public List<OrderItemViewModel> GetItems(long orderId)
         {
             return _orderRepository.GetItems(orderId);
+        }
+
+        public OrderViewModel GetInfoBy(long id)
+        {
+            return _orderRepository.GetInfoBy(id);
         }
     }
 }

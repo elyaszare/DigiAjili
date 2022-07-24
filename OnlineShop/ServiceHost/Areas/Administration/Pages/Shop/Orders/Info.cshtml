@@ -1,0 +1,31 @@
+﻿@using _0_Framework.Application
+@model ShopManagement.Application.Contracts.Order.OrderViewModel
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">آیتم های سفارش</h4>
+</div>
+
+<div class="modal-body">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ادرس</th>
+                <th>موبایل</th>
+                <th>کد پستی</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Address</td>
+                <td>@Model.Mobile</td>
+                <td>@Model.Postalcode</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+</div>

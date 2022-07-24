@@ -7,10 +7,10 @@
 
     <header>
         <div class="container">
-            <h2 class="title">محصولات محبوب</h2>
+            <h2 class="title">تخفیفات ویژه!!</h2>
             <div class="text">
                 <p>
-                    مطابقت کامل خود را پیدا کنید <a asp-page="/Products" class="btn btn-main">مشاهده همه</a>
+                   از جدید ترین محصولات ما را تجربه کنید... <a asp-page="/Products" class="btn btn-main">مشاهده همه</a>
                 </p>
             </div>
         </div>
@@ -34,30 +34,33 @@
                                     <i class="icon icon-heart"></i>
                                 </a>
                             </span>
-                            <span>
-                                <a href="#productid1" class="mfp-open" data-title="نمایش سریع ">
-                                    <i class="icon icon-eye"></i>
-                                </a>
-                            </span>
                         </div>
                         <div class="btn btn-add">
-                            <i class="icon icon-cart"></i>
+                            <a class="icon icon-cart" style="color: white" asp-page="/Product" asp-route-id="@product.Slug"></a>
                         </div>
                         <div class="figure-grid">
+                            @if (product.HasDiscount)
+                            {
+                                <span class="badge badge-warning" style="font-size: 110%">@product.DiscountRate%</span>
+                            }
                             <div class="image">
                                 <a asp-page="/Product" asp-route-id="@product.Slug">
-                                    <img src="ProductPictures/@product.Picture" alt="@product.PictureAlt" title="@product.PictureTitle" />
+                                    <img src="ProductPictures/@product.Picture" alt="@product.PictureAlt" title="@product.PictureTitle"/>
                                 </a>
                             </div>
                             <div class="text">
                                 <h2 class="title h4">
                                     <a asp-page="/Product" asp-route-id="@product.Slug">@product.Name</a>
                                 </h2>
-                                <sub>@product.Price تومان</sub>
                                 @if (product.HasDiscount)
                                 {
-                                    <sup>@product.PriceWithDiscount تومان</sup>
-                                }                               
+                                    <sub style="text-decoration: line-through">@product.Price تومان</sub>
+                                    <sup >@product.PriceWithDiscount تومان</sup>
+                                }
+                                else
+                                {
+                                    <sub>@product.Price تومان</sub>
+                                }
                                 <span class="description clearfix">
                                     @product.ShortDescription
                                 </span>

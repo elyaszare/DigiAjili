@@ -109,7 +109,7 @@ namespace AccountManagement.Application
         public OperationResult Login(Login command)
         {
             var operation = new OperationResult();
-            var account = _accountRepository.GetBy(command.Username);
+            var account = _accountRepository.GetBy(command.Email);
 
             if (account == null)
                 return operation.Failed(ApplicationMessages.WrongUserPass);
@@ -124,7 +124,7 @@ namespace AccountManagement.Application
                 .Select(x => x.Code).ToList();
 
             var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname, account.Username,
-                account.Mobile, permission);
+                account.Mobile, account.Email, permission);
             _authHelper.Signin(authViewModel);
             return operation.Succeeded();
         }

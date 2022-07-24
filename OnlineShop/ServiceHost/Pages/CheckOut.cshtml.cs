@@ -51,7 +51,7 @@ namespace ServiceHost.Pages
             _cartService.Set(Cart);
         }
 
-        public IActionResult OnGetPay()
+        public IActionResult OnGetPay(OrderInfo orderInfo)
         {
             var cart = _cartService.Get();
             var result = _productQuery.CheckInventoryStock(cart.Items);
@@ -59,7 +59,7 @@ namespace ServiceHost.Pages
                 return RedirectToPage("/Cart");
             var accountUserName = _authHelper.CurrentAccountInfo().Username;
             var accountMobile = _authHelper.CurrentAccountInfo().Mobile;
-            var orderId = _orderApplication.PlaceOrder(cart);
+            var orderId = _orderApplication.PlaceOrder(cart, orderInfo);
 
             var paymentResponse = _zarinPalFactory.CreatePaymentRequest(cart.PayAmount.ToString(), accountMobile,
                 accountUserName, "", orderId);

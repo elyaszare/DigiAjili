@@ -1,0 +1,125 @@
+﻿@page
+@model ServiceHost.Pages.BlogModel
+@{
+    ViewData["Title"] = "مقالات";
+    ViewData["keywords"] = "مقالات,آجیل,پسته,پسته تازه";
+    ViewData["metaDescription"] = "مقالات درباره محصولات خشکبار و آجیل ها";
+}
+
+<section class="blog blog-category blog-animated pt-0">
+
+    <!--Header-->
+
+    <header>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-page="/Index">خانه</a></li>
+                <li class="breadcrumb-item active" aria-current="page">وبلاگ</li>
+            </ol>
+            <h2 class="title">مقالات</h2>
+            <div class="text">
+                <p>مقالاتی درباره انواع خشکبار و آجیل ها</p>
+            </div>
+        </div>
+    </header>
+
+    <!--Content-->
+
+    <div class="container">
+
+        <div class="row">
+
+            <!--Blog content-->
+
+            <div class="col-lg-9">
+
+                <div class="row">
+
+                    <!--Blog item-->
+                    @foreach (var article in Model.Articles)
+                    {
+                        <div class="col-md-6">
+                            <article>
+                                <a asp-page="/Article" asp-route-id="@article.Slug" class="blog-link">
+                                    <div class="image" style="background-image:url(/ProductPictures/@article.Picture)">
+                                        <img src="~/ProductPictures/@article.Picture" alt="@article.PictureAlt" title="@article.PictureTitle" />
+                                    </div>
+                                    <div class="entry entry-table">
+                                        <div class="date-wrapper">
+                                        </div>
+                                        <div class="title">
+                                            <h2 class="h5">@article.Title</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                    }
+
+
+                </div>
+
+                <!--Pagination-->
+
+                <div class="pagination-wrapper">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!--Blog menu-->
+
+            <div class="col-lg-3">
+
+                <aside>
+
+                    <!--Box categories-->
+
+                    <div class="box box-animated box-categories">
+                        <h5 class="title">دسته های وبلاگ</h5>
+                        <ul>
+                            @foreach (var category in Model.ArticleCategories)
+                            {
+                                <li><a asp-page="/ArticleCategory" asp-route-id="@category.Slug">@category.Name</a></li>
+                            }
+                        </ul>
+                    </div>
+
+                    <!--Box posts-->
+
+                    <div class="box box-animated box-posts">
+                        <h5 class="title">پست های اخیر</h5>
+                        <ul>
+                            @foreach (var article in Model.Articles)
+                            {
+                                <li>
+                                    <a asp-page="/Article" asp-route-id="@article.Slug">
+                                        <span class="date">
+                                            <img src="~/ProductPictures/@article.Picture" alt="@article.PictureAlt" title="@article.PictureTitle" style="width: 70px; height: 55px;" />
+                                        </span>
+                                        <span class="text">@article.Title</span>
+                                    </a>
+                                </li>
+                            }
+
+                        </ul>
+                    </div>
+
+
+                </aside>
+
+            </div><!--/col-lg-3-->
+
+
+        </div> <!--/row-->
+
+
+    </div><!--/container-->
+</section>

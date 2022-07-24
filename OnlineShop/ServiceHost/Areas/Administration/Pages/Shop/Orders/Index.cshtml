@@ -97,7 +97,12 @@
                                                 <a class="btn btn-danger pull-right m-rl-5" asp-page-handler="Cancel" asp-route-id="@item.Id">
                                                     <i class="fa fa-close"></i> لغو
                                                 </a>
+                                                
                                             }
+                                            <a class="btn btn-primary pull-right m-rl-5"
+                                               href="#showmodal=@Url.Page("./Index", "Info", new {id = item.Id})">
+                                                <i class="fa fa-id-card"></i> اطلاعات
+                                            </a>
                                             <a class="btn btn-primary pull-right m-rl-5"
                                                href="#showmodal=@Url.Page("./Index", "Items", new {id = item.Id})">
                                                 <i class="fa fa-id-card"></i> آیتم ها

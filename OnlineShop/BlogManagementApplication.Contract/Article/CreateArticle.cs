@@ -33,6 +33,7 @@ namespace BlogManagement.Application.Contract.Article
         public string MetaDescription { get; set; }
 
         [Required(ErrorMessage = ValidationMessage.IsRequired)]
+        [MaxLength(100, ErrorMessage = "تعداد کارکتر های موجود نمی تواند از 100 تا بیشتر باشد")]
         public string KeyWords { get; set; }
 
         public string CanonicalAddress { get; set; }

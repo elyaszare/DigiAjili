@@ -35,7 +35,24 @@ namespace _01_Query.Query
                         ShortDescription = x.ShortDescription,
                         Slug = x.Slug,
                         IsRemoved = x.IsRemoved
-                    }).ToList();
+                    }).AsEnumerable().OrderByDescending(x => x.Id).Take(6).ToList();
+        }
+
+        public List<ArticleQueryModel> GetArticles()
+        {
+            return context.Articles.Where(x => !x.IsRemoved).Include(x => x.Category)
+                .Where(x => x.PublishDate <= DateTime.Now).Select(x =>
+                    new ArticleQueryModel
+                    {
+                        Title = x.Title,
+                        Picture = x.Picture,
+                        PictureAlt = x.PictureAlt,
+                        PictureTitle = x.PictureTitle,
+                        PublishDate = x.PublishDate.ToFarsi(),
+                        ShortDescription = x.ShortDescription,
+                        Slug = x.Slug,
+                        IsRemoved = x.IsRemoved
+                    }).AsEnumerable().OrderByDescending(x => x.Id).ToList();
         }
 
         public List<ArticleQueryModel> LatestArticlesBy(long categoryId)
@@ -85,7 +102,7 @@ namespace _01_Query.Query
 
             if (article == null) return new ArticleQueryModel();
             if (!string.IsNullOrWhiteSpace(article.Keywords))
-                article.KeywordList = article.Keywords.Split(",").ToList();
+                article.KeywordList = article.Keywords.Split("،").ToList();
 
 
             var comments = _commentContext.Comments

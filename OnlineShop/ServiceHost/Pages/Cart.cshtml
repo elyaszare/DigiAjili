@@ -5,96 +5,99 @@
     ViewData["Title"] = "سبد خرید";
 }
 
-<div class="breadcrumb-area section-space--half">
-    <div class="container wide">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb-wrapper breadcrumb-bg">
-                    <div class="breadcrumb-content">
-                        <h2 class="breadcrumb-content__title">سبد خرید شما</h2>
-                        <ul class="breadcrumb-content__page-map">
-                            <li>
-                                <a asp-page="./Index">صفحه اصلی</a>
-                            </li>
-                            <li class="active">سبد خرید</li>
-                        </ul>
+<div>
+    @*<div class="breadcrumb-area section-space--half">
+            <div class="container wide">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="breadcrumb-wrapper breadcrumb-bg">
+                            <div class="breadcrumb-content">
+                                <h2 class="breadcrumb-content__title">سبد خرید شما</h2>
+                                <ul class="breadcrumb-content__page-map">
+                                    <li>
+                                        <a asp-page="./Index">صفحه اصلی</a>
+                                    </li>
+                                    <li class="active">سبد خرید</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
-@if (Model.CartItems != null)
-{
-    <div class="page-content-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="page-wrapper">
+        @if (Model.CartItems != null)
+        {
+            <div class="page-content-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="page-wrapper">
 
-                        <div id="productStockWarnings">
-                            @foreach (var item in Model.CartItems.Where(x => !x.IsInStock))
-                            {
-                                <div class="alert alert-warning" id="@item.Id">
-                                    <i class="fa fa-warning"></i> کالای
-                                    <strong>@item.Name</strong>
-                                    در انبار کمتر از تعداد درخواستی موجود است.
+                                <div id="productStockWarnings">
+                                    @foreach (var item in Model.CartItems.Where(x => !x.IsInStock))
+                                    {
+                                        <div class="alert alert-warning" id="@item.Id">
+                                            <i class="fa fa-warning"></i> کالای
+                                            <strong>@item.Name</strong>
+                                            در انبار کمتر از تعداد درخواستی موجود است.
+                                        </div>
+                                    }
                                 </div>
-                            }
-                        </div>
 
-                        <div class="page-content-wrapper">
-                            <div class="cart-table table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th class="pro-thumbnail">عکس</th>
-                                            <th class="pro-title">محصول</th>
-                                            <th class="pro-price">قیمت واحد</th>
-                                            <th class="pro-quantity">تعداد</th>
-                                            <th class="pro-subtotal">قیمت کل</th>
-                                            <th class="pro-remove">حذف</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach (var item in Model.CartItems)
-                                        {
+                                <div class="page-content-wrapper">
+                                    <div class="cart-table table-responsive">
+                                        <table class="table">
+                                            <thead>
                                             <tr>
-                                                <td class="pro-thumbnail">
-                                                    <a>
-                                                        <img src="~/ProductPictures/@item.Picture" class="img-fluid" alt="@item.Name">
-                                                    </a>
-                                                </td>
-                                                <td class="pro-title">
-                                                    <a>@item.Name</a>
-                                                </td>
-                                                <td class="pro-price">
-                                                    <span>@item.UnitPrice.ToMoney()</span>
-                                                </td>
-                                                <td class="pro-quantity">
-                                                    <div class="quantity-selection">
-                                                        <input type="number" value="@item.Count" min="1" onchange="changeCartItemCount('@item.Id', 'totalItemPrice-@item.Id', this.value)">
-                                                    </div>
-                                                </td>
-                                                <td class="pro-subtotal">
-                                                    <span id="totalItemPrice-@item.Id">@item.TotalItemPrice.ToMoney()</span>
-                                                </td>
-                                                <td class="pro-remove">
-                                                    <a asp-page-handler="RemoveFromCartItem" asp-route-id="@item.Id">
-                                                        <i class="fa fa-trash-o"></i>
-                                                    </a>
-                                                </td>
+                                                <th class="pro-thumbnail">عکس</th>
+                                                <th class="pro-title">محصول</th>
+                                                <th class="pro-price">قیمت واحد</th>
+                                                <th class="pro-quantity">تعداد</th>
+                                                <th class="pro-subtotal">قیمت کل</th>
+                                                <th class="pro-remove">حذف</th>
                                             </tr>
-                                        }
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-12 d-flex">
-                                    <div class="cart-summary">
-                                        <div class="cart-summary-button">
-                                            <a class="checkout-btn" asp-page-handler="GoToCheckOut">تکمیل فرایند خرید</a>
+                                            </thead>
+                                            <tbody>
+                                            @foreach (var item in Model.CartItems)
+                                            {
+                                                <tr>
+                                                    <td class="pro-thumbnail">
+                                                        <a>
+                                                            <img src="~/ProductPictures/@item.Picture" class="img-fluid" alt="@item.Name">
+                                                        </a>
+                                                    </td>
+                                                    <td class="pro-title">
+                                                        <a>@item.Name</a>
+                                                    </td>
+                                                    <td class="pro-price">
+                                                        <span>@item.UnitPrice.ToMoney()</span>
+                                                    </td>
+                                                    <td class="pro-quantity">
+                                                        <div class="quantity-selection">
+                                                            <input type="number" value="@item.Count" min="1" onchange="changeCartItemCount('@item.Id', 'totalItemPrice-@item.Id', this.value)">
+                                                        </div>
+                                                    </td>
+                                                    <td class="pro-subtotal">
+                                                        <span id="totalItemPrice-@item.Id">@item.TotalItemPrice.ToMoney()</span>
+                                                    </td>
+                                                    <td class="pro-remove">
+                                                        <a asp-page-handler="RemoveFromCartItem" asp-route-id="@item.Id">
+                                                            <i class="fa fa-trash-o"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12 d-flex">
+                                            <div class="cart-summary">
+                                                <div class="cart-summary-button">
+                                                    <a class="checkout-btn" asp-page-handler="GoToCheckOut">تکمیل فرایند خرید</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -102,13 +105,127 @@
                         </div>
                     </div>
                 </div>
+            </div>*@
+</div>
+
+
+<section class="checkout">
+
+    <!-- === header === -->
+
+    <header>
+        <div class="container">
+            <h2 class="title">تایید سبد خرید و پرداخت</h2>
+            <div class="text">
+                <p>سفارش خود را تایید و پرداخت کنید</p>
             </div>
         </div>
+    </header>
+    <div id="productStockWarnings">
+        @foreach (var item in Model.CartItems.Where(x => !x.IsInStock))
+        {
+            <div class="alert alert-warning" id="@item.Id">
+                <i class="fa fa-warning"></i> کالای
+                <strong>@item.Name</strong>
+                در انبار کمتر از تعداد درخواستی موجود است.
+            </div>
+        }
     </div>
-}
-else
-{
-    <div class="alert alert-danger">
-        <i class="fa fa-warning"></i>سبد خرید شما خالی است!
-    </div>
-}
+    <!-- === step wrapper === -->
+    @if (Model.CartItems != null)
+    {
+        <div class="step-wrapper">
+
+            <div class="container">
+
+                <div class="stepper">
+                    <ul class="row">
+                        <li class="col-6 active">
+                            <span data-text="اقلام سبد خرید"></span>
+                        </li>
+                        <li class="col-6">
+                            <span style="color: gainsboro" data-text="تایید سبد خرید و پرداخت"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- === left content === -->
+
+        <div class="container">
+
+            <!-- ========================  Cart wrapper ======================== -->
+
+            <div class="cart-wrapper">
+
+                <!-- cart header -->
+
+                <div class="cart-block cart-block-header clearfix">
+                    <div><span> محصول</span></div>
+                    <div><span>&nbsp;</span></div>
+                    <div><span> قیمت واحد</span></div>
+                    <div><span>تعداد</span></div>
+                    <div><span>&nbsp;</span></div>
+                    <div class="text-right"><span>قیمت کل</span></div>
+                </div>
+
+                <!-- cart items -->
+
+                <div class="clearfix">
+
+                    <!-- cart item -->
+                    @foreach (var item in Model.CartItems)
+                    {
+                    <div class="cart-block cart-block-item clearfix">
+                        <div class="image">
+                            <a asp-page="/Products"><img src="~/ProductPictures/@item.Picture" alt="" /></a>
+                        </div>
+                        <div class="title">
+                            <div class="h4"><a asp-page="Products">@item.Name</a></div>
+                        </div>
+                        <div class="price" >
+                            <div class="h4"><a asp-page="Products" style="font-size: 18px">@item.UnitPrice.ToMoney() تومان</a></div>
+                        </div>
+                        <div class="quantity">
+                            <input type="number" class="form-control form-quantity" value="@item.Count" min="1" onchange="changeCartItemCount('@item.Id', 'totalItemPrice-@item.Id', this.value)">
+                        </div>
+                        <div class="price" >
+                            <span class="final h3" style="font-size: 18px" id="totalItemPrice-@item.Id"> @item.TotalItemPrice.ToMoney() تومان</span>
+                        </div>
+                        <!--delete-this-item-->
+                        <span class="icon icon-cross icon-delete" asp-page-handler="RemoveFromCartItem" asp-route-id="@item.Id"></span>
+                    </div>
+                    }
+                </div>
+            </div>
+
+            <!-- ========================  Cart navigation ======================== -->
+
+            <div class="clearfix">
+                <div class="row">
+                    <div class="col-6">
+                        <a asp-page="/Index" class="btn btn-clean-dark"><span class="icon icon-chevron-right"></span> به خرید ادامه دهید</a>
+                    </div>
+                    <div class="col-6 text-left">
+                        <a asp-page-handler="GoToCheckOut" class="btn btn-clean-dark"><span class="icon icon-cart"></span> ادامه به تحویل</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--/container-->
+    }
+    else
+    {
+
+        <section class="not-found">
+            <div class="container">
+                <h1 class="title" data-title="Page not found!">404</h1>
+                <div class="h4 subtitle">سبد خرید شما خالی است.</div>
+                <p></p>
+                <p>کلیک <a asp-page="/Index">اینجا</a> برای رفتن به صفحه اول؟ </p>
+            </div>
+        </section>
+    }
+</section>

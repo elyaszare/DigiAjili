@@ -1,4 +1,5 @@
-﻿const cookieName = "cart-items";
+﻿
+const cookieName = "cart-items";
 
 function addToCart(id, name, price, picture) {
     let products = $.cookie(cookieName);
@@ -35,25 +36,19 @@ function updateCart() {
     const cartItemsWrapper = $("#cart_items_wrapper");
     cartItemsWrapper.html('');
     products.forEach(x => {
-        const product = `<div class="single-cart-item">
-                            <a href="javascript:void(0)" class="remove-icon" onclick="removeFromCart('${x.id}')">
-                                <i class="ion-android-close"></i>
-                            </a>
-                            <div class="image">
-                                <a href="single-product.html">
-                                    <img src="/ProductPictures/${x.picture}"
-                                         class="img-fluid" alt="">
-                                </a>
+        const product =
+            `<div class="cart-block cart-block-item clearfix" >
+                                <div class="image">
+                                <a><img src="/ProductPictures/${x.picture}" alt="${x.name}" /></a>
                             </div>
-                            <div class="content">
-                                <p class="product-title">
-                                    <a href="single-product.html">محصول: ${x.name}</a>
-                                </p>
-                                <p class="count">تعداد: ${x.count}</p>
-                                <p class="count">قیمت واحد: ${x.unitPrice}</p>
+                            <div class="title">
+                                <div><a>${x.name}</a></div>
                             </div>
-                        </div>`;
-
+                            <div class="price">
+                                <span class="final"> تومان ${x.unitPrice}</span>
+                            </div>
+                            <span class="icon icon-cross icon-delete" onclick="removeFromCart('${x.id}')"></span>
+                            </div>`;
         cartItemsWrapper.append(product);
     });
 }

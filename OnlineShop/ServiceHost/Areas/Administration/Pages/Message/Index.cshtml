@@ -55,12 +55,10 @@
                                     <th>ایمیل</th>
                                     <th>پیام</th>
                                     <th>تاریخ</th>
-                                    <th>وضعیت</th>
-                                    <th>عملیات</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (var item in Model.Comments.Where(x=>x.Type==CommentType.Message))
+                                @foreach (var item in Model.Comments.Where(x => x.Type == CommentType.Message))
                                 {
                                     <tr>
                                         <td>@item.Id</td>
@@ -68,31 +66,6 @@
                                         <td>@item.Email</td>
                                         <td>@item.Message</td>
                                         <td>@item.CommentDate</td>
-                                        <td class="text-center">
-                                            @if (item.IsCanceled)
-                                            {
-                                                <span class="text-danger">کنسل شده</span>
-                                            }
-                                            @if (!item.IsCanceled && !item.IsConfirmed)
-                                            {
-                                                <span class="text-warning">در انتظار</span>
-                                            }
-                                            @if (!item.IsCanceled && item.IsConfirmed)
-                                            {
-                                                <span class="text-success">تایید شده</span>
-                                            }
-                                        </td>
-                                        <td>
-                                            <a asp-page="./Index" asp-page-handler="Cancel" asp-route-id="@item.Id"
-                                               class="btn btn-danger waves-effect waves-light m-b-5">کنسل</a>
-
-                                            @if (!item.IsConfirmed)
-                                            {
-                                                <a asp-page="./Index" asp-page-handler="Confirm" asp-route-id="@item.Id"
-                                                   class="btn btn-success waves-effect waves-light m-b-5">تایید</a>
-                                            }
-                                           
-                                        </td>
                                     </tr>
                                 }
                             </tbody>

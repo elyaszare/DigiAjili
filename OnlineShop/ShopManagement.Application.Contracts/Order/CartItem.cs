@@ -13,11 +13,6 @@
         public double DiscountAmount { get; set; }
         public double ItemPayAmount { get; set; }
 
-        public CartItem()
-        {
-            TotalItemPrice = UnitPrice * Count;
-        }
-
         public void CalculateTotalItemPrice()
         {
             TotalItemPrice = UnitPrice * Count;

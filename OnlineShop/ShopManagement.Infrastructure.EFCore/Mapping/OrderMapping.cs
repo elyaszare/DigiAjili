@@ -16,6 +16,9 @@ namespace ShopManagement.Infrastructure.EFCore.Mapping
             builder.Property(x => x.AccountId);
             builder.Property(x => x.DiscountAmount);
             builder.Property(x => x.IssueTrackingNo).HasMaxLength(8);
+            builder.Property(x => x.Address).IsRequired().HasMaxLength(500);
+            builder.Property(x => x.Mobile).IsRequired().HasMaxLength(50);
+            builder.Property(x => x.Postalcode).IsRequired();
 
             builder.OwnsMany(x => x.Items, navigationBuilder =>
             {

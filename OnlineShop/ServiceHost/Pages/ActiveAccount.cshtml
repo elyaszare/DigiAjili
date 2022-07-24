@@ -3,25 +3,22 @@
 @{
     ViewData["Title"] = "فعالسازی حساب کاربری";
 }
-<div class="breadcrumb-area section-space--half">
-    <div class="container wide">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb-wrapper breadcrumb-bg">
-                    <div class="breadcrumb-content">
-                        <h2 class="breadcrumb-content__title">فعالسازی حساب کاربری </h2>
-                        <ul class="breadcrumb-content__page-map">
-                            <li><a asp-page="/Index">صفحه اصلی</a></li>
-                            <li class="active">فعالسازی حساب کاربری</li>
-                        </ul>
-                    </div>
-                </div>
+<section class="login">
+
+    <header class="d-none">
+        <div class="container">
+            <h2 class="title">ورود و ثبت نام</h2>
+            <div class="text">
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                <hr />
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-page="/Index">خانه</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">ورود - ثبت نام</li>
+                </ol>
             </div>
         </div>
-    </div>
-</div>
+    </header>
 
-<div class="page-content-area">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -32,11 +29,11 @@
                             <div class="alert alert-success">
                                 <i class="fa fa-check"></i> @Model.Message
                             </div>
-                            <br/>
+                            <br />
                             <div class="col-md-12">
                                 <a class="btn btn-success" asp-page="/Account">ورود </a>
                             </div>
-                            <br/>
+                            <br />
                         }
                         @if (!string.IsNullOrWhiteSpace(Model.Message) && !Model.IsSuccess)
                         {
@@ -50,4 +47,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>

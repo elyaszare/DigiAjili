@@ -1,0 +1,143 @@
+﻿@page
+@model ServiceHost.Pages.ProductsModel
+@{
+}
+
+<section class="products pt-0">
+    <!--Header-->
+
+    <header>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-page="/Index">خانه</a></li>
+                <li class="breadcrumb-item active" aria-current="page">محصولات ما</li>
+            </ol>
+            <h1 class="title">محصولات ما</h1>
+            <div class="text">
+                <p>بهترین و با کیفیت ترین پسته شرق کشور در اختیار شماست!</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================== Icons ======================== -->
+    <!--Content-->
+
+    <div class="container">
+        <div class="row">
+
+            <!--Right content-->
+
+            <div class="col-12">
+
+                <!--Sort bar-->
+
+
+                <!--Products collection-->
+
+                <div class="row">
+
+                    <!--Product item-->
+
+                    @foreach (var product in Model.Products)
+                    {
+                        <div class="col-6 col-lg-4">
+                            <article>
+                                <div class="info">
+                                    <span class="add-favorite">
+                                        <a href="javascript:void(0);" data-title="افزودن به علاقه مندی ها" data-title-added="افزودن به  لیست علاقه مندی ">
+                                            <i class="icon icon-heart"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="btn btn-add">
+                                    <i class="icon icon-cart"></i>
+                                </div>
+                                <div class="figure-grid">
+                                    @if (product.HasDiscount)
+                                    {
+                                        <span class="badge badge-warning" style="font-size: 110%">@product.DiscountRate%</span>
+                                    }
+                                    <div class="image">
+                                        <a asp-page="/Product" asp-route-id="@product.Slug">
+                                            <img src="~/ProductPictures/@product.Picture" alt="@product.PictureAlt" title="@product.PictureTitle"/>
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <h2 class="title h4">
+                                            <a asp-page="/Product" asp-route-id="@product.Slug">@product.Name</a>
+                                        </h2>
+                                        <sub>@product.Price تومان</sub>
+                                        @if (product.HasDiscount)
+                                        {
+                                            <sup>@product.PriceWithDiscount تومان</sup>
+                                        }
+                                        <span class="description clearfix">
+                                            @product.ShortDescription
+                                        </span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    }
+
+                </div>
+
+                <!--Pagination-->
+
+                <div class="pagination-wrapper">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+
+            </div> <!--/product items-->
+
+        </div><!--/row-->
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================  Newsletter ======================== -->
+
+<section class="banner">
+
+    <div class="container-fluid">
+
+        <div class="banner-image" style="background-image:url(/Theme/assets/images/gallery-1.jpg)">
+            <!--Header-->
+
+            <header>
+                <div class="container">
+
+                    <h2 class="h2 title">در تماس باش!</h2>
+                    <div class="text">
+                        <p>اولین کسی باشید که در مورد تمام ویژگی های داخلی جدید مطلع شوید</p>
+                    </div>
+
+                </div>
+            </header>
+
+            <!--Content-->
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <input type="email" class="form-control" name="name" value="" placeholder="ایمیل خود را وارد کنید">
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="btn btn-clean">اکنون مشترک شوید</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!--/container-fluid-->
+
+</section>
