@@ -1,6 +1,9 @@
 ﻿@page
 @model ServiceHost.Pages.ProductsModel
 @{
+    ViewData["Title"] = "محصولات";
+    ViewData["keywords"] = "خرید پسته, پسته,درخت پسته,پسته مه ولات,پسته اکبری,پسته تازه,خرید آنلاین پسته";
+    ViewData["metaDescription"] = "خرید آنلاین پسته تازه و خشک , انواع آجیل ";
 }
 
 <section class="products pt-0">
@@ -55,7 +58,7 @@
                                 <div class="figure-grid">
                                     @if (product.HasDiscount)
                                     {
-                                        <span class="badge badge-warning" style="font-size: 110%">@product.DiscountRate%</span>
+                                        <span class="badge badge-warning" style="font-size: 110%">@product.DiscountRate%-</span>
                                     }
                                     <div class="image">
                                         <a asp-page="/Product" asp-route-id="@product.Slug">
@@ -72,7 +75,9 @@
                                             <sup>@product.PriceWithDiscount تومان</sup>
                                         }
                                         <span class="description clearfix">
-                                            @product.ShortDescription
+                                            <h3>
+                                                @product.ShortDescription
+                                            </h3>
                                         </span>
                                     </div>
                                 </div>

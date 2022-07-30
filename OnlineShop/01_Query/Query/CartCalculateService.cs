@@ -41,6 +41,10 @@ namespace _01_Query.Query
                     var colleagueDiscount = colleagueDiscounts.FirstOrDefault(x => x.ProductId == cartItem.Id);
                     if (colleagueDiscount != null)
                         cartItem.DiscountRate = colleagueDiscount.DiscountRate;
+
+                    var customerDiscount = customerDiscounts.FirstOrDefault(x => x.ProductId == cartItem.Id);
+                    if (customerDiscount != null)
+                        cartItem.DiscountRate = customerDiscount.DiscountRate;
                 }
                 else
                 {

@@ -5,6 +5,8 @@ using _0_Framework.Application;
 using _0_Framework.Application.Email;
 using _0_Framework.Application.ZarinPal;
 using _0_Framework.Infrastructure;
+using _01_Query.Contracts;
+using _01_Query.Query;
 using AccountManagement.Infrastructure.Configuration;
 using BlogManagement.Infrastructure.Configuration;
 using CommentManagement.Infrastructure.Configuration;
@@ -38,13 +40,14 @@ namespace ServiceHost
             var connectionString = Configuration.GetConnectionString("OnlineShop_DB");
             ShopManagementBootstrapper.Configure(services, connectionString);
             DiscountManagementBootstrapper.Configure(services, connectionString);
-            InventoryManagementBootstrapper.Configure(services,connectionString);
-            BlogManagementBootstrapper.Configure(services,connectionString);
+            InventoryManagementBootstrapper.Configure(services, connectionString);
+            BlogManagementBootstrapper.Configure(services, connectionString);
             CommentManagementBootstrapper.Configure(services, connectionString);
             AccountManagementBootstrapper.Configure(services, connectionString);
 
-            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
 
+            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
+            services.AddTransient<ITempData, TempData>();
             services.AddSingleton<IPasswordHasher, PasswordHasher>();
             services.AddTransient<IFileUploader, FileUploader>();
             services.AddTransient<IAuthHelper, AuthHelper>();
@@ -52,8 +55,8 @@ namespace ServiceHost
             services.AddTransient<IEmailService, EmailService>();
             services.Configure<CookiePolicyOptions>(options =>
             {
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.Lax;
+                //options.CheckConsentNeeded = context => true;
+                //options.MinimumSameSitePolicy = SameSiteMode.Lax;
             });
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -70,16 +73,19 @@ namespace ServiceHost
             services.AddAuthorization(option =>
             {
                 option.AddPolicy("AdminArea",
-                    builder => builder.RequireRole(new List<string> {Roles.Administrator, Roles.ContentUploader}));
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator, Roles.ContentUploader }));
 
                 option.AddPolicy("Shop",
-                    builder => builder.RequireRole(new List<string> {Roles.Administrator}));
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator }));
 
                 option.AddPolicy("Discount",
-                    builder => builder.RequireRole(new List<string> {Roles.Administrator}));
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator }));
 
                 option.AddPolicy("Account",
-                    builder => builder.RequireRole(new List<string> {Roles.Administrator}));
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator }));
+
+                option.AddPolicy("Inventory",
+                    builder => builder.RequireRole(new List<string> { Roles.Administrator }));
             });
 
 
@@ -91,6 +97,7 @@ namespace ServiceHost
                     option.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
                     option.Conventions.AuthorizeAreaFolder("Administration", "/Discounts", "Discount");
                     option.Conventions.AuthorizeAreaFolder("Administration", "/Accounts", "Account");
+                    option.Conventions.AuthorizeAreaFolder("Administration", "/Inventory", "Inventory");
                 }).AddApplicationPart(typeof(InventoryController).Assembly)
                 .AddNewtonsoftJson();
         }

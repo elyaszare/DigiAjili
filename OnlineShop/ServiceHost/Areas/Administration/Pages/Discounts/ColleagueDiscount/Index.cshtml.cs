@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contract.ColleagueDiscount;
+using DiscountManagement.Configuration.Permissions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -24,12 +26,14 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.ColleagueDiscount
             _colleagueDiscountApplication = colleagueDiscountApplication;
         }
 
+        [NeedsPermission(DiscountPermissions.ListDiscounts)]
         public void OnGet(ColleagueDiscountSearchModel searchModel)
         {
             Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
             ColleagueDiscount = _colleagueDiscountApplication.Search(searchModel);
         }
 
+        [NeedsPermission(DiscountPermissions.CreateDiscount)]
         public IActionResult OnGetCreate()
         {
             var command = new DefineColleagueDiscount
@@ -39,12 +43,14 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.ColleagueDiscount
             return Partial("./Create", command);
         }
 
+        [NeedsPermission(DiscountPermissions.CreateDiscount)]
         public JsonResult OnPostCreate(DefineColleagueDiscount command)
         {
             var result = _colleagueDiscountApplication.Define(command);
             return new JsonResult(result);
         }
 
+        [NeedsPermission(DiscountPermissions.EditDiscount)]
         public JsonResult OnPostEdit(EditColleagueDiscount command)
         {
             var result = _colleagueDiscountApplication.Edit(command);
@@ -52,6 +58,7 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.ColleagueDiscount
             return new JsonResult(result);
         }
 
+        [NeedsPermission(DiscountPermissions.EditDiscount)]
         public IActionResult OnGetEdit(long id)
         {
             var colleagueDiscount = _colleagueDiscountApplication.GetDetails(id);
@@ -59,12 +66,14 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.ColleagueDiscount
             return Partial("Edit", colleagueDiscount);
         }
 
+        [NeedsPermission(DiscountPermissions.Remove)]
         public IActionResult OnGetRemove(long id)
         {
             _colleagueDiscountApplication.Remove(id);
             return RedirectToPage("./Index");
         }
 
+        [NeedsPermission(DiscountPermissions.Restore)]
         public IActionResult OnGetRestore(long id)
         {
             _colleagueDiscountApplication.Restore(id);

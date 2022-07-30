@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using _0_Framework.Infrastructure;
 using AccountManagement.Application.Contract.Account;
 using AccountManagement.Application.Contract.Role;
+using AccountManagement.Infrastructure.Configuration.Permissions;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ServiceHost.Areas.Administration.Pages.Accounts.Role
@@ -16,6 +18,7 @@ namespace ServiceHost.Areas.Administration.Pages.Accounts.Role
             _roleApplication = roleApplication;
         }
 
+        [NeedsPermission(AccountPermissions.ListRoles)]
         public void OnGet(AccountSearchModel searchModel)
         {
             Roles = _roleApplication.GetRoles();

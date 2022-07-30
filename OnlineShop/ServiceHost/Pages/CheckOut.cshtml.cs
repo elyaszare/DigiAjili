@@ -16,14 +16,14 @@ namespace ServiceHost.Pages
     [Authorize]
     public class CheckOutModel : PageModel
     {
-        public Cart Cart;
         public const string CookieName = "cart-items";
+        private readonly IAuthHelper _authHelper;
         private readonly ICartCalculateService _cartCalculateService;
         private readonly ICartService _cartService;
-        private readonly IProductQuery _productQuery;
         private readonly IOrderApplication _orderApplication;
+        private readonly IProductQuery _productQuery;
         private readonly IZarinPalFactory _zarinPalFactory;
-        private readonly IAuthHelper _authHelper;
+        public Cart Cart;
 
         public CheckOutModel(ICartCalculateService cartCalculateService, ICartService cartService,
             IProductQuery productQuery, IOrderApplication orderApplication, IZarinPalFactory zarinPalFactory,
@@ -51,7 +51,7 @@ namespace ServiceHost.Pages
             _cartService.Set(Cart);
         }
 
-        public IActionResult OnGetPay(OrderInfo orderInfo)
+        public IActionResult OnPostPay(OrderInfo orderInfo)
         {
             var cart = _cartService.Get();
             var result = _productQuery.CheckInventoryStock(cart.Items);

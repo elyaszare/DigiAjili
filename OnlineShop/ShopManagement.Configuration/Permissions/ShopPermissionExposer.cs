@@ -28,6 +28,18 @@ namespace ShopManagement.Configuration.Permissions
                         new(ShopPermissions.CreateProductCategory, "CreateProductCategory"),
                         new(ShopPermissions.EditProductCategory, "EditProductCategory")
                     }
+                },
+                {
+                    "Order",
+                    new List<PermissionDto>
+                    {
+                        new(ShopPermissions.SearchOrder, "SearchOrder"),
+                        new(ShopPermissions.ListOrder, "ListOrder"),
+                        new(ShopPermissions.Confirm, "Confirm"),
+                        new(ShopPermissions.Cancel, "Cancel"),
+                        new(ShopPermissions.GetItems, "GetItems"),
+                        new(ShopPermissions.GetInfo, "GetInfo")
+                    }
                 }
             };
         }

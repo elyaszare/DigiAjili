@@ -1,13 +1,17 @@
 ﻿@page
 @model ServiceHost.Pages.AccessDeniedModel
 @{
+    ViewData["Title"] = "خطا404";
+    ViewData["keywords"] = "خرید پسته, پسته,درخت پسته,پسته مه ولات,پسته اکبری,پسته تازه,خرید آنلاین پسته";
+    ViewData["metaDescription"] = "خرید آنلاین پسته تازه و خشک , انواع آجیل ";
 }
 
 <section class="not-found">
     <div class="container">
+        <h4>@TempData["message"]</h4>
         <h1 class="title" data-title="Page not found!">404</h1>
-        <div class="h4 subtitle">متاسف! صفحه یافت نشد.</div>
-        <p>URL درخواستی در این سرور یافت نشد. این تمام چیزیست که ما میدانیم.</p>
-        <p>کلیک <a asp-page="/Index">اینجا</a> برای رفتن به صفحه اول؟ </p>
+        <div class="h4 subtitle">متاسفانه صفحه یافت نشد.</div>
+        <p>اصفحه ای با این اطلاعات یافت نشد.</p>
+        <p>کلیک کنید. <a asp-page="/Index">اینجا</a> برای رفتن به صفحه اول </p>
     </div>
 </section>

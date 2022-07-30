@@ -33,12 +33,14 @@ namespace AccountManagement.Application
         {
             var operation = new OperationResult();
             var accountBy = _accountRepository.GetBy(command.Username);
+
             if (_accountRepository.Exists(x => x.Email == command.Email || x.Mobile == command.Mobile))
                 return operation.Failed("حساب کاربری با این مشخصات وجود دارد . می توانید وارد حساب کاربری خود شوید");
 
 
-            if (accountBy is {IsActive: true})
+            if (accountBy?.ActiveCode != null)
                 return operation.Succeeded("کاربر گرامی کد فعال سازی حساب کاربری  به ایمیل شما ارسال شده است.");
+
             //Hashing Password
             var password = _passwordHasher.Hash(command.Password);
 
@@ -58,8 +60,9 @@ namespace AccountManagement.Application
 
             _accountRepository.Create(account);
             _accountRepository.SaveChanges();
+            //{"https://localhost:5001/ActiveAccount/" + activeCode}
             _emailService.SendEmail(command.Email, "ثبت نام موفق!",
-                $"به سایت کالا مارکت خوش آمدید \n از طریق لینک زیر وارد شوید\n{"https://localhost:5001/ActiveAccount/" + activeCode}");
+                "");
             return operation.Succeeded();
         }
 
@@ -79,8 +82,9 @@ namespace AccountManagement.Application
             var path = $"ProfilePhotos//{command.Username}";
             //Save Picture in Path
             var fileName = _fileUploader.Upload(command.ProfilePhoto, path);
+            var activeCode = account.ActiveCode;
             account.Edit(command.Fullname, command.Username, command.Email, command.Mobile, fileName,
-                command.ActiveCode,
+                activeCode,
                 command.RoleId);
 
             _accountRepository.SaveChanges();
@@ -116,7 +120,7 @@ namespace AccountManagement.Application
 
             //Check for Valid password in Database 
             var result = _passwordHasher.Check(account.Password, command.Password);
-
+            if (!result.Verified) return operation.Failed(ApplicationMessages.WrongUserPass);
 
             var permission = _roleRepository
                 .Get(account.RoleId)

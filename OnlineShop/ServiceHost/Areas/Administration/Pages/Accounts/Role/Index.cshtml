@@ -1,8 +1,7 @@
 ﻿@page
+@using AccountManagement.Infrastructure.Configuration.Permissions
 @model ServiceHost.Areas.Administration.Pages.Accounts.Role.IndexModel
-@{
 
-}
 @{
     Layout = "Shared/_AdminLayout";
     ViewData["title"] = "مدیریت نقش ها";
@@ -12,14 +11,14 @@
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
-            <a class="btn btn-success btn-lg" asp-page="./Create">تعریف نقش جدید</a>
+            <a permission="@AccountPermissions.CreateRoles" class="btn btn-success btn-lg" asp-page="./Create">تعریف نقش جدید</a>
         </p>
     </div>
 </div>
 
 
 
-<div class="row" >
+<div class="row" permission="@AccountPermissions.ListRoles">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -41,16 +40,16 @@
                             <tbody>
                                 @foreach (var item in Model.Roles)
                                 {
-                                <tr>
-                                    <td>@item.Id</td>
-                                    <td>@item.Name</td>
-                                    <td>@item.CreationDate</td>
-                                    <td>
-                                        <a class="btn btn-warning pull-right m-rl-5" asp-page="./Edit" asp-route-id="@item.Id">
-                                            <i class="fa fa-edit"></i> ویرایش
-                                        </a>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Name</td>
+                                        <td>@item.CreationDate</td>
+                                        <td>
+                                            <a permission="@AccountPermissions.EditRoles" class="btn btn-warning pull-right m-rl-5" asp-page="./Edit" asp-route-id="@item.Id">
+                                                <i class="fa fa-edit"></i> ویرایش
+                                            </a>
+                                        </td>
+                                    </tr>
                                 }
                             </tbody>
                         </table>

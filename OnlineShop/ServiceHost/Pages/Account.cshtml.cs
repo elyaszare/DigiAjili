@@ -1,4 +1,6 @@
-﻿using AccountManagement.Application.Contract.Account;
+﻿using _0_Framework.Application;
+using AccountManagement.Application.Contract.Account;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -6,9 +8,10 @@ namespace ServiceHost.Pages
 {
     public class AccountModel : PageModel
     {
-        [TempData] public string LoginMessage { get; set; }
+        [TempData]
+        public string LoginMessage { get; set; }
         [TempData] public string RegisterMessage { get; set; }
-
+        [TempData] public string RegisterMessageSuccess { get; set; }
         private readonly IAccountApplication _accountApplication;
 
         public AccountModel(IAccountApplication accountApplication)
@@ -18,16 +21,24 @@ namespace ServiceHost.Pages
 
         public void OnGet()
         {
+            //if (IsMessage) LoginMessage = "نام کاربر یا رمز عبور شما صحیح نمی باشد.";
         }
 
-        public IActionResult OnPostLogin(Login command)
+        public RedirectToPageResult OnPostLogin(Login command, IFormCollection form)
         {
+            var reCaptcha = new ReCaptchaAccount();
+            var captchaResult = reCaptcha.CheckReCaptcha(form);
+            if (!captchaResult.IsSucceeded)
+            {
+                LoginMessage = captchaResult.Message;
+                return RedirectToPage("/Account");
+            }
+
             var result = _accountApplication.Login(command);
-            if (result.IsSucceeded)
-                return RedirectToPage("/Index");
+            if (result.IsSucceeded) return RedirectToPage("/Index");
 
             LoginMessage = result.Message;
-            return RedirectToPage("/Account");
+            return RedirectToPage("Account");
         }
 
         public IActionResult OnGetLogout()
@@ -36,23 +47,26 @@ namespace ServiceHost.Pages
             return RedirectToPage("/Index");
         }
 
-        public IActionResult OnPostRegister(RegisterAccount command)
+        public IActionResult OnPostRegister(RegisterAccount command, IFormCollection form)
         {
+            var reCaptcha = new ReCaptchaAccount();
+            var captchaResult = reCaptcha.CheckReCaptcha(form);
+            if (!captchaResult.IsSucceeded)
+            {
+                RegisterMessage = captchaResult.Message;
+                return RedirectToPage("/Account");
+            }
+
             var result = _accountApplication.Register(command);
+
             if (result.IsSucceeded)
             {
-                RegisterMessage =
-                    "ثبت نام شما با موفقیت انجام شد جهت فعال سازی حساب کاربری خود از طریق لینک ارسال شده در ایمیل خود وارد شوید.";
+                RegisterMessageSuccess = result.Message;
                 return RedirectToPage("/Account");
             }
 
             RegisterMessage = result.Message;
             return RedirectToPage("/Account");
-        }
-
-        public IActionResult OnPostActiveAccount(string activeAccount)
-        {
-            return RedirectToPage("Account");
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿@page
 @using _0_Framework.Application
+@using ShopManagement.Configuration.Permissions
 @model ServiceHost.Areas.Administration.Pages.Shop.Orders.IndexModel
 @{
 }
@@ -8,7 +9,7 @@
     ViewData["title"] = "مدیریت سفارشات ";
 }
 
-<div class="row">
+<div class="row" permission="@ShopPermissions.SearchOrder">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -38,7 +39,7 @@
     </div>
 </div>
 
-<div class="row" id="ProductCategoriesDiv">
+<div class="row" id="ProductCategoriesDiv" permission="@ShopPermissions.ListOrder">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -91,19 +92,19 @@
                                         <td>
                                             @if (item.IsPaid == false)
                                             {
-                                                <a class="btn btn-success pull-right m-rl-5" asp-page-handler="Confirm" asp-route-id="@item.Id">
+                                                <a permission="@ShopPermissions.Confirm" class="btn btn-success pull-right m-rl-5" asp-page-handler="Confirm" asp-route-id="@item.Id">
                                                     <i class="fa fa-check"></i> تایید
                                                 </a>
-                                                <a class="btn btn-danger pull-right m-rl-5" asp-page-handler="Cancel" asp-route-id="@item.Id">
+                                                <a permission="@ShopPermissions.Cancel" class="btn btn-danger pull-right m-rl-5" asp-page-handler="Cancel" asp-route-id="@item.Id">
                                                     <i class="fa fa-close"></i> لغو
                                                 </a>
                                                 
                                             }
-                                            <a class="btn btn-primary pull-right m-rl-5"
+                                            <a permission="@ShopPermissions.GetInfo" class="btn btn-primary pull-right m-rl-5"
                                                href="#showmodal=@Url.Page("./Index", "Info", new {id = item.Id})">
                                                 <i class="fa fa-id-card"></i> اطلاعات
                                             </a>
-                                            <a class="btn btn-primary pull-right m-rl-5"
+                                            <a permission="@ShopPermissions.GetItems" class="btn btn-primary pull-right m-rl-5"
                                                href="#showmodal=@Url.Page("./Index", "Items", new {id = item.Id})">
                                                 <i class="fa fa-id-card"></i> آیتم ها
                                             </a>

@@ -1,9 +1,4 @@
 ﻿//Operation Messages File
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _0_Framework.Application
 {
@@ -16,8 +11,9 @@ namespace _0_Framework.Application
         {
             IsSucceeded = false;
         }
+
         //Succeeded Message
-        public OperationResult Succeeded(string message = "عملیسات با موفقیت انجام شد")
+        public OperationResult Succeeded(string message = "عملیات با موفقیت انجام شد")
         {
             IsSucceeded = true;
             Message = message;

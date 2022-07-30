@@ -32,6 +32,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Product
             Product = _productApplication.Search(searchModel);
         }
 
+        [NeedsPermission(ShopPermissions.CreateProduct)]
         public IActionResult OnGetCreate()
         {
             var command = new CreateProduct
@@ -41,6 +42,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Product
             return Partial("./Create", command);
         }
 
+        [NeedsPermission(ShopPermissions.CreateProduct)]
         public JsonResult OnPostCreate(CreateProduct command)
         {
             var result = _productApplication.Create(command);
@@ -55,6 +57,7 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Product
             return new JsonResult(result);
         }
 
+        [NeedsPermission(ShopPermissions.EditProduct)]
         public IActionResult OnGetEdit(long id)
         {
             var product = _productApplication.GetDetails(id);

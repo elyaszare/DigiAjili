@@ -123,8 +123,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IM.Presentation", "IM.Prese
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryManagement.Presentation.Api", "InventoryManagemenr.Presentation.Api\InventoryManagement.Presentation.Api.csproj", "{4BB76210-70E2-412C-9252-63D949C23F3B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pistachio", "Pistachio", "{CD9DDBAA-D2DD-4FAA-95E5-29750A8C67AB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

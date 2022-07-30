@@ -30,7 +30,6 @@ namespace ServiceHost.Pages
             if (cartItems != null)
                 foreach (var item in cartItems)
                     item.CalculateTotalItemPrice();
-
             CartItems = _productQuery.CheckInventoryStock(cartItems);
         }
 
@@ -58,8 +57,8 @@ namespace ServiceHost.Pages
                     item.CalculateTotalItemPrice();
 
             CartItems = _productQuery.CheckInventoryStock(cartItems);
-            if (CartItems.Any(x => !x.IsInStock))
-                return RedirectToPage("/Cart");
+            if (CartItems.Any(x => !x.IsInStock)) return RedirectToPage("/Cart");
+
             return RedirectToPage("CheckOut");
         }
     }

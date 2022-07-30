@@ -1,4 +1,5 @@
 ﻿@page
+@using DiscountManagement.Configuration.Permissions
 @model ServiceHost.Areas.Administration.Pages.Discounts.ColleagueDiscount.IndexModel
 @{
 }
@@ -11,12 +12,12 @@
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
-            <a class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">تعریف تخفیف همکاری جدید</a>
+            <a permission="@DiscountPermissions.CreateDiscount" class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">تعریف تخفیف همکاری جدید</a>
         </p>
     </div>
 </div>
 
-<div class="row">
+<div class="row" permission="@DiscountPermissions.SearchDiscounts">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -38,7 +39,7 @@
     </div>
 </div>
 
-<div class="row" id="ProductCategoriesDiv">
+<div class="row" id="ProductCategoriesDiv" permission="@DiscountPermissions.ListDiscounts">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -69,18 +70,18 @@
                                         <td>
                                             @if (item.IsRemoved)
                                             {
-                                                <a asp-page="./Index" asp-page-handler="Restore" asp-route-id="@item.Id"
+                                                <a permission="@DiscountPermissions.Restore" asp-page="./Index" asp-page-handler="Restore" asp-route-id="@item.Id"
                                                    class="btn btn-success waves-effect waves-light m-b-5">فعال سازی</a>
                                                
                                             }
                                             else
                                             {
-                                                <a asp-page="./Index" asp-page-handler="Remove" asp-route-id="@item.Id"
+                                                <a permission="@DiscountPermissions.Remove" asp-page="./Index" asp-page-handler="Remove" asp-route-id="@item.Id"
                                                    class="btn btn-danger waves-effect waves-light m-b-5">غیر فعال</a>
                                             }
                                         </td>
                                         <td>
-                                            <a class="btn btn-warning btn-custom waves-effect waves-light m-b-5"
+                                            <a permission="@DiscountPermissions.EditDiscount" class="btn btn-warning btn-custom waves-effect waves-light m-b-5"
                                                href="#showmodal=@Url.Page("./Index", "Edit", new { id =item.Id})">
                                                 <i class="fa fa-edit"></i> ویرایش
                                             </a>

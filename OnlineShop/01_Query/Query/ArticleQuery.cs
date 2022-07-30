@@ -102,7 +102,7 @@ namespace _01_Query.Query
 
             if (article == null) return new ArticleQueryModel();
             if (!string.IsNullOrWhiteSpace(article.Keywords))
-                article.KeywordList = article.Keywords.Split("،").ToList();
+                article.KeywordList = article.Keywords.Split(",").ToList();
 
 
             var comments = _commentContext.Comments

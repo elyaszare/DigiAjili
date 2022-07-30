@@ -423,7 +423,6 @@ D:\PistachioShop\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\
 D:\PistachioShop\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Contact.cshtml.g.cs
 D:\PistachioShop\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 D:\PistachioShop\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
-D:\PistachioShop\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Payment.cshtml.g.cs
 D:\PistachioShop\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\PaymentResult.cshtml.g.cs
 D:\PistachioShop\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
 D:\PistachioShop\OnlineShop\OnlineShop\ServiceHost\obj\Debug\net5.0\Razor\Pages\Product.cshtml.g.cs

@@ -3,6 +3,8 @@
 @model ServiceHost.Pages.CartModel
 @{
     ViewData["Title"] = "سبد خرید";
+    ViewData["keywords"] = "خرید پسته,پسته تازه,پسته مه ولات,پسته خشک,پسته اکبری";
+    ViewData["metaDescription"] = "خرید انواع پسته و آجیل,پسته اکبری";
 }
 
 <div>
@@ -111,7 +113,6 @@
 
 <section class="checkout">
 
-    <!-- === header === -->
 
     <header>
         <div class="container">
@@ -131,7 +132,6 @@
             </div>
         }
     </div>
-    <!-- === step wrapper === -->
     @if (Model.CartItems != null)
     {
         <div class="step-wrapper">
@@ -151,15 +151,12 @@
             </div>
         </div>
 
-        <!-- === left content === -->
 
         <div class="container">
 
-            <!-- ========================  Cart wrapper ======================== -->
 
             <div class="cart-wrapper">
 
-                <!-- cart header -->
 
                 <div class="cart-block cart-block-header clearfix">
                     <div><span> محصول</span></div>
@@ -170,11 +167,9 @@
                     <div class="text-right"><span>قیمت کل</span></div>
                 </div>
 
-                <!-- cart items -->
 
                 <div class="clearfix">
 
-                    <!-- cart item -->
                     @foreach (var item in Model.CartItems)
                     {
                     <div class="cart-block cart-block-item clearfix">
@@ -200,7 +195,6 @@
                 </div>
             </div>
 
-            <!-- ========================  Cart navigation ======================== -->
 
             <div class="clearfix">
                 <div class="row">
@@ -214,7 +208,6 @@
             </div>
 
         </div>
-        <!--/container-->
     }
     else
     {

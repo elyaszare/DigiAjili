@@ -10,7 +10,7 @@
             <h2 class="title">تخفیفات ویژه!!</h2>
             <div class="text">
                 <p>
-                   از جدید ترین محصولات ما را تجربه کنید... <a asp-page="/Products" class="btn btn-main">مشاهده همه</a>
+                   از جدید ترین محصولات ما را تجربه کنید... <a asp-page="/Products" class="btn btn-main">مشاهده همه محصولات</a>
                 </p>
             </div>
         </div>
@@ -41,7 +41,7 @@
                         <div class="figure-grid">
                             @if (product.HasDiscount)
                             {
-                                <span class="badge badge-warning" style="font-size: 110%">@product.DiscountRate%</span>
+                                <span class="badge badge-warning" style="font-size: 110%">@product.DiscountRate%-</span>
                             }
                             <div class="image">
                                 <a asp-page="/Product" asp-route-id="@product.Slug">

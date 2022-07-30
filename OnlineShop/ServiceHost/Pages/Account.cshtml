@@ -1,125 +1,14 @@
 ﻿@page
 @model ServiceHost.Pages.AccountModel
 @{
-    ViewData["Title"] = "ورود و ثبت نام";
+    ViewData["Title"] = "ورود - ثبت نام";
+    ViewData["keywords"] = "خرید پسته, پسته,درخت پسته,پسته مه ولات,پسته اکبری,پسته تازه,خرید آنلاین پسته";
+    ViewData["metaDescription"] = "خرید آنلاین پسته تازه و خشک , انواع آجیل ";
+    var b = Model.LoginMessage;
 }
-<div>
-
-    @*<div class="breadcrumb-area section-space--half">
-        <div class="container wide">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-wrapper breadcrumb-bg">
-                        <div class="breadcrumb-content">
-                            <h2 class="breadcrumb-content__title">ورود - ثبت نام</h2>
-                            <ul class="breadcrumb-content__page-map">
-                                <li><a asp-page="/Index">صفحه اصلی</a></li>
-                                <li class="active">ورود - ثبت نام</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="page-content-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="page-wrapper">
-                        <div class="page-content-wrapper">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6">
-                                    @if (Model.LoginMessage != null)
-                                    {
-                                        <div class="alert alert-danger">@Model.LoginMessage</div>
-                                    }
-                                    <form method="post" asp-page-handler="Login">
-                                        <div class="login-form">
-                                            <h4 class="login-title">ورود</h4>
-                                            <div class="row">
-                                                <div class="col-md-12 col-12">
-                                                    <label>نام کاربری</label>
-                                                    <input type="text" name="username" placeholder="مثال: ElyasZare4">
-                                                </div>
-                                                <div class="col-12">
-                                                    <label>رمز عبور</label>
-                                                    <input type="password" name="password" placeholder="رمز عبور">
-                                                </div>
-
-                                                <div class="col-sm-6 text-left text-sm-right">
-                                                    <a href="#" class="forget-pass-link"> رمز عبور را فراموش کرده اید؟</a>
-                                                </div>
-
-                                                <div class="col-md-12">
-                                                    <button class="register-button">ورود</button>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </form>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
-
-                                    @if (!string.IsNullOrWhiteSpace(Model.RegisterMessage))
-                                    {
-                                        <div class="alert alert-danger">@Model.RegisterMessage</div>
-                                    }
-                                    <form method="post" asp-page-handler="Register">
-
-                                        <div class="login-form">
-                                            <h4 class="login-title">ثبت نام</h4>
-
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>نام و نام خانوادگی*</label>
-                                                    <input type="text" name="fullname" placeholder="مثال: الیاس زارع">
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label>نام کاربری</label>
-                                                    <input type="text" name="username" placeholder="مثال: ElyasZare4">
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label>ایمیل</label>
-                                                    <input type="email" name="email" placeholder="ایمیل: elyas@elyaszare.ir">
-                                                </div>
-                                                <div class="col-md-12 col-12">
-                                                    <label>شماره موبایل</label>
-                                                    <input type="number" name="mobile" placeholder="مثال: 9120000000">
-                                                </div>
-                                                <div class="col-6">
-                                                    <label>رمز عبور</label>
-                                                    <input type="password" name="password" placeholder="رمز عبور">
-                                                </div>
-                                                <div class="col-6">
-                                                    <label>تایید رمز عبور</label>
-                                                    <input type="password" name="repassword" placeholder="رمز عبور">
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <button class="register-button">ثبت نام</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>*@
-
-
-</div>
-
-
 
 <section class="login">
 
-    <!--Header-->
 
     <header class="d-none">
         <div class="container">
@@ -135,47 +24,60 @@
         </div>
     </header>
 
-    <!--Content-->
 
     <div class="container">
 
         <div class="row">
 
-            <!-- === left content === -->
 
             <div class="col-md-6  m-auto">
 
                 <div class="login-wrapper">
-
-                    <!--signin-->
-
+                    @if (!string.IsNullOrEmpty(Model.LoginMessage))
+                    {
+                        <div class="alert alert-danger">
+                            @Model.LoginMessage
+                        </div>
+                    }
+                    @if (Model.RegisterMessage != null)
+                    {
+                        <div class="alert alert-danger">@Model.RegisterMessage</div>
+                    }
+                    @if (Model.RegisterMessageSuccess != null)
+                    {
+                        <div class="alert alert-success">@Model.RegisterMessageSuccess</div>
+                    }
+                    <hr />
                     <div class="login-block login-block-signin">
+
 
                         <div class="h4">ورود<a href="javascript:void(0);" class="btn btn-main btn-sm btn-register pull-left">ایجاد حساب کاربری</a></div>
 
                         <hr />
-                        <form  method="post" asp-page-handler="Login">
+                        <form method="post" asp-page-handler="Login">
                             <div class="row">
 
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input type="email" name="email" class="form-control" placeholder="ایمیل">
+                                        <input type="email" name="email" class="form-control" placeholder="ایمیل" required="">
                                     </div>
                                 </div>
 
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input type="password" name="password" class="form-control" placeholder="کلمه عبور">
+                                        <input type="password" name="password" class="form-control" placeholder="کلمه عبور" required="">
                                     </div>
                                 </div>
 
                                 <div class="col-12">
                                     <span class="checkbox">
                                         <input type="checkbox" id="checkBoxId3">
-                                        <label for="checkBoxId3">مرا به خاطر بسپار &nbsp;<a href="#">رمز عبور خود را فراموش کرده اید؟</a></label>
+                                        @*<label for="checkBoxId3">مرا به خاطر بسپار &nbsp;<a href="#">رمز عبور خود را فراموش کرده اید؟</a></label>*@
                                     </span>
                                 </div>
-
+                                <div class="col-md-12">
+                                    <div class="g-recaptcha" data-sitekey="6LebvDEhAAAAAMv6Kozrh4BsHJDzOtVlpZQtnYQq"></div>
+                                </div>
                                 <div class="col-12">
                                     <hr />
                                     <button type="submit" class="btn btn-primary">ورود</button>
@@ -183,8 +85,6 @@
                             </div>
                         </form>
                     </div> <!--/signin-->
-                    <!--signup-->
-
                     <div class="login-block login-block-signup">
 
                         <div class="h4">اکنون ثبت نام کنید<a href="javascript:void(0);" class="btn btn-main btn-sm btn-login pull-left">قبلا عضو هستید؟</a></div>
@@ -196,7 +96,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="fullname" class="form-control" placeholder="نام : *">
+                                        <input type="text" name="fullname" class="form-control" placeholder="نام : *" required="">
                                     </div>
                                 </div>
 
@@ -204,31 +104,31 @@
                                 <div class="col-md-12">
 
                                     <div class="form-group">
-                                        <input type="number" name="mobile" class="form-control" placeholder="شماره تلفن:">
+                                        <input type="number" name="mobile" class="form-control" placeholder="شماره تلفن: *" required="">
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <input type="email" name="email" class="form-control" placeholder="ایمیل: *">
+                                        <input type="email" name="email" class="form-control" placeholder="ایمیل: *" required="">
                                     </div>
                                 </div>
 
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <input type="text" name="username" class="form-control" placeholder="نام کاربری: *">
+                                        <input type="text" name="username" class="form-control" placeholder="نام کاربری: *" required="">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="password" name="password" class="form-control" placeholder="رمز عبور: *">
+                                        <input type="password" name="password" class="form-control" placeholder="رمز عبور: *" required="">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="password" name="repassword" class="form-control" placeholder="تکرار رمز عبور: *">
+                                        <input type="password" name="repassword" class="form-control" placeholder="تکرار رمز عبور: *" required="">
                                     </div>
                                 </div>
 
@@ -238,6 +138,10 @@
                                         <label for="checkBoxId2">اشتراک در خبرنامه های جالب و نکات عالی</label>
                                     </span>
                                     <hr />
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="g-recaptcha" data-sitekey="6LebvDEhAAAAAMv6Kozrh4BsHJDzOtVlpZQtnYQq"></div>
                                 </div>
 
                                 <div class="col-md-12">
