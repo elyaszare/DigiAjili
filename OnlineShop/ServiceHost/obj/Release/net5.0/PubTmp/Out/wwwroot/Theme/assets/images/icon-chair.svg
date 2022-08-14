@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-icon-chair">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="icon-chair" clip-path="url(#clip-icon-chair)">
+    <path id="Path_7" data-name="Path 7" d="M171.494,371.021v27.73h-2.21v-27.73l-10.106-3.988-1.24,19.618h-1.482l1.132-20.157c.647-11.507.081-22.933-1.509-30.128l18.487-.216c2.075,6.252,2.183,15.091,2.587,24.334l16.169,4.635v25.52h-2.21v-24.9l-12.827,3.476v12.019H176.8V369.62l-5.309,1.4Z" transform="translate(-125.08 -317.15)" fill-rule="evenodd"/>
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(1 1)" fill="none" stroke="#000" stroke-width="1">
+      <circle cx="49" cy="49" r="49" stroke="none"/>
+      <circle cx="49" cy="49" r="48.5" fill="none"/>
+    </g>
+  </g>
+</svg>

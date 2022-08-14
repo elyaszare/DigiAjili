@@ -1,0 +1,15 @@
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\bin\Release\net5.0\ShopManagement.Application.Contracts.deps.json
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\bin\Release\net5.0\ShopManagement.Application.Contracts.dll
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\bin\Release\net5.0\ref\ShopManagement.Application.Contracts.dll
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\bin\Release\net5.0\ShopManagement.Application.Contracts.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\bin\Release\net5.0\0_Framework.dll
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\bin\Release\net5.0\0_Framework.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\obj\Release\net5.0\ShopManagement.Application.Contracts.csproj.AssemblyReference.cache
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\obj\Release\net5.0\ShopManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\obj\Release\net5.0\ShopManagement.Application.Contracts.AssemblyInfoInputs.cache
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\obj\Release\net5.0\ShopManagement.Application.Contracts.AssemblyInfo.cs
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\obj\Release\net5.0\ShopManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\obj\Release\net5.0\ShopManagement.Application.Contracts.csproj.CopyComplete
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\obj\Release\net5.0\ShopManagement.Application.Contracts.dll
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\obj\Release\net5.0\ref\ShopManagement.Application.Contracts.dll
+D:\PistachioShop\OnlineShop\OnlineShop\ShopManagement.Application.Contracts\obj\Release\net5.0\ShopManagement.Application.Contracts.pdb

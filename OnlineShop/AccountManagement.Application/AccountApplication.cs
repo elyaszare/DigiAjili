@@ -60,9 +60,8 @@ namespace AccountManagement.Application
 
             _accountRepository.Create(account);
             _accountRepository.SaveChanges();
-            //{"https://localhost:5001/ActiveAccount/" + activeCode}
             _emailService.SendEmail(command.Email, "ثبت نام موفق!",
-                "");
+                $"سلام و عرض ادب خدمت شما کاربر عزیز سایت شورین :) \n به سایت شورین خوش آمدید \n باعث افتخار ماست که برای خرید آسان و مطمئن سایت ما را انتخاب کرده اید... \n جهت فعال سازی حساب کاربری خود از لینک {"https://localhost:5001/ActiveAccount/" + activeCode} وارد شوید \n باتشکر، مدیریت شورین");
             return operation.Succeeded();
         }
 
@@ -126,7 +125,6 @@ namespace AccountManagement.Application
                 .Get(account.RoleId)
                 .Permissions
                 .Select(x => x.Code).ToList();
-
             var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname, account.Username,
                 account.Mobile, account.Email, permission);
             _authHelper.Signin(authViewModel);

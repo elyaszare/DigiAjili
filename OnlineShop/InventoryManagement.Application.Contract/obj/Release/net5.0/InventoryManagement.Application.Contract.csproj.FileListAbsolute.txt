@@ -1,0 +1,17 @@
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Release\net5.0\InventoryManagement.Application.Contract.deps.json
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Release\net5.0\InventoryManagement.Application.Contract.dll
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Release\net5.0\ref\InventoryManagement.Application.Contract.dll
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Release\net5.0\InventoryManagement.Application.Contract.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Release\net5.0\0_Framework.dll
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Release\net5.0\ShopManagement.Application.Contracts.dll
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Release\net5.0\0_Framework.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\bin\Release\net5.0\ShopManagement.Application.Contracts.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Release\net5.0\InventoryManagement.Application.Contract.csproj.AssemblyReference.cache
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Release\net5.0\InventoryManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Release\net5.0\InventoryManagement.Application.Contract.AssemblyInfoInputs.cache
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Release\net5.0\InventoryManagement.Application.Contract.AssemblyInfo.cs
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Release\net5.0\InventoryManagement.Application.Contract.csproj.CoreCompileInputs.cache
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Release\net5.0\InventoryManagement.Application.Contract.csproj.CopyComplete
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Release\net5.0\InventoryManagement.Application.Contract.dll
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Release\net5.0\ref\InventoryManagement.Application.Contract.dll
+D:\PistachioShop\OnlineShop\OnlineShop\InventoryManagement.Application.Contract\obj\Release\net5.0\InventoryManagement.Application.Contract.pdb

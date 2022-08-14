@@ -36,6 +36,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Slug = x.Slug,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
+                IsRemoved = x.IsRemoved,
                 ShortDescription = x.ShortDescription
             }).FirstOrDefault(x => x.Id == id);
         }
@@ -61,6 +62,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     CategoryId = x.CategoryId,
                     Code = x.Code,
                     Picture = x.Picture,
+                    IsRemoved = x.IsRemoved,
                     CreationDate = x.CreationDate.ToFarsi()
                 });
 

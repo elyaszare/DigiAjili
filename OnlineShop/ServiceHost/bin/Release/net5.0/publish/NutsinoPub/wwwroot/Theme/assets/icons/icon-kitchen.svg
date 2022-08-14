@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-icon-kitchen">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="icon-kitchen" clip-path="url(#clip-icon-kitchen)">
+    <path id="Path_6" data-name="Path 6" d="M45.55,409.11H58.336V432.6H45.55V409.11ZM59,422.995H75.2c0-1.275-3.589-2.314-4.863-2.314H63.651c-1.294,0-4.648,1.039-4.648,2.314ZM63.69,409.11h6.687v10.354H63.69V409.11Zm11.923,0H89.831v16.2H75.613v-16.2Zm23.494,14.845v-3.863h.608v3.863Zm2.687,0v-3.863h.608v3.863ZM90.439,409.11h10.3v16.2h-10.3v-16.2Zm10.9,0h9.962v16.2h-9.962v-16.2Zm2.216,1.275h6.687v13.453h-6.687V410.385Zm-12,0h6.687v13.453H91.557V410.385ZM79.81,422.818H85.6v.608H79.81v-.608ZM45.55,434.192H58.434v15.159H45.55V434.192Zm52.341,11.08h5.785v.608H97.891v-.608Zm0-7.609h5.785v.608H97.891v-.608Zm-16.552,9.08h3.1v.608h-3.1v-.608Zm0-5.177h3.1v.608h-3.1v-.608Zm0-5.177h3.1V437h-3.1v-.608Zm-19.474-.353H72.633v.8H61.866v-.8Zm-2.844-1.843h16.14v15.159H59.023V434.192Zm16.748,0H89.831v4.746H75.77v-4.746Zm14.061,5.354v4.569H75.77v-4.569Zm0,5.177v4.628H75.77v-4.628Zm.608-10.531h20.846v7.315H90.439v-7.315Zm20.846,7.923v7.236H90.439v-7.236Zm-49.831-3.471H73.28v8.962H61.141v-8.962Zm11.2.608h-10.9v7.727h10.9v-7.727Zm-10.355.294h9.825v7.119H62.3v-7.119Zm-5.609.176v-3.863H57.3v3.863Zm0-8.766v-3.863H57.3v3.863Z" transform="translate(-28.55 -379.11)" fill-rule="evenodd"/>
+    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(1 1)" fill="none" stroke="#000" stroke-width="1">
+      <circle cx="49" cy="49" r="49" stroke="none"/>
+      <circle cx="49" cy="49" r="48.5" fill="none"/>
+    </g>
+  </g>
+</svg>

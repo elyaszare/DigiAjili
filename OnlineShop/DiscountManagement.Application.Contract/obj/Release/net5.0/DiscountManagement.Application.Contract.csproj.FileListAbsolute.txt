@@ -1,0 +1,17 @@
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Release\net5.0\DiscountManagement.Application.Contract.deps.json
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Release\net5.0\DiscountManagement.Application.Contract.dll
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Release\net5.0\ref\DiscountManagement.Application.Contract.dll
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Release\net5.0\DiscountManagement.Application.Contract.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Release\net5.0\0_Framework.dll
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Release\net5.0\ShopManagement.Application.Contracts.dll
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Release\net5.0\0_Framework.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\bin\Release\net5.0\ShopManagement.Application.Contracts.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\obj\Release\net5.0\DiscountManagement.Application.Contract.csproj.AssemblyReference.cache
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\obj\Release\net5.0\DiscountManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\obj\Release\net5.0\DiscountManagement.Application.Contract.AssemblyInfoInputs.cache
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\obj\Release\net5.0\DiscountManagement.Application.Contract.AssemblyInfo.cs
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\obj\Release\net5.0\DiscountManagement.Application.Contract.csproj.CoreCompileInputs.cache
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\obj\Release\net5.0\DiscountManagement.Application.Contract.csproj.CopyComplete
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\obj\Release\net5.0\DiscountManagement.Application.Contract.dll
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\obj\Release\net5.0\ref\DiscountManagement.Application.Contract.dll
+D:\PistachioShop\OnlineShop\OnlineShop\DiscountManagement.Application.Contract\obj\Release\net5.0\DiscountManagement.Application.Contract.pdb

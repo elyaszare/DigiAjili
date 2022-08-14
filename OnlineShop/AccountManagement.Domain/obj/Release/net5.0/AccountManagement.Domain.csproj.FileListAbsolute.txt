@@ -1,0 +1,17 @@
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\bin\Release\net5.0\AccountManagement.Domain.deps.json
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\bin\Release\net5.0\AccountManagement.Domain.dll
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\bin\Release\net5.0\ref\AccountManagement.Domain.dll
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\bin\Release\net5.0\AccountManagement.Domain.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\bin\Release\net5.0\0_Framework.dll
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\bin\Release\net5.0\AccountManagement.Application.Contract.dll
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\bin\Release\net5.0\0_Framework.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\bin\Release\net5.0\AccountManagement.Application.Contract.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\obj\Release\net5.0\AccountManagement.Domain.csproj.AssemblyReference.cache
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\obj\Release\net5.0\AccountManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\obj\Release\net5.0\AccountManagement.Domain.AssemblyInfoInputs.cache
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\obj\Release\net5.0\AccountManagement.Domain.AssemblyInfo.cs
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\obj\Release\net5.0\AccountManagement.Domain.csproj.CoreCompileInputs.cache
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\obj\Release\net5.0\AccountManagement.Domain.csproj.CopyComplete
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\obj\Release\net5.0\AccountManagement.Domain.dll
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\obj\Release\net5.0\ref\AccountManagement.Domain.dll
+D:\PistachioShop\OnlineShop\OnlineShop\AccountManagement.Domain\obj\Release\net5.0\AccountManagement.Domain.pdb

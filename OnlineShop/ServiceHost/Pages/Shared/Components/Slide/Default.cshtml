@@ -11,30 +11,29 @@
             <!--Slide item-->
             @foreach (var item in Model)
             {
-                <div class="item d-flex align-items-center" style="background-image: url(ProductPictures/@item.Picture)">
-                    <div class="container">
-                        <div class="caption">
-                            <div class="animated" data-start="fadeInUp">
-                                <div class="promo pt-3">
-                                    <div class="title title-sm p-0" style="font-size: 45px">@item.Title</div>
+                    <div class="item d-flex align-items-center"onclick="location.href='@item.Link';" style="background-image: url(ProductPictures/@item.Picture)">
+                        <div class="container">
+                            <div class="caption">
+                                <div class="animated" data-start="fadeInUp">
+                                    <div class="promo pt-3">
+                                        <div class="title title-sm p-0" style="font-size: 45px">@item.Title</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="animated" data-start="fadeInUp" style="font-size: 25px">
-                                @item.Heading
-                            </div>
-                            <div class="animated" data-start="fadeInUp" style="font-size: 20px">
-                                @item.Text
-                            </div>
-                            <div class="animated" data-start="fadeInUp">
-                                <div class="pt-3">
-                                    <a href="@item.Link" target="_blank" class="btn btn-outline-light">@item.BtnText</a>
+                                <div class="animated" data-start="fadeInUp" style="font-size: 25px">
+                                    @item.Heading
                                 </div>
-                            </div>
+                                <div class="animated" data-start="fadeInUp" style="font-size: 20px">
+                                    @item.Text
+                                </div>
+                                <div class="animated" data-start="fadeInUp">
+                                    <div class="pt-3">
+                                        <a href="@item.Link" target="_blank" class="btn btn-outline-light">@item.BtnText</a>
+                                    </div>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-               
             }
         </div> <!--/owl-slider-->
     </div>

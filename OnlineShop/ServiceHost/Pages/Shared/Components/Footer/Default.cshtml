@@ -1,4 +1,5 @@
-﻿@{
+﻿@model _01_Query.FooterModel
+@{
 }
 <footer>
 
@@ -11,7 +12,7 @@
                 <!--footer showroom-->
                 <div class="footer-showroom">
                     <div class="text-center">
-                        <a href="/"><img src="~/Theme/assets/images/divano-logo.png" alt="" width="130" height="55" /></a>
+                        <a href="/"><img src="~/Theme/assets/images/DigiAjili3.png" alt="" width="70" height="50" /></a>
                     </div>
                 </div>
 
@@ -19,33 +20,21 @@
                 <div class="footer-links">
                     <div class="row">
                         <div class="col-md-2">
-                            <h5>مرور کردن توسط</h5>
+                            <h5>گروه محصولات</h5>
                             <ul>
-                                <li><a href="#">نام تجاری</a></li>
-                                <li><a href="#"> محصول</a></li>
-                                <li><a href="#">دسته بندی</a></li>
-                                <li><a href="#">پروژه ها</a></li>
-                                <li><a href="#">حراجی</a></li>
+                                @foreach (var productCategory in Model.ProductCategories)
+                                {
+                                <li><a asp-page="ProductCategory" asp-route-id="@productCategory.Slug">@productCategory.Name</a></li>
+                                }
                             </ul>
                         </div>
                         <div class="col-md-2">
-                            <h5>لینک های سریع</h5>
+                            <h5>گروه مقالات</h5>
                             <ul>
-                                <li><a href="#">وانت در فروشگاه</a></li>
-                                <li><a href="#">کارت هدیه</a></li>
-                                <li><a href="#">پس از پرداخت</a></li>
-                                <li><a href="#">خرید کنید</a></li>
-                                <li><a href="#">سالات متداول</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-2">
-                            <h5>اطلاعات سفارش</h5>
-                            <ul>
-                                <li><a href="#">وضعیت سفارش </a></li>
-                                <li><a href="#">مبلغ پرداختی</a></li>
-                                <li><a href="#">حمل دریایی</a></li>
-                                <li><a href="#">برمی گردد</a></li>
-                                <li><a href="#">تاریخچه سفارش ها</a></li>
+                                @foreach (var articleCategory in Model.ArticleCategories)
+                                {
+                                    <li><a asp-page="ArticleCategory" asp-route-id="@articleCategory.Slug">@articleCategory.Name</a></li>
+                                }
                             </ul>
                         </div>
                         <div class="offset-md-3 col-md-3">
@@ -63,16 +52,10 @@
 
                 <div class="footer-social">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <a href="#" target="_blank"><i class="fa fa-download"></i> دانلود قالب دایوانا</a> &nbsp; | &nbsp; <a href="#">نقشه سایت</a> &nbsp; | &nbsp; <a href="#">سیاست حفظ حریم خصوصی</a>
-                        </div>
                         <div class="col-sm-6 links">
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li style="font-size: 30px"><a href="https://t.me/DigiAjili" target="_blank"><i class="fa fa-telegram"></i></a></li>
+                                <li style="font-size: 30px"><a href="https://www.instagram.com/digiajili/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>

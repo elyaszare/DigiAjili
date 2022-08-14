@@ -55,11 +55,12 @@ namespace _01_Query.Query
                         CategorySlug = x.Category.Slug,
                         Code = x.Code,
                         Description = x.Description,
+                        IsRemoved = x.IsRemoved,
                         Keywords = x.Keywords,
                         ShortDescription = x.ShortDescription,
                         MetaDescription = x.MetaDescription,
                         Pictures = MapProductPicture(x.ProductPictures)
-                    }).FirstOrDefault(x => x.Slug == slug);
+                    }).Where(x => !x.IsRemoved).FirstOrDefault(x => x.Slug == slug);
 
             if (!string.IsNullOrWhiteSpace(product.Keywords))
                 product.KeywordList = product.Keywords.Split("،").ToList();
@@ -128,8 +129,9 @@ namespace _01_Query.Query
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 Category = x.Category.Name,
-                Slug = x.Slug
-            }).OrderByDescending(x => x.Id).Take(6).ToList();
+                Slug = x.Slug,
+                IsRemoved = x.IsRemoved
+            }).Where(x => !x.IsRemoved).OrderByDescending(x => x.Id).Take(6).ToList();
 
 
             foreach (var product in products)
@@ -172,8 +174,9 @@ namespace _01_Query.Query
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 Category = x.Category.Name,
-                Slug = x.Slug
-            }).OrderByDescending(x => x.Id).ToList();
+                Slug = x.Slug,
+                IsRemoved = x.IsRemoved
+            }).Where(x => !x.IsRemoved).OrderByDescending(x => x.Id).ToList();
 
 
             foreach (var product in products)
@@ -216,8 +219,9 @@ namespace _01_Query.Query
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 Category = x.Category.Name,
-                Slug = x.Slug
-            }).OrderByDescending(x => x.Id).ToList();
+                Slug = x.Slug,
+                IsRemoved = x.IsRemoved
+            }).Where(x => !x.IsRemoved).OrderByDescending(x => x.Id).ToList();
 
 
             foreach (var product in products)
@@ -262,8 +266,9 @@ namespace _01_Query.Query
                     Picture = x.Picture,
                     PictureAlt = x.PictureAlt,
                     Category = x.Category.Name,
-                    Slug = x.Slug
-                }).OrderByDescending(x => x.Id).ToList();
+                    Slug = x.Slug,
+                    IsRemoved = x.IsRemoved
+                }).Where(x => !x.IsRemoved).OrderByDescending(x => x.Id).ToList();
 
 
             foreach (var product in products)
@@ -310,8 +315,9 @@ namespace _01_Query.Query
                         PictureAlt = x.PictureAlt,
                         Slug = x.Slug,
                         ShortDescription = x.ShortDescription,
-                        CategorySlug = x.Category.Slug
-                    }).AsNoTracking();
+                        CategorySlug = x.Category.Slug,
+                        IsRemoved = x.IsRemoved
+                    }).Where(x => !x.IsRemoved).AsNoTracking();
 
 
             if (!string.IsNullOrWhiteSpace(searchModel))

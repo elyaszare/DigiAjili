@@ -39,6 +39,8 @@ namespace ShopManagement.Application.Contracts.Product
         [Required(ErrorMessage = ValidationMessage.IsRequired)]
         public string Slug { get; set; }
 
+        public bool IsRemoved { get; set; }
+
         public List<ProductCategoryViewModel> ProductCategories { get; set; }
     }
 }

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-icon-nightstand">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="icon-nightstand" clip-path="url(#clip-icon-nightstand)">
+    <path id="Path_12" data-name="Path 12" d="M531.01,374.739l.807,8.334,3.327-.134.4-8.67,1.109-.269v-1.042l-33.638,4.268-16.97-6.855v.907l.269.1.471,9.913h3.528l.638-8.065,10.888,4.537.773,9.476,3.865-.034.706-9.443,23.826-3.025Zm5.881-29.539-32.7-.437-.067,14.45,32.7-1.68.067-12.333Zm-32.765,15.357-.067,14.45,32.7-3.9.067-12.2-32.7,1.647Zm-1.479-15.828-16.668.3v23.456l16.5,6.351.168-30.11Z" transform="translate(-460.98 -315.73)" fill="#fff" fill-rule="evenodd"/>
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(1 1)" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="49" cy="49" r="49" stroke="none"/>
+      <circle cx="49" cy="49" r="48.5" fill="none"/>
+    </g>
+  </g>
+</svg>

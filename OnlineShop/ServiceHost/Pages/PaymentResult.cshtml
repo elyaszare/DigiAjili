@@ -2,6 +2,8 @@
 @model ServiceHost.Pages.PaymentResultModel
 @{
     ViewData["Title"] = "نتیجه پرداخت";
+    ViewData["Image"] = "Theme/assets/images/DigiAjili3 (2).ico";
+
 }
 
 <div class="breadcrumb-area section-space--half">
@@ -30,12 +32,15 @@
             <div class="col-lg-12">
                 @if (Model.Result.IsSuccessful)
                 {
+                    <p class="alert alert-danger">کد پیگیری خود را حتما ذخیره بفرمایید زیرا امکان بازیابی وجود ندارد.</p>
+                    <hr/>
                     <div class="alert alert-success">
                         <p>
                             @Model.Result.Message
                         </p>
                         @if (!string.IsNullOrWhiteSpace(Model.Result.IssueTrackingNo))
                         {
+                           
                             <p>
                                 شماره پیگیری: <strong>@Model.Result.IssueTrackingNo</strong>
                             </p>

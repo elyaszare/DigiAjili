@@ -64,5 +64,28 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.Product
             product.ProductCategories = _productCategoryApplication.GetProductCategories();
             return Partial("Edit", product);
         }
+
+
+        public IActionResult OnGetRemove(long id)
+        {
+            var result = _productApplication.Remove(id);
+            if (result.IsSucceeded)
+                return RedirectToPage("./Index");
+
+            Message = result.Message;
+            return RedirectToPage("./Index");
+        }
+
+
+        public IActionResult OnGetRestore(long id)
+        {
+            var result = _productApplication.Restore(id);
+            if (result.IsSucceeded)
+                return RedirectToPage("./Index");
+
+            Message = result.Message;
+            return RedirectToPage("./Index");
+        }
     }
 }
+

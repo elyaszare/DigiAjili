@@ -988,7 +988,7 @@ nav .navigation-top {
 
 nav .navigation-top > ul {
     text-align: left;
-    height: 55px;
+    height: 60px;
     overflow: hidden;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -5346,11 +5346,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     padding-bottom: 0;
 }
 
-.contact #map {
-    width: 100%;
-    height: 400px;
-    background-color: grey;
-}
+    .contact #map {
+        width: 100%;
+        height: 400px;
+        background-image: url(/Theme/assets/images/Banner2.jpg);
+    }
 
 .contact .contact-block {
     margin-top: -80px;

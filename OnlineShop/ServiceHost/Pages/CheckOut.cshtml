@@ -5,6 +5,7 @@
 @{
     var AccountName = _authHelper.CurrentAccountInfo().Fullname;
     ViewData["Title"] = "تایید سبد خرید / پرداخت";
+    ViewData["Image"] = "Theme/assets/images/DigiAjili3 (2).ico";
     ViewData["keywords"] = "خرید پسته,پسته تازه,پسته مه ولات,پسته خشک,پسته اکبری";
     ViewData["metaDescription"] = "خرید انواع پسته و آجیل,پسته اکبری";
 }
@@ -114,7 +115,6 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
                         <th scope="col">نام</th>
                         <th scope="col">قیمت واحد</th>
                         <th scope="col">تعداد</th>
@@ -128,7 +128,6 @@
                     @foreach (var item in Model.Cart.Items)
                     {
                         <tr>
-                            <th scope="row">@item.Id</th>
                             <td>@item.Name</td>
                             <td>@item.UnitPrice.ToMoney()</td>
                             <td>@item.Count</td>

@@ -7,6 +7,7 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.ArticleCategories
 {
     public class IndexModel : PageModel
     {
+        public string Message { get; set; }
         private readonly IArticleCategoryApplication _articleCategoryApplication;
         public List<ArticleCategoryViewModel> ArticleCategories;
         public ArticleCategorySearchModel SearchModel;
@@ -46,6 +47,27 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.ArticleCategories
         {
             var articleCategory = _articleCategoryApplication.GetDetails(id);
             return Partial("Edit", articleCategory);
+        }
+
+        public IActionResult OnGetRemove(long id)
+        {
+            var result = _articleCategoryApplication.Remove(id);
+            if (result.IsSucceeded)
+                return RedirectToPage("./Index");
+
+            Message = result.Message;
+            return RedirectToPage("./Index");
+        }
+
+
+        public IActionResult OnGetRestore(long id)
+        {
+            var result = _articleCategoryApplication.Restore(id);
+            if (result.IsSucceeded)
+                return RedirectToPage("./Index");
+
+            Message = result.Message;
+            return RedirectToPage("./Index");
         }
     }
 }

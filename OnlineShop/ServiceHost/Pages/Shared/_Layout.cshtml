@@ -9,24 +9,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="~/Theme/assets/images/DigiAjili3 (2).ico">
     @if (ViewData["metaDescription"] != null)
     {
         <meta name="description" content="@ViewData["metaDescription"]">
+        <meta property="og:description" content="@ViewData["metaDescription"]" />
     }
     else
     {
-        <meta name="description" content="خرید بهترین پسته از سراسر ایران">
-
+        <meta name="description" content="فروشگاه اینترنتی دیجی آجیلی، فروش انواع آجیل و خشکبار تازه و خشک با بهترین قیمت">
+        <meta property="og:description" content="فروشگاه اینترنتی دیجی آجیلی، فروش انواع آجیل و خشکبار تازه و خشک با بهترین قیمت" />
     }
     <meta name="author" content="">
     @if (ViewData["Title"] != null)
     {
-        <title>پسته طلایی | @ViewData["Title"]</title>
+        <title>دیجی آجیلی | @ViewData["Title"]</title>
+        <meta property="og:title" content="دیجی آجیلی | @ViewData["Title"]" />
     }
     else
     {
-        <title>پسته طلایی | خرید پسته آنلاین</title>
+        <title>دیجی آجیلی | فروشگاه آجیل و خشکبار</title>
+        <meta property="og:title" content="دیجی آجیلی | فروشگاه آجیل و خشکبار" />
     }
+    <meta property="og:image" content="https://digiajili.ir/@ViewData["Image"]" />
+    <meta property="og:site_name" content="دیجی آجیلی | Digi Ajili" />
     <meta name="keywords" content="@ViewData["keywords"]" />
 
     <link rel="stylesheet" media="all" href="~/Theme/assets/css/bootstrap.css" />
@@ -42,6 +48,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
 
+    <script type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "a2d52516-360a-4bf2-8b40-ccb98d4555f2"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
 
 
 </head>
@@ -84,7 +91,6 @@
         $(document).ready(function () {
             updateCart();
         });
-
     </script>
 
 </body>

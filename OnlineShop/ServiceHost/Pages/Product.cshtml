@@ -2,6 +2,7 @@
 @model ServiceHost.Pages.ProductModel
 @{
     ViewData["Title"] = Model.Product.Name;
+    ViewData["Image"] = $"ProductPictures/{@Model.Product.Picture}";
     ViewData["keywords"] = Model.Product.Keywords;
     ViewData["metaDescription"] = Model.Product.MetaDescription;
 }
@@ -47,17 +48,17 @@
                                 </span>
                             </div>
 
-                            <hr />
+                            <!--<hr />-->
 
                             <!--info-box-->
-                            <div class="info-box">
+                            <!--<div class="info-box">
                                 <span><strong>کارساز</strong></span>
                                 <span>نام تجاری </span>
                             </div>
                             <div class="info-box">
                                 <span><strong>مواد</strong></span>
                                 <span>چوب ، چرم ، اکریلیک</span>
-                            </div>
+                            </div>-->
 
 
                             <hr />
@@ -146,12 +147,12 @@
         <ul class="nav nav-pills nav-pills-flat justify-content-center" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="tab-review-tab" data-toggle="tab" href="#tab-review" role="tab">
-                    بررسی ها
+                    نظرات
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="tab-desc-tab" data-toggle="tab" href="#tab-desc" role="tab">
-                    شرح
+                    توضیحات
                 </a>
             </li>
         </ul>
@@ -162,7 +163,7 @@
 
             <!--Tab description-->
 
-            <div class="tab-pane fade show active" id="tab-review">
+            <div class="tab-pane fade" id="tab-review">
 
                 <div class="col-md-8  m-auto">
 
@@ -172,7 +173,7 @@
 
                         <div class="comment-header">
                             <div class="h3 m-0">نظرات اخیر</div>
-                            <span>@Model.Product.Comments.Count @Model.Product.Name</span>
+                            <span>@Model.Product.Comments.Count</span>
                         </div>
 
                         <div class="comment-wrapper">
@@ -296,9 +297,9 @@
             </div> <!--/tab-pane -->
             <!--Tab specification-->
 
-            <div class="tab-pane fade" id="tab-desc">
+            <div class="tab-pane fade show active" id="tab-desc">
 
-                <div class="col-md-8  m-auto">
+                <div class="col-md-8  m-auto ">
 
                     <div>
                         <div class="h3 m-0"> مشخصات محصول</div>
@@ -308,7 +309,7 @@
                     <hr />
 
                     <div class="row">
-                        @Model.Product.Description
+                       @Html.Raw(Model.Product.Description)
                     </div>
                     <!--/row-->
 
@@ -331,10 +332,9 @@
 
     <header>
         <div class="container">
-            <h3 class="title">جدید ترین محصولات آجیلی</h3>
+            <h2 class="title">جدید ترین محصولات آجیلی</h2>
             <div class="text">
-                <p>
-                    از جدید ترین محصولات ما را تجربه کنید... <a asp-page="/Products" class="btn btn-main">مشاهده همه</a>
+                <p>دیدین دیگر محصولات دیجی آجیلی... <a asp-page="/Products" class="btn btn-main">مشاهده همه</a>
                 </p>
             </div>
         </div>
@@ -398,9 +398,3 @@
     </div> <!--/container-->
 
 </section>
-
-
-
-
-
-

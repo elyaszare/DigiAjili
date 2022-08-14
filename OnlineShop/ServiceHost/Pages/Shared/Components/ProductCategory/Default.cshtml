@@ -7,9 +7,9 @@
 
     <header>
         <div class="container">
-            <h2 class="title">دسته های ویژه</h2>
+            <h2 class="title">دسته بندی محصولات ویژه</h2>
             <div class="text">
-                <p>ما فقط چیزها را به حداقل می رسانیم</p>
+                <p style="font-size: 16px">تازه و قیمت مناسب فقط با دیجی آجیلی</p>
             </div>
         </div>
     </header>
@@ -33,12 +33,12 @@
                                 </div>
                                 <div class="entry entry-block">
                                     <div class="title">
-                                        <p class="h4" asp-page="/ProductCategory" asp-route-id="@item.Slug">@item.Name</p>
+                                        <h2 class="h4" asp-page="/ProductCategory" asp-route-id="@item.Slug">@item.Name</h2>
                                     </div>
                                     <div class="description">
-                                        <p>
+                                        <h3>
                                             @item.Description
-                                        </p>
+                                        </h3>
                                     </div>
                                 </div>
                                 <div class="show-more">

@@ -10,12 +10,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
-    <meta name="author" content="Coderthemes">
+    <meta name="description" content="مدیریت سایت دیجی آجیلی">
 
-    <link rel="shortcut icon" href="~/AdminTheme/assets/images/favicon_1.ico">
+    <link rel="shortcut icon" href="~/Theme/assets/images/DigiAjili3 (2).ico">
 
-    <title>@ViewData["Title"] | OnlineShop</title>
+    <title>@ViewData["Title"] | دیجی آجیلی</title>
 
     <!-- Base Css Files -->
     <link href="~/AdminTheme/assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -48,12 +47,9 @@
     <script src="https://cdn.tiny.cloud/1/4l7ll64n9m6p5vwdighcgta9opzok7dz2hnspm7sd9iiytka/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
         tinymce.init({
-            selector: '#BodyContent',
-            plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
-            toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter image editimage pageembed permanentpen table tableofcontents',
-            toolbar_mode: 'floating',
-            tinycomments_mode: 'embedded',
-            tinycomments_author: 'Author name',
+            selector: 'textarea',
+            plugins: 'advlist autolink lists link image charmap preview anchor pagebreak',
+            toolbar_mode: 'floating'
         });
     </script>
 </head>
@@ -68,7 +64,7 @@
             <!-- LOGO -->
             <div class="topbar-left">
                 <div class="text-center">
-                    <a asp-page="./index" class="logo"><i class="md md-terrain"></i> <span>فروشگاه آنلاین </span></a>
+                    <a asp-page="./index" class="logo"><i> <img src="~/Theme/assets/images/DigiAjili3.png" style="width: 45px; height: 25px"/></i> <span style="font-size: 16px">مدیریت|دیجی آجیلی</span></a>
                 </div>
             </div>
             <!-- Button mobile view to collapse sidebar menu -->
@@ -155,7 +151,7 @@
                                 <a href="#" class="right-bar-toggle waves-effect waves-light"><i class="md md-chat"></i></a>
                             </li>
                             <li class="dropdown">
-                                <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true"><img src="~/AdminTheme/assets/images/avatar-1.jpg" alt="user-img" class="img-circle"> </a>
+                                <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true"><img src="~/AdminTheme/assets/images/users/Administrator.png" alt="user-img" class="img-circle"> </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> پروفایل</a></li>
                                     <li><a href="javascript:void(0)"><i class="md md-settings"></i> تنظیمات</a></li>
@@ -211,7 +207,7 @@
                                 <a asp-page="/Inventory/Index" class="waves-effect"><i class="fa fa-shopping-cart"></i><span> انبارداری </span></a>
                             </li>
                             <li>
-                                <a asp-page="/Shop/Orders/Index" class="waves-effect"><i class="md md-add-shopping-cart"></i><span> سفارشات </span></a>
+                                <a asp-page="/Shop/Orders/Index" class="waves-effect"><i class="md md-shopping-basket"></i><span> سفارشات </span></a>
                             </li>
                             <li class="has_sub">
                                 <a class="waves-effect"><i class="md md-add-shopping-cart"></i><span> فروشگاه </span><span class="pull-right"><i class="md md-add"></i></span></a>
@@ -292,100 +288,10 @@
                     <li class="list-group-item">
                         <a href="#">
                             <div class="avatar">
-                                <img src="~/AdminTheme/assets/images/users/avatar-1.jpg" alt="">
+                                <img src="~/AdminTheme/assets/images/users/Administrator.png" alt="">
                             </div>
                             <span class="name">Chadengle</span>
                             <i class="fa fa-circle online"></i>
-                        </a>
-                        <span class="clearfix"></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">
-                            <div class="avatar">
-                                <img src="images/users/avatar-2.jpg" alt="">
-                            </div>
-                            <span class="name">Tomaslau</span>
-                            <i class="fa fa-circle online"></i>
-                        </a>
-                        <span class="clearfix"></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">
-                            <div class="avatar">
-                                <img src="images/users/avatar-3.jpg" alt="">
-                            </div>
-                            <span class="name">Stillnotdavid</span>
-                            <i class="fa fa-circle online"></i>
-                        </a>
-                        <span class="clearfix"></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">
-                            <div class="avatar">
-                                <img src="images/users/avatar-4.jpg" alt="">
-                            </div>
-                            <span class="name">Kurafire</span>
-                            <i class="fa fa-circle online"></i>
-                        </a>
-                        <span class="clearfix"></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">
-                            <div class="avatar">
-                                <img src="images/users/avatar-5.jpg" alt="">
-                            </div>
-                            <span class="name">Shahedk</span>
-                            <i class="fa fa-circle away"></i>
-                        </a>
-                        <span class="clearfix"></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">
-                            <div class="avatar">
-                                <img src="images/users/avatar-6.jpg" alt="">
-                            </div>
-                            <span class="name">Adhamdannaway</span>
-                            <i class="fa fa-circle away"></i>
-                        </a>
-                        <span class="clearfix"></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">
-                            <div class="avatar">
-                                <img src="images/users/avatar-7.jpg" alt="">
-                            </div>
-                            <span class="name">Ok</span>
-                            <i class="fa fa-circle away"></i>
-                        </a>
-                        <span class="clearfix"></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">
-                            <div class="avatar">
-                                <img src="images/users/avatar-8.jpg" alt="">
-                            </div>
-                            <span class="name">Arashasghari</span>
-                            <i class="fa fa-circle offline"></i>
-                        </a>
-                        <span class="clearfix"></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">
-                            <div class="avatar">
-                                <img src="images/users/avatar-9.jpg" alt="">
-                            </div>
-                            <span class="name">Joshaustin</span>
-                            <i class="fa fa-circle offline"></i>
-                        </a>
-                        <span class="clearfix"></span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">
-                            <div class="avatar">
-                                <img src="images/users/avatar-10.jpg" alt="">
-                            </div>
-                            <span class="name">Sortino</span>
-                            <i class="fa fa-circle offline"></i>
                         </a>
                         <span class="clearfix"></span>
                     </li>

@@ -2,16 +2,17 @@
 @model IndexModel
 @{
     ViewData["Title"] = "صفحه اصلی";
-    ViewData["keywords"] = "تاپ مارکت, آنلاین شاپ, لوازم خانگی";
-    ViewData["metaDescription"] = "فروشگاه آنلاین لوازم خانگی تاپ مارکت";
+    ViewData["Image"] = "Theme/assets/images/DigiAjili3 (2).ico";
+    ViewData["keywords"] = "خرید پسته, پسته,درخت پسته,پسته مه ولات,پسته اکبری,پسته تازه,خرید آنلاین پسته,خرید آجیل,آنواع آجیل";
+    ViewData["metaDescription"] = "خرید آنلاین پسته و انواع آجیل ";
 }
 
 @await Component.InvokeAsync("Slide")
 @await Component.InvokeAsync("ProductCategory")
 @await Component.InvokeAsync("Product")
 @await Component.InvokeAsync("Newsletter")
-@*@await Component.InvokeAsync("Banner")*@
 @await Component.InvokeAsync("Benefits")
+@await Component.InvokeAsync("Banner")
 @await Component.InvokeAsync("LatestArticles")
 
 

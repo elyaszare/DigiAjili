@@ -58,7 +58,8 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
                 ShowOrder = x.ShowOrder,
                 Picture = x.Picture,
                 CreationDate = x.CreationDate.ToFarsi(),
-                ArticleCount = x.Articles.Count
+                ArticleCount = x.Articles.Count,
+                IsRemoved = x.IsRemoved
             });
 
 

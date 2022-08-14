@@ -1,0 +1,17 @@
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Release\net5.0\CommentManagement.Domain.deps.json
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Release\net5.0\CommentManagement.Domain.dll
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Release\net5.0\ref\CommentManagement.Domain.dll
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Release\net5.0\CommentManagement.Domain.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Release\net5.0\0_Framework.dll
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Release\net5.0\CommentManagement.Application.Contract.dll
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Release\net5.0\0_Framework.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\bin\Release\net5.0\CommentManagement.Application.Contract.pdb
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\obj\Release\net5.0\CommentManagement.Domain.csproj.AssemblyReference.cache
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\obj\Release\net5.0\CommentManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\obj\Release\net5.0\CommentManagement.Domain.AssemblyInfoInputs.cache
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\obj\Release\net5.0\CommentManagement.Domain.AssemblyInfo.cs
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\obj\Release\net5.0\CommentManagement.Domain.csproj.CoreCompileInputs.cache
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\obj\Release\net5.0\CommentManagement.Domain.csproj.CopyComplete
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\obj\Release\net5.0\CommentManagement.Domain.dll
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\obj\Release\net5.0\ref\CommentManagement.Domain.dll
+D:\PistachioShop\OnlineShop\OnlineShop\CommentManagement.Domain\obj\Release\net5.0\CommentManagement.Domain.pdb

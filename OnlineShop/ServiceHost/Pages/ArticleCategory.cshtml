@@ -2,6 +2,7 @@
 @model ServiceHost.Pages.ArticleCategoryModel
 @{
     ViewData["Title"] = Model.ArticleCategory.Name;
+    ViewData["Image"] = $"ProductPictures/{@Model.ArticleCategory.Picture}";
     ViewData["keywords"] = Model.ArticleCategory.Keywords;
     ViewData["metaDescription"] = Model.ArticleCategory.MetaDescription;
 }
